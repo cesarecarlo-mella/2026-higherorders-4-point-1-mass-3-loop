@@ -1,0 +1,3 @@
+{"Family" -> H, "Loop" -> {}, "Leg" -> {k2}, "Conservation" -> {}, 
+ "Replacement" -> {k2^2 -> -1}, "Propagator" -> {}, "Numeric" -> {}, 
+ "NThread" -> 50}

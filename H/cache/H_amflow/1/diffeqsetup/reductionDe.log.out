@@ -1,0 +1,475 @@
+"Error: can not find LiteRed2025.m\nCheck if this file exists in /scratch/ge86hab/hep_tools/LiteRed2"
+Blade: a pacakge for block-triangular form improved Feynman integral decomposition.
+Version 2023/01/04.
+Author: Xin Guan, Xiao Liu, Yan-Qing Ma and Wen-Hao Wu.
+Number of defined symbols=64. Please see ?Blade`* for help.
+
+--------------------------------------------------
+BLSetReducerOptions->"IBPParameter" -> Automatic, "IntegralOrdering" -> 1, "CheckMastersQ" -> True, "FilterLevel" -> 3, "IBPForMapSector" -> False, "MaxIncrement" -> 2, "CloseSymmetry" -> False, "CutNoDot" -> False, "BlackBoxRank" -> 2, "BlackBoxDot" -> 0, "MaxPrime" -> 200, "MaxDegree" -> 1000
+BLSetSchemeOptions->"OperatorExtendGQ" -> True, "MinimalSchemeRank" -> 1, "PartitionDot" -> True, "PartitionRankThreshold" -> 400, "UniqueSubsectorQ" -> True"--------------------------------------------------"
+
+Begin BLDifferentialEquation...
+      Begin determine master integrals...
+      Begin BLMaximalCutMasters...
+            BLMaximalCutMasters use time : 235.75300000000001s,   LeafCount = 14203
+      Begin compute derivatives...
+      DivideLevel -> 0
+      Begin BLReduce...
+            MaximalCutMasters already exist.
+            Solve system id -> 1, Sector -> BL[H, {1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0}]
+            Begin BLReduce...
+                  Begin GenerateIBP...
+                        Begin BLIBPSystem...
+                              Rank: 3, Dots: 1, FilterLevel: 3
+                              BLIBPSystem use time : 833.687s,   LeafCount = 1
+                        Begin BLDatabaseInfo...
+                              BLDatabaseInfo use time : 3288.138s,   LeafCount = 1
+                        GenerateIBP use time : 4128.295s,   LeafCount = 3
+                  Begin BLNthreadsLearning...
+                        Database Nthreads-> 9, constraint by memory.
+                        Average sample time for ibps (single core) -> 185.842s.
+                        BLNthreadsLearning use time : 2141.295s,   LeafCount = 1
+                  Begin BLDumpDegrees...
+                        BLDumpDegrees use time : 72143.563s,   LeafCount = 1
+                  Begin BLDumpSamplePoints...
+                        BLDumpSamplePoints use time : 368.285s,   LeafCount = 1
+                  number of sample points -> 40426
+                  Estimated wall time(IBP FiniteField) -> 834760.99 s.
+                  Begin BLAdaptiveSearch...
+                        current options:  <|CutIncrement -> 2, DatanamePrefix -> 1, IntegralWeight -> {uniform}, Jobname -> 1, VariableGroup -> {{eps}}, VariableWeight -> {adaptive}|>
+                        Begin BLSearchRelations...
+                              Begin determine variable weights...
+                              Variables: {{eps}}, Weights: {{1}}
+                              Begin determine cut...
+                              Sorted vars: {{eps}}, Weights: {{1}}, IntMode: {uniform}, Cut: {}
+                              Begin BLSearchRelationsBasic...
+                                    Begin BLGenerateJob...
+                                          block number: 736, all integrals: 10246, reduced integrals: 9461, masters: 785
+                                          size of blocks ->56 56 28 28 28 28 28 28 28 28 28 28 28 28 28 28 28 28 28 28 28 36 36 36 36 36 36 36 36 36 36 36 36 36 36 36 36 36 36 36 36 36 36 36 36 36 36 36 36 36 36 8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 45 45 45 45 45 45 45 45 45 45 45 45 45 45 45 45 45 45 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 55 55 55 55 55 55 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 55 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12
+                                          BLGenerateJob use time : 283.367s,   LeafCount = 1
+                                    Begin BLDatabase...
+                                          18 data generated in 324.698s. name: 1
+                                          18 data write in 10.302s. name: 1
+                                          BLDatabase use time : 338.588s,   LeafCount = 1
+                                    Begin SearchTemplate...
+                                          search round ->0
+                                          current data number ->18
+                                          SearchTemplate use time : 272.507s,   LeafCount = 1
+                                    Begin FitTemplate...
+                                          current data number ->9
+                                          FitTemplate use time : 14.348s,   LeafCount = 1
+                                    BLSearchRelationsBasic use time : 1192.242s,   LeafCount = 4
+                              # database -> 18, time for fitting -> 14.266300000000001s, time for solving -> 1.9506000000000001s.
+                              BLSearchRelations use time : 1192.243s,   LeafCount = 4
+                        Estimated wall time(BL FiniteField) -> 171517.40600000002 s.
+                        current options:  <|CutIncrement -> 2, DatanamePrefix -> 2, IntegralWeight -> {uniform}, Jobname -> 2, VariableGroup -> {{eta, eps}}, VariableWeight -> {adaptive}|>
+                        Begin BLSearchRelations...
+                              Begin determine variable weights...
+                              Begin BLSearchRelationsBasic...
+                                    Begin BLGenerateJob...
+                                          block number: 736, all integrals: 10246, reduced integrals: 9461, masters: 785
+                                          size of blocks ->56 56 28 28 28 28 28 28 28 28 28 28 28 28 28 28 28 28 28 28 28 36 36 36 36 36 36 36 36 36 36 36 36 36 36 36 36 36 36 36 36 36 36 36 36 36 36 36 36 36 36 8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 45 45 45 45 45 45 45 45 45 45 45 45 45 45 45 45 45 45 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 55 55 55 55 55 55 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 55 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12
+                                          BLGenerateJob use time : 360.17s,   LeafCount = 1
+                                    Begin BLDatabase...
+                                          18 data generated in 264.208s. name: eta1uniform
+                                          18 data write in 10.198s. name: eta1uniform
+                                          BLDatabase use time : 277.721s,   LeafCount = 1
+                                    Begin SearchTemplate...
+                                          search round ->0
+                                          current data number ->18
+                                          SearchTemplate use time : 219.293s,   LeafCount = 1
+                                    BLSearchRelationsBasic use time : 1129.165s,   LeafCount = 1
+                              Begin BLSearchRelationsBasic...
+                                    Begin BLGenerateJob...
+                                          block number: 736, all integrals: 10246, reduced integrals: 9461, masters: 785
+                                          size of blocks ->56 56 28 28 28 28 28 28 28 28 28 28 28 28 28 28 28 28 28 28 28 36 36 36 36 36 36 36 36 36 36 36 36 36 36 36 36 36 36 36 36 36 36 36 36 36 36 36 36 36 36 8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 45 45 45 45 45 45 45 45 45 45 45 45 45 45 45 45 45 45 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 55 55 55 55 55 55 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 55 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12
+                                          BLGenerateJob use time : 472.658s,   LeafCount = 1
+                                    Begin BLDatabase...
+                                          18 data generated in 365.278s. name: eps1uniform
+                                          18 data write in 12.343s. name: eps1uniform
+                                          BLDatabase use time : 382.15000000000003s,   LeafCount = 1
+                                    Begin SearchTemplate...
+                                          search round ->0
+                                          current data number ->18
+                                          SearchTemplate use time : 454.124s,   LeafCount = 1
+                                    BLSearchRelationsBasic use time : 1726.402s,   LeafCount = 1
+                              Variables: {{eta, eps}}, Weights: {{1, 1}}
+                              Begin determine cut...
+                              Sorted vars: {{eta, eps}}, Weights: {{1, 1}}, IntMode: {uniform}, Cut: {}
+                              Begin BLSearchRelationsBasic...
+                                    Begin BLGenerateJob...
+                                          block number: 736, all integrals: 10246, reduced integrals: 9461, masters: 785
+                                          size of blocks ->56 56 28 28 28 28 28 28 28 28 28 28 28 28 28 28 28 28 28 28 28 36 36 36 36 36 36 36 36 36 36 36 36 36 36 36 36 36 36 36 36 36 36 36 36 36 36 36 36 36 36 8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 45 45 45 45 45 45 45 45 45 45 45 45 45 45 45 45 45 45 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 55 55 55 55 55 55 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 55 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12
+                                          BLGenerateJob use time : 872.167s,   LeafCount = 1
+                                    Begin BLDatabase...
+                                          36 data generated in 977.687s. name: 2_0_1
+                                          36 data write in 31.397s. name: 2_0_1
+                                          BLDatabase use time : 1013.26s,   LeafCount = 1
+                                    Begin SearchTemplate...
+                                          search round ->0
+                                          current data number ->36
+                                          datainfo has already been written. ingnore it.
+                                          36 data generated in 775.954s. name: 2_0_1
+                                          36 data write in 27.576s. name: 2_0_1
+                                          search round ->1
+                                          current data number ->72
+                                          SearchTemplate use time : 2498.093s,   LeafCount = 1
+                                    Begin FitTemplate...
+                                          current data number ->36
+                                          current data number ->54
+                                          FitTemplate use time : 113.364s,   LeafCount = 1
+                                    BLSearchRelationsBasic use time : 5069.331s,   LeafCount = 4
+                              # database -> 54, time for fitting -> 54.9281s, time for solving -> 4.4072000000000005s.
+                              BLSearchRelations use time : 7925.036s,   LeafCount = 4
+                        Estimated wall time(BL FiniteField) -> 4733.253 s.
+                        The optimal choice is NVariables -> 2
+                        BLAdaptiveSearch use time : 9188.665s,   LeafCount = 1
+                  Begin BLSolveSemiBL...
+                        Begin SolveSemiBLMod...
+                              points/points_0.fflow already exists, nothing to do
+                              Begin Sampling...
+                                    sampling -> 1/1
+                                    Sampling use time : 3753.452s,   LeafCount = 1
+                              Begin FunctionalReconstruction...
+                                    FunctionalReconstruction use time : 301.753s,   LeafCount = 1
+                              SolveSemiBLMod use time : 4062.291s,   LeafCount = 1
+                        rational reconstruct: start: 0, nparsout: 48740364, nthreads: 50, read files from: 2_*_coeff, out_file: rrres
+
+                        
+                        Begin SolveSemiBLMod...
+                              Begin Sampling...
+                                    sampling -> 1/1
+                                    54 data generated in 1295.29s. name: 2_1_1
+                                    54 data write in 43.368s. name: 2_1_1
+                                    Sampling use time : 5022.197s,   LeafCount = 1
+                              Begin FunctionalReconstruction...
+                                    FunctionalReconstruction use time : 341.645s,   LeafCount = 1
+                              SolveSemiBLMod use time : 5873.4490000000005s,   LeafCount = 1
+                        used primes-> 1, rest elements -> 47588007
+
+                        Begin SolveSemiBLMod...
+                              Begin Sampling...
+                                    sampling -> 1/1
+                                    54 data generated in 1594.44s. name: 2_2_1
+                                    54 data write in 53.293s. name: 2_2_1
+                                    Sampling use time : 5311.635s,   LeafCount = 1
+                              Begin FunctionalReconstruction...
+                                    FunctionalReconstruction use time : 274.107s,   LeafCount = 1
+                              SolveSemiBLMod use time : 6261.383s,   LeafCount = 1
+                        used primes-> 2, rest elements -> 44387618
+
+                        Begin SolveSemiBLMod...
+                              Begin Sampling...
+                                    sampling -> 1/1
+                                    54 data generated in 1158.71s. name: 2_3_1
+                                    54 data write in 39.013s. name: 2_3_1
+                                    Sampling use time : 4807.11s,   LeafCount = 1
+                              Begin FunctionalReconstruction...
+                                    FunctionalReconstruction use time : 286.225s,   LeafCount = 1
+                              SolveSemiBLMod use time : 5555.4310000000005s,   LeafCount = 1
+                        used primes-> 3, rest elements -> 39865618
+
+                        Begin SolveSemiBLMod...
+                              Begin Sampling...
+                                    sampling -> 1/1
+                                    54 data generated in 1664.03s. name: 2_4_1
+                                    54 data write in 42.918s. name: 2_4_1
+                                    Sampling use time : 5471.023s,   LeafCount = 1
+                              Begin FunctionalReconstruction...
+                                    FunctionalReconstruction use time : 343.283s,   LeafCount = 1
+                              SolveSemiBLMod use time : 6470.951s,   LeafCount = 1
+                        used primes-> 4, rest elements -> 34510566
+
+                        Begin SolveSemiBLMod...
+                              Begin Sampling...
+                                    sampling -> 1/1
+                                    54 data generated in 1585.2s. name: 2_5_1
+                                    54 data write in 49.725s. name: 2_5_1
+                                    Sampling use time : 5486.437s,   LeafCount = 1
+                              Begin FunctionalReconstruction...
+                                    FunctionalReconstruction use time : 350.56600000000003s,   LeafCount = 1
+                              SolveSemiBLMod use time : 6590.464s,   LeafCount = 1
+                        used primes-> 5, rest elements -> 29069942
+
+                        Begin SolveSemiBLMod...
+                              Begin Sampling...
+                                    sampling -> 1/1
+                                    54 data generated in 1444.36s. name: 2_6_1
+                                    54 data write in 43.75s. name: 2_6_1
+                                    Sampling use time : 5358.619s,   LeafCount = 1
+                              Begin FunctionalReconstruction...
+                                    FunctionalReconstruction use time : 350.051s,   LeafCount = 1
+                              SolveSemiBLMod use time : 6382.8730000000005s,   LeafCount = 1
+                        used primes-> 6, rest elements -> 23825609
+
+                        Begin SolveSemiBLMod...
+                              Begin Sampling...
+                                    sampling -> 1/1
+                                    54 data generated in 1618.24s. name: 2_7_1
+                                    54 data write in 45.894s. name: 2_7_1
+                                    Sampling use time : 5393.28s,   LeafCount = 1
+                              Begin FunctionalReconstruction...
+                                    FunctionalReconstruction use time : 362.902s,   LeafCount = 1
+                              SolveSemiBLMod use time : 6397.0070000000005s,   LeafCount = 1
+                        used primes-> 7, rest elements -> 19320963
+
+                        Begin SolveSemiBLMod...
+                              Begin Sampling...
+                                    sampling -> 1/1
+                                    54 data generated in 1471.5s. name: 2_8_1
+                                    54 data write in 41.191s. name: 2_8_1
+                                    Sampling use time : 5323.646s,   LeafCount = 1
+                              Begin FunctionalReconstruction...
+                                    FunctionalReconstruction use time : 323.83s,   LeafCount = 1
+                              SolveSemiBLMod use time : 6239.597s,   LeafCount = 1
+                        used primes-> 8, rest elements -> 15470126
+
+                        Begin SolveSemiBLMod...
+                              Begin Sampling...
+                                    sampling -> 1/1
+                                    54 data generated in 1588.02s. name: 2_9_1
+                                    54 data write in 42.661s. name: 2_9_1
+                                    Sampling use time : 4639.528s,   LeafCount = 1
+                              Begin FunctionalReconstruction...
+                                    FunctionalReconstruction use time : 248.497s,   LeafCount = 1
+                              SolveSemiBLMod use time : 5473.495s,   LeafCount = 1
+                        used primes-> 9, rest elements -> 11895864
+
+                        Begin SolveSemiBLMod...
+                              Begin Sampling...
+                                    sampling -> 1/1
+                                    54 data generated in 1166.69s. name: 2_10_1
+                                    54 data write in 38.65s. name: 2_10_1
+                                    Sampling use time : 3700.098s,   LeafCount = 1
+                              Begin FunctionalReconstruction...
+                                    FunctionalReconstruction use time : 272.14s,   LeafCount = 1
+                              SolveSemiBLMod use time : 4450.34s,   LeafCount = 1
+                        used primes-> 10, rest elements -> 8661824
+
+                        Begin SolveSemiBLMod...
+                              Begin Sampling...
+                                    sampling -> 1/1
+                                    54 data generated in 1277.43s. name: 2_11_1
+                                    54 data write in 32.766s. name: 2_11_1
+                                    Sampling use time : 3998.571s,   LeafCount = 1
+                              Begin FunctionalReconstruction...
+                                    FunctionalReconstruction use time : 244.25900000000001s,   LeafCount = 1
+                              SolveSemiBLMod use time : 4739.274s,   LeafCount = 1
+                        used primes-> 11, rest elements -> 6059933
+
+                        Begin SolveSemiBLMod...
+                              Begin Sampling...
+                                    sampling -> 1/1
+                                    54 data generated in 1027.05s. name: 2_12_1
+                                    54 data write in 32.324s. name: 2_12_1
+                                    Sampling use time : 3994.725s,   LeafCount = 1
+                              Begin FunctionalReconstruction...
+                                    FunctionalReconstruction use time : 276.49s,   LeafCount = 1
+                              SolveSemiBLMod use time : 4668.202s,   LeafCount = 1
+                        used primes-> 12, rest elements -> 4228583
+
+                        Begin SolveSemiBLMod...
+                              Begin Sampling...
+                                    sampling -> 1/1
+                                    54 data generated in 1085.15s. name: 2_13_1
+                                    54 data write in 30.741s. name: 2_13_1
+                                    Sampling use time : 3876.641s,   LeafCount = 1
+                              Begin FunctionalReconstruction...
+                                    FunctionalReconstruction use time : 266.621s,   LeafCount = 1
+                              SolveSemiBLMod use time : 4531.76s,   LeafCount = 1
+                        used primes-> 13, rest elements -> 2992522
+
+                        Begin SolveSemiBLMod...
+                              Begin Sampling...
+                                    sampling -> 1/1
+                                    54 data generated in 878.801s. name: 2_14_1
+                                    54 data write in 32.72s. name: 2_14_1
+                                    Sampling use time : 3795.849s,   LeafCount = 1
+                              Begin FunctionalReconstruction...
+                                    FunctionalReconstruction use time : 248.339s,   LeafCount = 1
+                              SolveSemiBLMod use time : 4447.577s,   LeafCount = 1
+                        used primes-> 14, rest elements -> 2156069
+
+                        Begin SolveSemiBLMod...
+                              Begin Sampling...
+                                    sampling -> 1/1
+                                    54 data generated in 883.583s. name: 2_15_1
+                                    54 data write in 32.989s. name: 2_15_1
+                                    Sampling use time : 3779.068s,   LeafCount = 1
+                              Begin FunctionalReconstruction...
+                                    FunctionalReconstruction use time : 295.508s,   LeafCount = 1
+                              SolveSemiBLMod use time : 4476.363s,   LeafCount = 1
+                        used primes-> 15, rest elements -> 1636429
+
+                        Begin SolveSemiBLMod...
+                              Begin Sampling...
+                                    sampling -> 1/1
+                                    54 data generated in 865.449s. name: 2_16_1
+                                    54 data write in 33.237s. name: 2_16_1
+                                    Sampling use time : 3823.951s,   LeafCount = 1
+                              Begin FunctionalReconstruction...
+                                    FunctionalReconstruction use time : 290.76300000000003s,   LeafCount = 1
+                              SolveSemiBLMod use time : 4506.78s,   LeafCount = 1
+                        used primes-> 16, rest elements -> 1264218
+
+                        Begin SolveSemiBLMod...
+                              Begin Sampling...
+                                    sampling -> 1/1
+                                    54 data generated in 874.349s. name: 2_17_1
+                                    54 data write in 32.707s. name: 2_17_1
+                                    Sampling use time : 3814.348s,   LeafCount = 1
+                              Begin FunctionalReconstruction...
+                                    FunctionalReconstruction use time : 277.664s,   LeafCount = 1
+                              SolveSemiBLMod use time : 4494.076s,   LeafCount = 1
+                        used primes-> 17, rest elements -> 1012855
+
+                        Begin SolveSemiBLMod...
+                              Begin Sampling...
+                                    sampling -> 1/1
+                                    54 data generated in 879.418s. name: 2_18_1
+                                    54 data write in 30.6s. name: 2_18_1
+                                    Sampling use time : 3791.6530000000002s,   LeafCount = 1
+                              Begin FunctionalReconstruction...
+                                    FunctionalReconstruction use time : 214.927s,   LeafCount = 1
+                              SolveSemiBLMod use time : 4404.468s,   LeafCount = 1
+                        used primes-> 18, rest elements -> 830854
+
+                        Begin SolveSemiBLMod...
+                              Begin Sampling...
+                                    sampling -> 1/1
+                                    54 data generated in 872.71s. name: 2_19_1
+                                    54 data write in 30.526s. name: 2_19_1
+                                    Sampling use time : 3698.831s,   LeafCount = 1
+                              Begin FunctionalReconstruction...
+                                    FunctionalReconstruction use time : 223.314s,   LeafCount = 1
+                              SolveSemiBLMod use time : 4314.877s,   LeafCount = 1
+                        used primes-> 19, rest elements -> 688425
+
+                        Begin SolveSemiBLMod...
+                              Begin Sampling...
+                                    sampling -> 1/1
+                                    54 data generated in 897.671s. name: 2_20_1
+                                    54 data write in 31.573s. name: 2_20_1
+                                    Sampling use time : 4047.793s,   LeafCount = 1
+                              Begin FunctionalReconstruction...
+                                    FunctionalReconstruction use time : 254.821s,   LeafCount = 1
+                              SolveSemiBLMod use time : 4701.5470000000005s,   LeafCount = 1
+                        used primes-> 20, rest elements -> 583964
+
+                        Begin SolveSemiBLMod...
+                              Begin Sampling...
+                                    sampling -> 1/1
+                                    54 data generated in 868.371s. name: 2_21_1
+                                    54 data write in 31.02s. name: 2_21_1
+                                    Sampling use time : 3743.167s,   LeafCount = 1
+                              Begin FunctionalReconstruction...
+                                    FunctionalReconstruction use time : 213.429s,   LeafCount = 1
+                              SolveSemiBLMod use time : 4355.966s,   LeafCount = 1
+                        used primes-> 21, rest elements -> 493438
+
+                        Begin SolveSemiBLMod...
+                              Begin Sampling...
+                                    sampling -> 1/1
+                                    54 data generated in 879.235s. name: 2_22_1
+                                    54 data write in 32.46s. name: 2_22_1
+                                    Sampling use time : 3691.799s,   LeafCount = 1
+                              Begin FunctionalReconstruction...
+                                    FunctionalReconstruction use time : 205.769s,   LeafCount = 1
+                              SolveSemiBLMod use time : 4298.793s,   LeafCount = 1
+                        used primes-> 22, rest elements -> 397459
+
+                        Begin SolveSemiBLMod...
+                              Begin Sampling...
+                                    sampling -> 1/1
+                                    54 data generated in 875.309s. name: 2_23_1
+                                    54 data write in 30.999s. name: 2_23_1
+                                    Sampling use time : 3687.5190000000002s,   LeafCount = 1
+                              Begin FunctionalReconstruction...
+                                    FunctionalReconstruction use time : 252.085s,   LeafCount = 1
+                              SolveSemiBLMod use time : 4334.106s,   LeafCount = 1
+                        used primes-> 23, rest elements -> 315868
+
+                        Begin SolveSemiBLMod...
+                              Begin Sampling...
+                                    sampling -> 1/1
+                                    54 data generated in 862.041s. name: 2_24_1
+                                    54 data write in 32.785s. name: 2_24_1
+                                    Sampling use time : 3678.955s,   LeafCount = 1
+                              Begin FunctionalReconstruction...
+                                    FunctionalReconstruction use time : 224.251s,   LeafCount = 1
+                              SolveSemiBLMod use time : 4305.042s,   LeafCount = 1
+                        used primes-> 24, rest elements -> 234592
+
+                        Begin SolveSemiBLMod...
+                              Begin Sampling...
+                                    sampling -> 1/1
+                                    54 data generated in 882.337s. name: 2_25_1
+                                    54 data write in 30.377s. name: 2_25_1
+                                    Sampling use time : 3723.079s,   LeafCount = 1
+                              Begin FunctionalReconstruction...
+                                    FunctionalReconstruction use time : 255.51500000000001s,   LeafCount = 1
+                              SolveSemiBLMod use time : 4380.945s,   LeafCount = 1
+                        used primes-> 25, rest elements -> 166147
+
+                        Begin SolveSemiBLMod...
+                              Begin Sampling...
+                                    sampling -> 1/1
+                                    54 data generated in 884.732s. name: 2_26_1
+                                    54 data write in 32.244s. name: 2_26_1
+                                    Sampling use time : 3776.275s,   LeafCount = 1
+                              Begin FunctionalReconstruction...
+                                    FunctionalReconstruction use time : 279.69100000000003s,   LeafCount = 1
+                              SolveSemiBLMod use time : 4438.91s,   LeafCount = 1
+                        used primes-> 26, rest elements -> 105846
+
+                        Begin SolveSemiBLMod...
+                              Begin Sampling...
+                                    sampling -> 1/1
+                                    54 data generated in 896.571s. name: 2_27_1
+                                    54 data write in 33.471s. name: 2_27_1
+                                    Sampling use time : 3835.443s,   LeafCount = 1
+                              Begin FunctionalReconstruction...
+                                    FunctionalReconstruction use time : 254.869s,   LeafCount = 1
+                              SolveSemiBLMod use time : 4492.234s,   LeafCount = 1
+                        used primes-> 27, rest elements -> 59992
+
+                        Begin SolveSemiBLMod...
+                              Begin Sampling...
+                                    sampling -> 1/1
+                                    54 data generated in 904.55s. name: 2_28_1
+                                    54 data write in 34.965s. name: 2_28_1
+                                    Sampling use time : 3632.149s,   LeafCount = 1
+                              Begin FunctionalReconstruction...
+                                    FunctionalReconstruction use time : 241.37300000000002s,   LeafCount = 1
+                              SolveSemiBLMod use time : 4266.608s,   LeafCount = 1
+                        used primes-> 28, rest elements -> 25769
+
+                        Begin SolveSemiBLMod...
+                              Begin Sampling...
+                                    sampling -> 1/1
+                                    54 data generated in 993.629s. name: 2_29_1
+                                    54 data write in 30.916s. name: 2_29_1
+                                    Sampling use time : 2937.184s,   LeafCount = 1
+                              Begin FunctionalReconstruction...
+                                    FunctionalReconstruction use time : 197.898s,   LeafCount = 1
+                              SolveSemiBLMod use time : 3530.119s,   LeafCount = 1
+                        used primes-> 29, rest elements -> 3635
+
+                        Begin SolveSemiBLMod...
+                              Begin Sampling...
+                                    sampling -> 1/1
+                                    54 data generated in 908.799s. name: 2_30_1
+                                    54 data write in 30.78s. name: 2_30_1
+                                    Sampling use time : 3151.368s,   LeafCount = 1
+                              Begin FunctionalReconstruction...
+                                    FunctionalReconstruction use time : 207.549s,   LeafCount = 1
+                              SolveSemiBLMod use time : 3749.64s,   LeafCount = 1
+                        rational reconstruct success with primes: 30 + 1, total use 150481.000000s. load use 193.000000s. ratrec use 541.000000s. dump in 100.000000s.
+                        BLSolveSemiBL use time : 156010.403s,   LeafCount = 477095847
+                  BLReduce use time : 244870.188s,   LeafCount = 477715212
+            Begin MergeReductionTable...
+                  # masters ->785
+                  merge system id -> 1
+                  MergeReductionTable use time : 245.506s,   LeafCount = 477715212
+            BLReduce use time : 246395.348s,   LeafCount = 781014860
+      BLDifferentialEquation use time : 262859.373s,   LeafCount = 1

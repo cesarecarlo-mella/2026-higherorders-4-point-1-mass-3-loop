@@ -1,0 +1,4 @@
+{{{1 - eps, -eps}, {"Family" -> H, "Loop" -> {k3}, "Leg" -> {k2}, 
+   "Conservation" -> {}, "Replacement" -> {k2^2 -> -1}, 
+   "Propagator" -> {-1 + k3^2, (k2 + k3)^2}, "Numeric" -> {}, 
+   "NThread" -> 50}, {j[H, 1, 0]}, {{{1}}, {}}}}

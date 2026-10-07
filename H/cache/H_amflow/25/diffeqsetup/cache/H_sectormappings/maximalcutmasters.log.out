@@ -1,0 +1,20 @@
+"Error: can not find LiteRed2025.m\nCheck if this file exists in /scratch/ge86hab/hep_tools/LiteRed2"
+CalcLoop: a tool for automated multiloop calculation in quantum field theory.
+Version 2022/07/10.
+Number of defined symbols=43. Please see ?CalcLoop`* for help.
+"BladeIBP: a package for generating IBP, LI and Symmetry relations."
+
+FrontEndObject::notavail: A front end is not available; certain operations require a front end.
+
+Part::partw: Part 2 of {1} does not exist.
+
+Part::partw: Part 2 of {1} does not exist.
+Number of Families = 1. Number of Sectors = 2.
+"2 zero sectors found, 2 nonzero sectors found."
+"2 unique sectors found, 0 mapped sectors found, 0 extmapped sectors found."
+"kernel 1 (Local (50)):"
+"{1, 1}\" done in: \"0.046621`5.120126578206578\"s.\"\n"
+"kernel 2 (Local (50)):"
+"{1, 0}\" done in: \"0.050303`5.15313888003488\"s.\"\n"
+"fast determineMI done in: "1.218827`6.53748705983848
+"# rawmasters(nomap): "2", # rawmasters: "2

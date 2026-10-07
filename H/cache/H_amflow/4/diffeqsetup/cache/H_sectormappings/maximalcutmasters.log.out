@@ -1,0 +1,94 @@
+"Error: can not find LiteRed2025.m\nCheck if this file exists in /scratch/ge86hab/hep_tools/LiteRed2"
+CalcLoop: a tool for automated multiloop calculation in quantum field theory.
+Version 2022/07/10.
+Number of defined symbols=43. Please see ?CalcLoop`* for help.
+"BladeIBP: a package for generating IBP, LI and Symmetry relations."
+
+FrontEndObject::notavail: A front end is not available; certain operations require a front end.
+
+Part::partw: Part 7 of {1, 1, 1} does not exist.
+
+Part::partw: Part 6 of {1, 1, 1} does not exist.
+
+Part::partw: Part 4 of {1, 1, 1} does not exist.
+
+General::stop: Further output of Part::partw will be suppressed during this calculation.
+Number of Families = 1. Number of Sectors = 24.
+"104 zero sectors found, 24 nonzero sectors found."
+"24 unique sectors found, 0 mapped sectors found, 0 extmapped sectors found."
+"kernel 23 (Local (50)):"
+"{1, 0, 1, 0, 0, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0}\" done in: \"3.100666`6.94299998057522\"s.\"\n"
+"kernel 12 (Local (50)):"
+"{1, 1, 1, 0, 0, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0}\" done in: \"3.880956`7.040483712488106\"s.\"\n"
+"kernel 17 (Local (50)):"
+"{1, 0, 1, 1, 0, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0}\" done in: \"3.879794`7.04035366057515\"s.\"\n"
+"kernel 22 (Local (50)):"
+"{1, 0, 1, 0, 1, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0}\" done in: \"4.545449`7.109121782834177\"s.\"\n"
+"kernel 9 (Local (50)):"
+"{1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0}\" done in: \"4.983878`7.149112396213038\"s.\"\n"
+"kernel 7 (Local (50)):"
+"{1, 0, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0}\" done in: \"5.053035`7.155097299898505\"s.\"\n"
+"kernel 16 (Local (50)):"
+"{1, 0, 1, 1, 1, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0}\" done in: \"5.214054`7.168720518176493\"s.\"\n"
+"kernel 19 (Local (50)):"
+"{1, 0, 0, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0}\" done in: \"5.719794`7.208925381331953\"s.\"\n"
+"kernel 20 (Local (50)):"
+"{0, 1, 1, 0, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0}\" done in: \"6.159968`7.241123449579308\"s.\"\n"
+"kernel 2 (Local (50)):"
+"{1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0}\" done in: \"6.33861`7.253539024955839\"s.\"\n"
+"kernel 11 (Local (50)):"
+"{1, 1, 1, 0, 1, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0}\" done in: \"7.117765`7.303888638741767\"s.\"\n"
+"kernel 8 (Local (50)):"
+"{0, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0}\" done in: \"7.238803`7.311211751202318\"s.\"\n"
+"From kernel 3 (Local (50)):"
+"Part::partw: Part 7 of {1, 1, 1} does not exist."
+"From kernel 3 (Local (50)):"
+"Part::partw: Part 6 of {1, 1, 1} does not exist."
+"From kernel 3 (Local (50)):"
+"Part::partw: Part 4 of {1, 1, 1} does not exist."
+"From kernel 3 (Local (50)):"
+"General::stop: Further output of Part::partw will be suppressed during this calculation."
+"kernel 3 (Local (50)):"
+"{1, 1, 1, 1, 1, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0}\" done in: \"9.300895`7.420069735045528\"s.\"\n"
+"kernel 6 (Local (50)):"
+"{1, 1, 0, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0}\" done in: \"13.731559`7.589264840759011\"s.\"\n"
+"kernel 4 (Local (50)):"
+"{1, 1, 1, 1, 0, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0}\" done in: \"20.608233`7.76558574940678\"s.\"\n"
+"kernel 14 (Local (50)):"
+"{1, 1, 0, 1, 0, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0}\" done in: \"20.714012`7.767809217001348\"s.\"\n"
+"From kernel 21 (Local (50)):"
+"Part::partw: Part 7 of {1, 1, 1} does not exist."
+"From kernel 21 (Local (50)):"
+"Part::partw: Part 6 of {1, 1, 1} does not exist."
+
+General::stop: Further output of Part::partw will be suppressed during this calculation.
+"From kernel 21 (Local (50)):"
+"General::stop: Further output of Part::partw will be suppressed during this calculation."
+"kernel 21 (Local (50)):"
+"\"sectors involved: \"{{1, 1, 1, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0}}\n"
+"kernel 21 (Local (50)):"
+"\"#Symmetry Relations:  \"7\n"
+"kernel 21 (Local (50)):"
+"{1, 1, 1, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0}\" done in: \"22.568022`7.805038490007071\"s.\"\n"
+"kernel 24 (Local (50)):"
+"{1, 0, 0, 1, 0, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0}\" done in: \"23.057097`7.814349620121379\"s.\"\n"
+"kernel 10 (Local (50)):"
+"{1, 1, 1, 0, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0}\" done in: \"23.703348`7.826354686140404\"s.\"\n"
+"From kernel 1 (Local (50)):"
+"General::stop: Further output of Part::partw will be suppressed during this calculation."
+"kernel 1 (Local (50)):"
+"{1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0}\" done in: \"24.126341`7.834036455313449\"s.\"\n"
+"kernel 15 (Local (50)):"
+"{1, 1, 0, 0, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0}\" done in: \"26.807208`7.8797965775894285\"s.\"\n"
+"kernel 13 (Local (50)):"
+"{1, 1, 0, 1, 1, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0}\" done in: \"27.066141`7.883971333423293\"s.\"\n"
+"From kernel 5 (Local (50)):"
+"General::stop: Further output of Part::partw will be suppressed during this calculation."
+"kernel 5 (Local (50)):"
+"{1, 1, 1, 0, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0}\" done in: \"27.838272`7.896187267388672\"s.\"\n"
+"From kernel 18 (Local (50)):"
+"General::stop: Further output of Part::partw will be suppressed during this calculation."
+"kernel 18 (Local (50)):"
+"{1, 0, 1, 0, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0}\" done in: \"28.707461`7.909539776990374\"s.\"\n"
+"fast determineMI done in: "33.534326`7.977034575458693
+"# rawmasters(nomap): "25", # rawmasters: "25

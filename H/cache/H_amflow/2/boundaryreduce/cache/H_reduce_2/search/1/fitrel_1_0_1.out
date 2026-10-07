@@ -1,0 +1,16 @@
+fitrel: working directory -> /scratch/ge45tuy/amflow/NumericalChecks/H/cache/H_amflow/2/boundaryreduce/cache/H_reduce_2/search, database -> 1_0_1, work -> 1, from 0 to 1.
+----------
+fitrel: loading database.
+fitrel: database loaded in 0.000000s.
+fitrel: prime -> 9223372036854775783, parameter -> 1, integral -> 12, master -> 1, size -> 50 * 9.
+----------
+fitrel: loading kinematics.
+fitrel: kinematics loaded in 0.000000s.
+fitrel: size -> 8 * 1.
+----------
+fitrel: fitting works using 50 threads.
+from thread 16: fit_relations: read from /scratch/ge45tuy/amflow/NumericalChecks/H/cache/H_amflow/2/boundaryreduce/cache/H_reduce_2/search/1/0, and write to /scratch/ge45tuy/amflow/NumericalChecks/H/cache/H_amflow/2/boundaryreduce/cache/H_reduce_2/search/1/0/fit/1_0_1.
+from thread 16: fit_relations: config 0
+from thread 16: search_relation: nvar -> 12, nsol -> 11, time -> 0.000000s.
+from thread 16: fit_relations: relations fit in 0.000000s.
+fitrel: works complete in 0.000000s.

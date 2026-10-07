@@ -1,0 +1,3 @@
+{{j[H, 0, 1, 1, 1, 0], j[H, 0, 1, 1, 1, -1]}, {eta}, 
+ {{{(1 - eps + eta - 2*eps*eta)/(eta + eta^2), (3 - 3*eps)/(eta + eta^2)}, 
+   {eps/(1 + eta), (3 - 3*eps)/(1 + eta)}}}}

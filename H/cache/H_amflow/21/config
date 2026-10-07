@@ -1,0 +1,4 @@
+{"Family" -> H, "Loop" -> {k1, k2}, "Leg" -> {k3}, "Conservation" -> {}, 
+ "Replacement" -> {k3^2 -> -1}, "Propagator" -> 
+  {-1 + k1^2, -eta + (k2 - k3)^2, k2^2, (k1 + k2)^2, (k1 + k3)^2}, 
+ "Numeric" -> {}, "NThread" -> 50}

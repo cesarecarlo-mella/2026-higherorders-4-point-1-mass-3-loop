@@ -1,0 +1,10 @@
+SetSystemOptions[ParallelOptions->ParallelThreadNumber->1];
+SetSystemOptions[ParallelOptions->MKLThreadNumber->1];
+SetDim[4 - 2*eps];
+Internal = {k1, k3};
+External = {k2, HAuxLeg};
+MomentumConservation = {HAuxLeg -> -k2};
+Replacements = {k2^2 -> -1};
+Propagators = {k3^2, -eta + (k1 - k2 - k3)^2, (k1 - k2)^2, (k2 + k3)^2, k1^2}/. MomentumConservation//Expand;
+NewBasis[H,Propagators,Internal, External, MomentumConservation, Replacements,"ExtraIntDeriv"->{{{0}, {0}, {0}, {0}, {0}}}];
+AnalyzeSectors[H,{0, 1, 1, 1, 0},"CutDs"->{0, 0, 0, 0, 0},"Prescription"->{1, 1},"CloseSyms"->False];

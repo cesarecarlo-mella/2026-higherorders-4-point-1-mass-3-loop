@@ -1,0 +1,144 @@
+{{(2 - 3*eps)/eta, 0, 0, 0, 0, 0, 0, 0, 0, 0}, 
+ {0, (7 - 7*eps + (2*eta)/3 - eps*eta)/(eta + eta^2/3), 
+  (2/3 - (2*eps)/3)/(eta + eta^2/3), 0, 0, 0, 0, 0, 0, 0}, 
+ {0, (-63 + 63*eps + 4*eta + eps*eta)/(eta + eta^2/3), 
+  (-6 + 6*eps + (4*eta)/3 - (4*eps*eta)/3)/(eta + eta^2/3), 0, 0, 0, 0, 0, 0, 
+  0}, {0, (22/3 - (53*eps)/3 + 10*eps^2 + (2*eta)/9 - (7*eps*eta)/9 + 
+    (2*eps^2*eta)/3)/(eta - 2*eps*eta + (2*eta^2)/3 - (4*eps*eta^2)/3 + 
+    eta^3/9 - (2*eps*eta^3)/9), (8/9 - (20*eps)/9 + (4*eps^2)/3)/
+   (eta - 2*eps*eta + (2*eta^2)/3 - (4*eps*eta^2)/3 + eta^3/9 - 
+    (2*eps*eta^3)/9), (1 - 2*eps)/eta, 0, 0, 0, 0, 0, 0}, 
+ {(2/3 - eps)/(eta + eta^2/3), 0, 0, 0, 
+  (-22/3 + (185*eps)/9 - (43*eps^2)/3 + eta/3 - (29*eps*eta)/27 + 
+    (22*eps^2*eta)/27)/(eta - (11*eps*eta)/9 + eta^2/3 - (11*eps*eta^2)/27), 
+  (-2/3 + (17*eps)/9 - (4*eps^2)/3)/(eta - (11*eps*eta)/9 + eta^2/3 - 
+    (11*eps*eta^2)/27), 0, 0, 0, 0}, {(-16/3 + 8*eps)/(eta + eta^2/3), 0, 0, 
+  0, (275/3 - (2230*eps)/9 + (1505*eps^2)/9 + (25*eta)/3 - (518*eps*eta)/27 + 
+    11*eps^2*eta)/(eta - (11*eps*eta)/9 + eta^2/3 - (11*eps*eta^2)/27), 
+  (25/3 - (205*eps)/9 + (140*eps^2)/9 + eta - (23*eps*eta)/9 + 
+    (44*eps^2*eta)/27)/(eta - (11*eps*eta)/9 + eta^2/3 - (11*eps*eta^2)/27), 
+  0, 0, 0, 0}, {0, 0, 0, 0, 0, 0, (32/3 - (227*eps)/9 + (131*eps^2)/9 + eta - 
+    (53*eps*eta)/18 + (37*eps^2*eta)/18)/(eta - (7*eps*eta)/6 + eta^2/3 - 
+    (7*eps*eta^2)/18), (4/3 - (28*eps)/9 + (16*eps^2)/9)/
+   (eta - (7*eps*eta)/6 + eta^2/3 - (7*eps*eta^2)/18), 0, 0}, 
+ {0, 0, 0, 0, 0, 0, (-232/3 + (6439*eps)/36 - (7205*eps^2)/72 - (35*eta)/6 + 
+    (103*eps*eta)/6 - (845*eps^2*eta)/72 - eta^2/6 + (5*eps*eta^2)/12 - 
+    (eps^2*eta^2)/4)/(eta - (7*eps*eta)/6 + eta^2/3 - (7*eps*eta^2)/18), 
+  (-29/3 + (397*eps)/18 - (110*eps^2)/9 + eta/3 - (17*eps*eta)/18 + 
+    (2*eps^2*eta)/3)/(eta - (7*eps*eta)/6 + eta^2/3 - (7*eps*eta^2)/18), 0, 
+  0}, {(32/3 - (224*eps)/3 + (568*eps^2)/3 - (616*eps^3)/3 + 80*eps^4 - 
+    (22*eta)/9 + (47*eps*eta)/3 - (308*eps^2*eta)/9 + (85*eps^3*eta)/3 - 
+    6*eps^4*eta)/(eps*eta^2 - 10*eps^2*eta^2 + 21*eps^3*eta^2 + 
+    (2*eps*eta^3)/3 - (20*eps^2*eta^3)/3 + 14*eps^3*eta^3 + (eps*eta^4)/9 - 
+    (10*eps^2*eta^4)/9 + (7*eps^3*eta^4)/3), 
+  (-242/9 + 143*eps - (2224*eps^2)/9 + (479*eps^3)/3 - 30*eps^4 - 
+    (22*eta)/27 + (47*eps*eta)/9 - (308*eps^2*eta)/27 + (85*eps^3*eta)/9 - 
+    2*eps^4*eta)/(eps*eta - 10*eps^2*eta + 21*eps^3*eta + eps*eta^2 - 
+    10*eps^2*eta^2 + 21*eps^3*eta^2 + (eps*eta^3)/3 - (10*eps^2*eta^3)/3 + 
+    7*eps^3*eta^3 + (eps*eta^4)/27 - (10*eps^2*eta^4)/27 + 
+    (7*eps^3*eta^4)/9), (-88/27 + (476*eps)/27 - (844*eps^2)/27 + 
+    (188*eps^3)/9 - 4*eps^4)/(eps*eta - 10*eps^2*eta + 21*eps^3*eta + 
+    eps*eta^2 - 10*eps^2*eta^2 + 21*eps^3*eta^2 + (eps*eta^3)/3 - 
+    (10*eps^2*eta^3)/3 + 7*eps^3*eta^3 + (eps*eta^4)/27 - 
+    (10*eps^2*eta^4)/27 + (7*eps^3*eta^4)/9), 
+  (-5/3 + (28*eps)/3 - (43*eps^2)/3 - (4*eps^3)/3 + 12*eps^4)/
+   (eps*eta - 10*eps^2*eta + 21*eps^3*eta + (eps*eta^2)/3 - 
+    (10*eps^2*eta^2)/3 + 7*eps^3*eta^2), 
+  (220/3 - (16121*eps)/27 + (50645*eps^2)/27 - (76505*eps^3)/27 + 
+    (55315*eps^4)/27 - (15194*eps^5)/27 - (5*eta)/9 + (307*eps*eta)/81 - 
+    (695*eps^2*eta)/81 + (437*eps^3*eta)/81 + (368*eps^4*eta)/81 - 
+    (44*eps^5*eta)/9)/(eps*eta - (101*eps^2*eta)/9 + (299*eps^3*eta)/9 - 
+    (77*eps^4*eta)/3 + (2*eps*eta^2)/3 - (202*eps^2*eta^2)/27 + 
+    (598*eps^3*eta^2)/27 - (154*eps^4*eta^2)/9 + (eps*eta^3)/9 - 
+    (101*eps^2*eta^3)/81 + (299*eps^3*eta^3)/81 - (77*eps^4*eta^3)/27), 
+  (6 - (437*eps)/9 + (4088*eps^2)/27 - (2039*eps^3)/9 + (4366*eps^4)/27 - 
+    (392*eps^5)/9)/(eps*eta - (101*eps^2*eta)/9 + (299*eps^3*eta)/9 - 
+    (77*eps^4*eta)/3 + (2*eps*eta^2)/3 - (202*eps^2*eta^2)/27 + 
+    (598*eps^3*eta^2)/27 - (154*eps^4*eta^2)/9 + (eps*eta^3)/9 - 
+    (101*eps^2*eta^3)/81 + (299*eps^3*eta^3)/81 - (77*eps^4*eta^3)/27), 
+  (266/3 - (2524*eps)/3 + (86723*eps^2)/27 - (113185*eps^3)/18 + 
+    (178832*eps^4)/27 - (63683*eps^5)/18 + (20069*eps^6)/27 + (59*eta)/9 - 
+    (3473*eps*eta)/54 + (13769*eps^2*eta)/54 - (14030*eps^3*eta)/27 + 
+    (1137*eps^4*eta)/2 - (5609*eps^5*eta)/18 + (1757*eps^6*eta)/27)/
+   (eps*eta - (85*eps^2*eta)/6 + (397*eps^3*eta)/6 - (245*eps^4*eta)/2 + 
+    (147*eps^5*eta)/2 + (2*eps*eta^2)/3 - (85*eps^2*eta^2)/9 + 
+    (397*eps^3*eta^2)/9 - (245*eps^4*eta^2)/3 + 49*eps^5*eta^2 + 
+    (eps*eta^3)/9 - (85*eps^2*eta^3)/54 + (397*eps^3*eta^3)/54 - 
+    (245*eps^4*eta^3)/18 + (49*eps^5*eta^3)/6), 
+  (12 - (1036*eps)/9 + (12028*eps^2)/27 - (7988*eps^3)/9 + (25840*eps^4)/27 - 
+    528*eps^5 + (3136*eps^6)/27)/(eps*eta - (85*eps^2*eta)/6 + 
+    (397*eps^3*eta)/6 - (245*eps^4*eta)/2 + (147*eps^5*eta)/2 + 
+    (2*eps*eta^2)/3 - (85*eps^2*eta^2)/9 + (397*eps^3*eta^2)/9 - 
+    (245*eps^4*eta^2)/3 + 49*eps^5*eta^2 + (eps*eta^3)/9 - 
+    (85*eps^2*eta^3)/54 + (397*eps^3*eta^3)/54 - (245*eps^4*eta^3)/18 + 
+    (49*eps^5*eta^3)/6), (23 - 118*eps + 188*eps^2 - 93*eps^3 - (5*eta)/3 + 
+    7*eps*eta + (5*eps^2*eta)/3 - 23*eps^3*eta)/
+   (eta - 10*eps*eta + 21*eps^2*eta + eta^2/3 - (10*eps*eta^2)/3 + 
+    7*eps^2*eta^2), (2 - 11*eps + 19*eps^2 - 10*eps^3)/
+   (eta - 10*eps*eta + 21*eps^2*eta + eta^2/3 - (10*eps*eta^2)/3 + 
+    7*eps^2*eta^2)}, {(-368/3 + (2440*eps)/3 - (5840*eps^2)/3 + 2000*eps^3 - 
+    744*eps^4 + (314*eta)/9 - (1723*eps*eta)/9 + (2372*eps^2*eta)/9 + 
+    103*eps^3*eta - 278*eps^4*eta - (8*eta^2)/3 + (176*eps*eta^2)/9 - 
+    (434*eps^2*eta^2)/9 + 44*eps^3*eta^2 - 10*eps^4*eta^2)/
+   (eps*eta^2 - 10*eps^2*eta^2 + 21*eps^3*eta^2 + (2*eps*eta^3)/3 - 
+    (20*eps^2*eta^3)/3 + 14*eps^3*eta^3 + (eps*eta^4)/9 - 
+    (10*eps^2*eta^4)/9 + (7*eps^3*eta^4)/3), 
+  (874/3 - (3847*eps)/3 + 1350*eps^2 + 293*eps^3 - 624*eps^4 - (130*eta)/9 + 
+    (583*eps*eta)/9 - 60*eps^2*eta - (17*eps^3*eta)/3 - 2*eps^4*eta - 
+    (8*eta^2)/9 + (176*eps*eta^2)/27 - (434*eps^2*eta^2)/27 + 
+    (44*eps^3*eta^2)/3 - (10*eps^4*eta^2)/3)/(eps*eta - 10*eps^2*eta + 
+    21*eps^3*eta + eps*eta^2 - 10*eps^2*eta^2 + 21*eps^3*eta^2 + 
+    (eps*eta^3)/3 - (10*eps^2*eta^3)/3 + 7*eps^3*eta^3 + (eps*eta^4)/27 - 
+    (10*eps^2*eta^4)/27 + (7*eps^3*eta^4)/9), 
+  (320/9 - (1456*eps)/9 + (1688*eps^2)/9 + (32*eps^3)/3 - 72*eps^4 - 
+    (8*eta)/3 + 12*eps*eta - (28*eps^2*eta)/3 - 12*eps^3*eta + 12*eps^4*eta)/
+   (eps*eta - 10*eps^2*eta + 21*eps^3*eta + eps*eta^2 - 10*eps^2*eta^2 + 
+    21*eps^3*eta^2 + (eps*eta^3)/3 - (10*eps^2*eta^3)/3 + 7*eps^3*eta^3 + 
+    (eps*eta^4)/27 - (10*eps^2*eta^4)/27 + (7*eps^3*eta^4)/9), 
+  (19 - 96*eps + 105*eps^2 + 124*eps^3 - 204*eps^4 - 2*eta + (44*eps*eta)/3 - 
+    (110*eps^2*eta)/3 + (104*eps^3*eta)/3 - 8*eps^4*eta)/
+   (eps*eta - 10*eps^2*eta + 21*eps^3*eta + (eps*eta^2)/3 - 
+    (10*eps^2*eta^2)/3 + 7*eps^3*eta^2), 
+  (-7304/9 + (161993*eps)/27 - (434959*eps^2)/27 + (164357*eps^3)/9 - 
+    (180037*eps^4)/27 - (8284*eps^5)/9 + (689*eta)/9 - (16933*eps*eta)/27 + 
+    (154991*eps^2*eta)/81 - (71963*eps^3*eta)/27 + (131020*eps^4*eta)/81 - 
+    (8020*eps^5*eta)/27 - (2*eta^2)/3 + (154*eps*eta^2)/27 - 
+    (1474*eps^2*eta^2)/81 + (2146*eps^3*eta^2)/81 - (1360*eps^4*eta^2)/81 + 
+    (88*eps^5*eta^2)/27)/(eps*eta - (101*eps^2*eta)/9 + (299*eps^3*eta)/9 - 
+    (77*eps^4*eta)/3 + (2*eps*eta^2)/3 - (202*eps^2*eta^2)/27 + 
+    (598*eps^3*eta^2)/27 - (154*eps^4*eta^2)/9 + (eps*eta^3)/9 - 
+    (101*eps^2*eta^3)/81 + (299*eps^3*eta^3)/81 - (77*eps^4*eta^3)/27), 
+  (-598/9 + (13171*eps)/27 - (34958*eps^2)/27 + (38617*eps^3)/27 - 
+    (4208*eps^4)/9 - 112*eps^5 + (52*eta)/9 - (1306*eps*eta)/27 + 
+    (1372*eps^2*eta)/9 - (6074*eps^3*eta)/27 + (460*eps^4*eta)/3 - 
+    (112*eps^5*eta)/3)/(eps*eta - (101*eps^2*eta)/9 + (299*eps^3*eta)/9 - 
+    (77*eps^4*eta)/3 + (2*eps*eta^2)/3 - (202*eps^2*eta^2)/27 + 
+    (598*eps^3*eta^2)/27 - (154*eps^4*eta^2)/9 + (eps*eta^3)/9 - 
+    (101*eps^2*eta^3)/81 + (299*eps^3*eta^3)/81 - (77*eps^4*eta^3)/27), 
+  (-8842/9 + (232618*eps)/27 - (792068*eps^2)/27 + (288521*eps^3)/6 - 
+    (1004938*eps^4)/27 + (533983*eps^5)/54 + (2786*eps^6)/3 + 13*eta - 
+    (3055*eps*eta)/18 + (21278*eps^2*eta)/27 - (47663*eps^3*eta)/27 + 
+    (12703*eps^4*eta)/6 - (25247*eps^5*eta)/18 + (7861*eps^6*eta)/18 + 
+    (58*eta^2)/9 - (1768*eps*eta^2)/27 + (527*eps^2*eta^2)/2 - 
+    (14342*eps^3*eta^2)/27 + (14935*eps^4*eta^2)/27 - (7274*eps^5*eta^2)/27 + 
+    (763*eps^6*eta^2)/18)/(eps*eta - (85*eps^2*eta)/6 + (397*eps^3*eta)/6 - 
+    (245*eps^4*eta)/2 + (147*eps^5*eta)/2 + (2*eps*eta^2)/3 - 
+    (85*eps^2*eta^2)/9 + (397*eps^3*eta^2)/9 - (245*eps^4*eta^2)/3 + 
+    49*eps^5*eta^2 + (eps*eta^3)/9 - (85*eps^2*eta^3)/54 + 
+    (397*eps^3*eta^3)/54 - (245*eps^4*eta^3)/18 + (49*eps^5*eta^3)/6), 
+  (-1196/9 + (31832*eps)/27 - (110116*eps^2)/27 + (61636*eps^3)/9 - 
+    (149720*eps^4)/27 + (45676*eps^5)/27 + (112*eps^6)/3 + (104*eta)/9 - 
+    (3044*eps*eta)/27 + (3848*eps^2*eta)/9 - (21280*eps^3*eta)/27 + 
+    (19168*eps^4*eta)/27 - (7036*eps^5*eta)/27 + (112*eps^6*eta)/9)/
+   (eps*eta - (85*eps^2*eta)/6 + (397*eps^3*eta)/6 - (245*eps^4*eta)/2 + 
+    (147*eps^5*eta)/2 + (2*eps*eta^2)/3 - (85*eps^2*eta^2)/9 + 
+    (397*eps^3*eta^2)/9 - (245*eps^4*eta^2)/3 + 49*eps^5*eta^2 + 
+    (eps*eta^3)/9 - (85*eps^2*eta^3)/54 + (397*eps^3*eta^3)/54 - 
+    (245*eps^4*eta^3)/18 + (49*eps^5*eta^3)/6), 
+  (-253 + 1114*eps - 1308*eps^2 + 279*eps^3 + (149*eta)/3 - (857*eps*eta)/3 + 
+    413*eps^2*eta - 9*eps^3*eta - 2*eta^2 + (38*eps*eta^2)/3 - 
+    22*eps^2*eta^2 + 6*eps^3*eta^2)/(eta - 10*eps*eta + 21*eps^2*eta + 
+    eta^2/3 - (10*eps*eta^2)/3 + 7*eps^2*eta^2), 
+  (-22 + 105*eps - 137*eps^2 + 30*eps^3 + (8*eta)/3 - 20*eps*eta + 
+    (148*eps^2*eta)/3 - 40*eps^3*eta)/(eta - 10*eps*eta + 21*eps^2*eta + 
+    eta^2/3 - (10*eps*eta^2)/3 + 7*eps^2*eta^2)}}

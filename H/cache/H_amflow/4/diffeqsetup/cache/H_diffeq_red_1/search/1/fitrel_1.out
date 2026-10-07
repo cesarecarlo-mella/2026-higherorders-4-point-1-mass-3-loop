@@ -1,0 +1,250 @@
+fitrel: working directory -> /scratch/ge45tuy/amflow/NumericalChecks/H/cache/H_amflow/4/diffeqsetup/cache/H_diffeq_red_1/search, database -> 1, work -> 1, from 0 to 42.
+----------
+fitrel: loading database.
+fitrel: database loaded in 0.000000s.
+fitrel: prime -> 9223372036854775783, parameter -> 2, integral -> 567, master -> 25, size -> 50 * 2919.
+----------
+fitrel: loading kinematics.
+fitrel: kinematics loaded in 0.000000s.
+fitrel: size -> 8 * 2.
+----------
+fitrel: fitting works using 50 threads.
+from thread 4: fit_relations: read from /scratch/ge45tuy/amflow/NumericalChecks/H/cache/H_amflow/4/diffeqsetup/cache/H_diffeq_red_1/search/1/5, and write to /scratch/ge45tuy/amflow/NumericalChecks/H/cache/H_amflow/4/diffeqsetup/cache/H_diffeq_red_1/search/1/5/fit/1.
+from thread 4: fit_relations: config 0
+from thread 27: fit_relations: read from /scratch/ge45tuy/amflow/NumericalChecks/H/cache/H_amflow/4/diffeqsetup/cache/H_diffeq_red_1/search/1/18, and write to /scratch/ge45tuy/amflow/NumericalChecks/H/cache/H_amflow/4/diffeqsetup/cache/H_diffeq_red_1/search/1/18/fit/1.
+from thread 27: fit_relations: config 0
+from thread 4: search_relation: nvar -> 11, nsol -> 9, time -> 0.000000s.
+from thread 27: search_relation: nvar -> 14, nsol -> 9, time -> 0.000000s.
+from thread 10: fit_relations: read from /scratch/ge45tuy/amflow/NumericalChecks/H/cache/H_amflow/4/diffeqsetup/cache/H_diffeq_red_1/search/1/12, and write to /scratch/ge45tuy/amflow/NumericalChecks/H/cache/H_amflow/4/diffeqsetup/cache/H_diffeq_red_1/search/1/12/fit/1.
+from thread 10: fit_relations: config 0
+from thread 4: fit_relations: config 1
+from thread 10: search_relation: nvar -> 15, nsol -> 10, time -> 0.000000s.
+from thread 27: fit_relations: config 1
+from thread 4: search_relation: nvar -> 2, nsol -> 1, time -> 0.000000s.
+from thread 27: search_relation: nvar -> 11, nsol -> 2, time -> 0.000000s.
+from thread 4: fit_relations: relations fit in 0.000000s.
+from thread 27: fit_relations: relations fit in 0.000000s.
+from thread 10: fit_relations: relations fit in 0.000000s.
+from thread 35: fit_relations: read from /scratch/ge45tuy/amflow/NumericalChecks/H/cache/H_amflow/4/diffeqsetup/cache/H_diffeq_red_1/search/1/17, and write to /scratch/ge45tuy/amflow/NumericalChecks/H/cache/H_amflow/4/diffeqsetup/cache/H_diffeq_red_1/search/1/17/fit/1.
+from thread 35: fit_relations: config 0
+from thread 35: search_relation: nvar -> 15, nsol -> 10, time -> 0.000000s.
+from thread 35: fit_relations: config 1
+from thread 35: search_relation: nvar -> 6, nsol -> 1, time -> 0.000000s.
+from thread 35: fit_relations: relations fit in 0.000000s.
+from thread 3: fit_relations: read from /scratch/ge45tuy/amflow/NumericalChecks/H/cache/H_amflow/4/diffeqsetup/cache/H_diffeq_red_1/search/1/33, and write to /scratch/ge45tuy/amflow/NumericalChecks/H/cache/H_amflow/4/diffeqsetup/cache/H_diffeq_red_1/search/1/33/fit/1.
+from thread 3: fit_relations: config 0
+from thread 3: search_relation: nvar -> 13, nsol -> 11, time -> 0.000000s.
+from thread 3: fit_relations: relations fit in 0.000000s.
+from thread 38: fit_relations: read from /scratch/ge45tuy/amflow/NumericalChecks/H/cache/H_amflow/4/diffeqsetup/cache/H_diffeq_red_1/search/1/39, and write to /scratch/ge45tuy/amflow/NumericalChecks/H/cache/H_amflow/4/diffeqsetup/cache/H_diffeq_red_1/search/1/39/fit/1.
+from thread 38: fit_relations: config 0
+from thread 38: search_relation: nvar -> 14, nsol -> 11, time -> 0.000000s.
+from thread 38: fit_relations: config 1
+from thread 38: search_relation: nvar -> 4, nsol -> 1, time -> 0.000000s.
+from thread 38: fit_relations: relations fit in 0.000000s.
+from thread 28: fit_relations: read from /scratch/ge45tuy/amflow/NumericalChecks/H/cache/H_amflow/4/diffeqsetup/cache/H_diffeq_red_1/search/1/20, and write to /scratch/ge45tuy/amflow/NumericalChecks/H/cache/H_amflow/4/diffeqsetup/cache/H_diffeq_red_1/search/1/20/fit/1.
+from thread 28: fit_relations: config 0
+from thread 28: search_relation: nvar -> 12, nsol -> 9, time -> 0.000000s.
+from thread 28: fit_relations: config 1
+from thread 15: fit_relations: read from /scratch/ge45tuy/amflow/NumericalChecks/H/cache/H_amflow/4/diffeqsetup/cache/H_diffeq_red_1/search/1/32, and write to /scratch/ge45tuy/amflow/NumericalChecks/H/cache/H_amflow/4/diffeqsetup/cache/H_diffeq_red_1/search/1/32/fit/1.
+from thread 15: fit_relations: config 0
+from thread 43: fit_relations: read from /scratch/ge45tuy/amflow/NumericalChecks/H/cache/H_amflow/4/diffeqsetup/cache/H_diffeq_red_1/search/1/4, and write to /scratch/ge45tuy/amflow/NumericalChecks/H/cache/H_amflow/4/diffeqsetup/cache/H_diffeq_red_1/search/1/4/fit/1.
+from thread 28: search_relation: nvar -> 8, nsol -> 2, time -> 0.000000s.
+from thread 43: fit_relations: config 0
+from thread 15: search_relation: nvar -> 11, nsol -> 10, time -> 0.000000s.
+from thread 43: search_relation: nvar -> 12, nsol -> 10, time -> 0.000000s.
+from thread 37: fit_relations: read from /scratch/ge45tuy/amflow/NumericalChecks/H/cache/H_amflow/4/diffeqsetup/cache/H_diffeq_red_1/search/1/22, and write to /scratch/ge45tuy/amflow/NumericalChecks/H/cache/H_amflow/4/diffeqsetup/cache/H_diffeq_red_1/search/1/22/fit/1.
+from thread 15: fit_relations: config 1
+from thread 29: fit_relations: read from /scratch/ge45tuy/amflow/NumericalChecks/H/cache/H_amflow/4/diffeqsetup/cache/H_diffeq_red_1/search/1/19, and write to /scratch/ge45tuy/amflow/NumericalChecks/H/cache/H_amflow/4/diffeqsetup/cache/H_diffeq_red_1/search/1/19/fit/1.
+from thread 37: fit_relations: config 0
+from thread 29: fit_relations: config 0
+from thread 28: fit_relations: relations fit in 0.000000s.
+from thread 43: fit_relations: relations fit in 0.000000s.
+from thread 37: search_relation: nvar -> 12, nsol -> 10, time -> 0.000000s.
+from thread 36: fit_relations: read from /scratch/ge45tuy/amflow/NumericalChecks/H/cache/H_amflow/4/diffeqsetup/cache/H_diffeq_red_1/search/1/21, and write to /scratch/ge45tuy/amflow/NumericalChecks/H/cache/H_amflow/4/diffeqsetup/cache/H_diffeq_red_1/search/1/21/fit/1.
+from thread 36: fit_relations: config 0
+from thread 37: fit_relations: config 1
+from thread 36: search_relation: nvar -> 13, nsol -> 11, time -> 0.000000s.
+from thread 37: search_relation: nvar -> 2, nsol -> 1, time -> 0.000000s.
+from thread 37: fit_relations: relations fit in 0.000000s.
+from thread 36: fit_relations: relations fit in 0.000000s.
+from thread 29: search_relation: nvar -> 13, nsol -> 10, time -> 0.000000s.
+from thread 0: fit_relations: read from /scratch/ge45tuy/amflow/NumericalChecks/H/cache/H_amflow/4/diffeqsetup/cache/H_diffeq_red_1/search/1/37, and write to /scratch/ge45tuy/amflow/NumericalChecks/H/cache/H_amflow/4/diffeqsetup/cache/H_diffeq_red_1/search/1/37/fit/1.
+from thread 0: fit_relations: config 0
+from thread 15: search_relation: nvar -> 3, nsol -> 1, time -> 0.000000s.
+from thread 0: search_relation: nvar -> 13, nsol -> 11, time -> 0.000000s.
+from thread 15: fit_relations: relations fit in 0.000000s.
+from thread 46: fit_relations: read from /scratch/ge45tuy/amflow/NumericalChecks/H/cache/H_amflow/4/diffeqsetup/cache/H_diffeq_red_1/search/1/36, and write to /scratch/ge45tuy/amflow/NumericalChecks/H/cache/H_amflow/4/diffeqsetup/cache/H_diffeq_red_1/search/1/36/fit/1.
+from thread 46: fit_relations: config 0
+from thread 46: search_relation: nvar -> 13, nsol -> 11, time -> 0.000000s.
+from thread 39: fit_relations: read from /scratch/ge45tuy/amflow/NumericalChecks/H/cache/H_amflow/4/diffeqsetup/cache/H_diffeq_red_1/search/1/1, and write to /scratch/ge45tuy/amflow/NumericalChecks/H/cache/H_amflow/4/diffeqsetup/cache/H_diffeq_red_1/search/1/1/fit/1.
+from thread 39: fit_relations: config 0
+from thread 46: fit_relations: config 1
+from thread 0: fit_relations: config 1
+from thread 46: search_relation: nvar -> 2, nsol -> 1, time -> 0.000000s.
+from thread 20: fit_relations: read from /scratch/ge45tuy/amflow/NumericalChecks/H/cache/H_amflow/4/diffeqsetup/cache/H_diffeq_red_1/search/1/9, and write to /scratch/ge45tuy/amflow/NumericalChecks/H/cache/H_amflow/4/diffeqsetup/cache/H_diffeq_red_1/search/1/9/fit/1.
+from thread 18: fit_relations: read from /scratch/ge45tuy/amflow/NumericalChecks/H/cache/H_amflow/4/diffeqsetup/cache/H_diffeq_red_1/search/1/38, and write to /scratch/ge45tuy/amflow/NumericalChecks/H/cache/H_amflow/4/diffeqsetup/cache/H_diffeq_red_1/search/1/38/fit/1.
+from thread 46: fit_relations: relations fit in 0.000000s.
+from thread 18: fit_relations: config 0
+from thread 49: fit_relations: read from /scratch/ge45tuy/amflow/NumericalChecks/H/cache/H_amflow/4/diffeqsetup/cache/H_diffeq_red_1/search/1/14, and write to /scratch/ge45tuy/amflow/NumericalChecks/H/cache/H_amflow/4/diffeqsetup/cache/H_diffeq_red_1/search/1/14/fit/1.
+from thread 9: fit_relations: read from /scratch/ge45tuy/amflow/NumericalChecks/H/cache/H_amflow/4/diffeqsetup/cache/H_diffeq_red_1/search/1/7, and write to /scratch/ge45tuy/amflow/NumericalChecks/H/cache/H_amflow/4/diffeqsetup/cache/H_diffeq_red_1/search/1/7/fit/1.
+from thread 25: fit_relations: read from /scratch/ge45tuy/amflow/NumericalChecks/H/cache/H_amflow/4/diffeqsetup/cache/H_diffeq_red_1/search/1/15, and write to /scratch/ge45tuy/amflow/NumericalChecks/H/cache/H_amflow/4/diffeqsetup/cache/H_diffeq_red_1/search/1/15/fit/1.
+from thread 9: fit_relations: config 0
+from thread 25: fit_relations: config 0
+from thread 18: search_relation: nvar -> 13, nsol -> 11, time -> 0.000000s.
+from thread 25: search_relation: nvar -> 12, nsol -> 10, time -> 0.000000s.
+from thread 9: search_relation: nvar -> 17, nsol -> 7, time -> 0.000000s.
+from thread 25: fit_relations: config 1
+from thread 25: search_relation: nvar -> 3, nsol -> 1, time -> 0.000000s.
+from thread 9: fit_relations: config 1
+from thread 25: fit_relations: relations fit in 0.000000s.
+from thread 18: fit_relations: config 1
+from thread 9: search_relation: nvar -> 17, nsol -> 3, time -> 0.000000s.
+from thread 18: search_relation: nvar -> 2, nsol -> 1, time -> 0.000000s.
+from thread 29: fit_relations: config 1
+from thread 30: fit_relations: read from /scratch/ge45tuy/amflow/NumericalChecks/H/cache/H_amflow/4/diffeqsetup/cache/H_diffeq_red_1/search/1/23, and write to /scratch/ge45tuy/amflow/NumericalChecks/H/cache/H_amflow/4/diffeqsetup/cache/H_diffeq_red_1/search/1/23/fit/1.
+from thread 49: fit_relations: config 0
+from thread 30: fit_relations: config 0
+from thread 16: fit_relations: read from /scratch/ge45tuy/amflow/NumericalChecks/H/cache/H_amflow/4/diffeqsetup/cache/H_diffeq_red_1/search/1/11, and write to /scratch/ge45tuy/amflow/NumericalChecks/H/cache/H_amflow/4/diffeqsetup/cache/H_diffeq_red_1/search/1/11/fit/1.
+from thread 29: search_relation: nvar -> 5, nsol -> 1, time -> 0.000000s.
+from thread 16: fit_relations: config 0
+from thread 33: fit_relations: read from /scratch/ge45tuy/amflow/NumericalChecks/H/cache/H_amflow/4/diffeqsetup/cache/H_diffeq_red_1/search/1/8, and write to /scratch/ge45tuy/amflow/NumericalChecks/H/cache/H_amflow/4/diffeqsetup/cache/H_diffeq_red_1/search/1/8/fit/1.
+from thread 33: fit_relations: config 0
+from thread 49: search_relation: nvar -> 13, nsol -> 9, time -> 0.000000s.
+from thread 9: fit_relations: relations fit in 0.000000s.
+from thread 30: search_relation: nvar -> 13, nsol -> 11, time -> 0.000000s.
+from thread 29: fit_relations: relations fit in 0.000000s.
+from thread 16: search_relation: nvar -> 13, nsol -> 6, time -> 0.000000s.
+from thread 33: search_relation: nvar -> 13, nsol -> 9, time -> 0.000000s.
+from thread 18: fit_relations: relations fit in 0.000000s.
+from thread 49: fit_relations: config 1
+from thread 30: fit_relations: relations fit in 0.000000s.
+from thread 49: search_relation: nvar -> 6, nsol -> 1, time -> 0.000000s.
+from thread 16: fit_relations: config 1
+from thread 33: fit_relations: config 1
+from thread 33: search_relation: nvar -> 6, nsol -> 1, time -> 0.000000s.
+from thread 16: search_relation: nvar -> 18, nsol -> 4, time -> 0.000000s.
+from thread 49: fit_relations: relations fit in 0.000000s.
+from thread 20: fit_relations: config 0
+from thread 39: search_relation: nvar -> 32, nsol -> 4, time -> 0.000000s.
+from thread 33: fit_relations: relations fit in 0.000000s.
+from thread 20: search_relation: nvar -> 16, nsol -> 9, time -> 0.000000s.
+from thread 16: fit_relations: relations fit in 0.000000s.
+from thread 32: fit_relations: read from /scratch/ge45tuy/amflow/NumericalChecks/H/cache/H_amflow/4/diffeqsetup/cache/H_diffeq_red_1/search/1/0, and write to /scratch/ge45tuy/amflow/NumericalChecks/H/cache/H_amflow/4/diffeqsetup/cache/H_diffeq_red_1/search/1/0/fit/1.
+from thread 1: fit_relations: read from /scratch/ge45tuy/amflow/NumericalChecks/H/cache/H_amflow/4/diffeqsetup/cache/H_diffeq_red_1/search/1/24, and write to /scratch/ge45tuy/amflow/NumericalChecks/H/cache/H_amflow/4/diffeqsetup/cache/H_diffeq_red_1/search/1/24/fit/1.
+from thread 32: fit_relations: config 0
+from thread 1: fit_relations: config 0
+from thread 14: fit_relations: read from /scratch/ge45tuy/amflow/NumericalChecks/H/cache/H_amflow/4/diffeqsetup/cache/H_diffeq_red_1/search/1/27, and write to /scratch/ge45tuy/amflow/NumericalChecks/H/cache/H_amflow/4/diffeqsetup/cache/H_diffeq_red_1/search/1/27/fit/1.
+from thread 20: fit_relations: config 1
+from thread 14: fit_relations: config 0
+from thread 1: search_relation: nvar -> 12, nsol -> 10, time -> 0.000000s.
+from thread 20: search_relation: nvar -> 6, nsol -> 1, time -> 0.000000s.
+from thread 14: search_relation: nvar -> 15, nsol -> 10, time -> 0.000000s.
+from thread 32: search_relation: nvar -> 27, nsol -> 7, time -> 0.000000s.
+from thread 39: fit_relations: config 1
+from thread 20: fit_relations: relations fit in 0.000000s.
+from thread 1: fit_relations: config 1
+from thread 14: fit_relations: config 1
+from thread 1: search_relation: nvar -> 2, nsol -> 1, time -> 0.000000s.
+from thread 14: search_relation: nvar -> 6, nsol -> 1, time -> 0.000000s.
+from thread 1: fit_relations: relations fit in 0.000000s.
+from thread 14: fit_relations: relations fit in 0.000000s.
+from thread 39: search_relation: nvar -> 45, nsol -> 5, time -> 0.000000s.
+from thread 32: fit_relations: config 1
+from thread 23: fit_relations: read from /scratch/ge45tuy/amflow/NumericalChecks/H/cache/H_amflow/4/diffeqsetup/cache/H_diffeq_red_1/search/1/25, and write to /scratch/ge45tuy/amflow/NumericalChecks/H/cache/H_amflow/4/diffeqsetup/cache/H_diffeq_red_1/search/1/25/fit/1.
+from thread 23: fit_relations: config 0
+from thread 23: search_relation: nvar -> 17, nsol -> 10, time -> 0.000000s.
+from thread 41: fit_relations: read from /scratch/ge45tuy/amflow/NumericalChecks/H/cache/H_amflow/4/diffeqsetup/cache/H_diffeq_red_1/search/1/26, and write to /scratch/ge45tuy/amflow/NumericalChecks/H/cache/H_amflow/4/diffeqsetup/cache/H_diffeq_red_1/search/1/26/fit/1.
+from thread 41: fit_relations: config 0
+from thread 32: search_relation: nvar -> 46, nsol -> 2, time -> 0.000000s.
+from thread 41: search_relation: nvar -> 14, nsol -> 9, time -> 0.000000s.
+from thread 23: fit_relations: config 1
+from thread 23: search_relation: nvar -> 8, nsol -> 1, time -> 0.000000s.
+from thread 39: fit_relations: relations fit in 0.000000s.
+from thread 23: fit_relations: relations fit in 0.000000s.
+from thread 41: fit_relations: config 1
+from thread 32: fit_relations: relations fit in 0.000000s.
+from thread 41: search_relation: nvar -> 9, nsol -> 2, time -> 0.000000s.
+from thread 31: fit_relations: read from /scratch/ge45tuy/amflow/NumericalChecks/H/cache/H_amflow/4/diffeqsetup/cache/H_diffeq_red_1/search/1/2, and write to /scratch/ge45tuy/amflow/NumericalChecks/H/cache/H_amflow/4/diffeqsetup/cache/H_diffeq_red_1/search/1/2/fit/1.
+from thread 31: fit_relations: config 0
+from thread 41: fit_relations: relations fit in 0.000000s.
+from thread 0: search_relation: nvar -> 3, nsol -> 1, time -> 0.000000s.
+from thread 0: fit_relations: relations fit in 0.000000s.
+from thread 11: fit_relations: read from /scratch/ge45tuy/amflow/NumericalChecks/H/cache/H_amflow/4/diffeqsetup/cache/H_diffeq_red_1/search/1/35, and write to /scratch/ge45tuy/amflow/NumericalChecks/H/cache/H_amflow/4/diffeqsetup/cache/H_diffeq_red_1/search/1/35/fit/1.
+from thread 11: fit_relations: config 0
+from thread 11: search_relation: nvar -> 13, nsol -> 11, time -> 0.000000s.
+from thread 11: fit_relations: config 1
+from thread 11: search_relation: nvar -> 3, nsol -> 1, time -> 0.000000s.
+from thread 11: fit_relations: relations fit in 0.000000s.
+from thread 21: fit_relations: read from /scratch/ge45tuy/amflow/NumericalChecks/H/cache/H_amflow/4/diffeqsetup/cache/H_diffeq_red_1/search/1/10, and write to /scratch/ge45tuy/amflow/NumericalChecks/H/cache/H_amflow/4/diffeqsetup/cache/H_diffeq_red_1/search/1/10/fit/1.
+from thread 21: fit_relations: config 0
+from thread 21: search_relation: nvar -> 19, nsol -> 9, time -> 0.000000s.
+from thread 21: fit_relations: config 1
+from thread 26: fit_relations: read from /scratch/ge45tuy/amflow/NumericalChecks/H/cache/H_amflow/4/diffeqsetup/cache/H_diffeq_red_1/search/1/16, and write to /scratch/ge45tuy/amflow/NumericalChecks/H/cache/H_amflow/4/diffeqsetup/cache/H_diffeq_red_1/search/1/16/fit/1.
+from thread 26: fit_relations: config 0
+from thread 24: fit_relations: read from /scratch/ge45tuy/amflow/NumericalChecks/H/cache/H_amflow/4/diffeqsetup/cache/H_diffeq_red_1/search/1/28, and write to /scratch/ge45tuy/amflow/NumericalChecks/H/cache/H_amflow/4/diffeqsetup/cache/H_diffeq_red_1/search/1/28/fit/1.
+from thread 24: fit_relations: config 0
+from thread 21: search_relation: nvar -> 12, nsol -> 1, time -> 0.000000s.
+from thread 31: search_relation: nvar -> 76, nsol -> 50, time -> 0.000000s.
+from thread 26: search_relation: nvar -> 12, nsol -> 10, time -> 0.000000s.
+from thread 48: fit_relations: read from /scratch/ge45tuy/amflow/NumericalChecks/H/cache/H_amflow/4/diffeqsetup/cache/H_diffeq_red_1/search/1/13, and write to /scratch/ge45tuy/amflow/NumericalChecks/H/cache/H_amflow/4/diffeqsetup/cache/H_diffeq_red_1/search/1/13/fit/1.
+from thread 48: fit_relations: config 0
+from thread 48: search_relation: nvar -> 12, nsol -> 8, time -> 0.000000s.
+from thread 24: search_relation: nvar -> 13, nsol -> 9, time -> 0.000000s.
+from thread 6: fit_relations: read from /scratch/ge45tuy/amflow/NumericalChecks/H/cache/H_amflow/4/diffeqsetup/cache/H_diffeq_red_1/search/1/34, and write to /scratch/ge45tuy/amflow/NumericalChecks/H/cache/H_amflow/4/diffeqsetup/cache/H_diffeq_red_1/search/1/34/fit/1.
+from thread 21: fit_relations: relations fit in 0.000000s.
+from thread 48: fit_relations: config 1
+from thread 48: search_relation: nvar -> 9, nsol -> 2, time -> 0.000000s.
+from thread 6: fit_relations: config 0
+from thread 24: fit_relations: config 1
+from thread 22: fit_relations: read from /scratch/ge45tuy/amflow/NumericalChecks/H/cache/H_amflow/4/diffeqsetup/cache/H_diffeq_red_1/search/1/40, and write to /scratch/ge45tuy/amflow/NumericalChecks/H/cache/H_amflow/4/diffeqsetup/cache/H_diffeq_red_1/search/1/40/fit/1.
+from thread 6: search_relation: nvar -> 11, nsol -> 10, time -> 0.000000s.
+from thread 22: fit_relations: config 0
+from thread 24: search_relation: nvar -> 9, nsol -> 2, time -> 0.000000s.
+from thread 48: fit_relations: relations fit in 0.000000s.
+from thread 22: search_relation: nvar -> 13, nsol -> 10, time -> 0.000000s.
+from thread 26: fit_relations: config 1
+from thread 6: fit_relations: config 1
+from thread 6: search_relation: nvar -> 3, nsol -> 1, time -> 0.000000s.
+from thread 6: fit_relations: relations fit in 0.000000s.
+from thread 24: fit_relations: relations fit in 0.000000s.
+from thread 26: search_relation: nvar -> 2, nsol -> 1, time -> 0.000000s.
+from thread 22: fit_relations: config 1
+from thread 42: fit_relations: read from /scratch/ge45tuy/amflow/NumericalChecks/H/cache/H_amflow/4/diffeqsetup/cache/H_diffeq_red_1/search/1/6, and write to /scratch/ge45tuy/amflow/NumericalChecks/H/cache/H_amflow/4/diffeqsetup/cache/H_diffeq_red_1/search/1/6/fit/1.
+from thread 42: fit_relations: config 0
+from thread 22: search_relation: nvar -> 7, nsol -> 2, time -> 0.000000s.
+from thread 42: search_relation: nvar -> 17, nsol -> 9, time -> 0.000000s.
+from thread 22: fit_relations: relations fit in 0.000000s.
+from thread 42: fit_relations: config 1
+from thread 42: search_relation: nvar -> 10, nsol -> 1, time -> 0.000000s.
+from thread 26: fit_relations: relations fit in 0.000000s.
+from thread 42: fit_relations: relations fit in 0.000000s.
+from thread 31: fit_relations: config 1
+from thread 31: search_relation: nvar -> 32, nsol -> 5, time -> 0.000000s.
+from thread 13: fit_relations: read from /scratch/ge45tuy/amflow/NumericalChecks/H/cache/H_amflow/4/diffeqsetup/cache/H_diffeq_red_1/search/1/29, and write to /scratch/ge45tuy/amflow/NumericalChecks/H/cache/H_amflow/4/diffeqsetup/cache/H_diffeq_red_1/search/1/29/fit/1.
+from thread 13: fit_relations: config 0
+from thread 13: search_relation: nvar -> 14, nsol -> 11, time -> 0.000000s.
+from thread 31: fit_relations: relations fit in 0.000000s.
+from thread 17: fit_relations: read from /scratch/ge45tuy/amflow/NumericalChecks/H/cache/H_amflow/4/diffeqsetup/cache/H_diffeq_red_1/search/1/41, and write to /scratch/ge45tuy/amflow/NumericalChecks/H/cache/H_amflow/4/diffeqsetup/cache/H_diffeq_red_1/search/1/41/fit/1.
+from thread 17: fit_relations: config 0
+from thread 17: search_relation: nvar -> 12, nsol -> 11, time -> 0.000000s.
+from thread 13: fit_relations: relations fit in 0.000000s.
+from thread 17: fit_relations: config 1
+from thread 17: search_relation: nvar -> 3, nsol -> 1, time -> 0.000000s.
+from thread 17: fit_relations: relations fit in 0.000000s.
+from thread 2: fit_relations: read from /scratch/ge45tuy/amflow/NumericalChecks/H/cache/H_amflow/4/diffeqsetup/cache/H_diffeq_red_1/search/1/3, and write to /scratch/ge45tuy/amflow/NumericalChecks/H/cache/H_amflow/4/diffeqsetup/cache/H_diffeq_red_1/search/1/3/fit/1.
+from thread 2: fit_relations: config 0
+from thread 2: search_relation: nvar -> 75, nsol -> 49, time -> 0.000000s.
+from thread 12: fit_relations: read from /scratch/ge45tuy/amflow/NumericalChecks/H/cache/H_amflow/4/diffeqsetup/cache/H_diffeq_red_1/search/1/31, and write to /scratch/ge45tuy/amflow/NumericalChecks/H/cache/H_amflow/4/diffeqsetup/cache/H_diffeq_red_1/search/1/31/fit/1.
+from thread 12: fit_relations: config 0
+from thread 12: search_relation: nvar -> 13, nsol -> 11, time -> 0.000000s.
+from thread 12: fit_relations: relations fit in 0.000000s.
+from thread 2: fit_relations: config 1
+from thread 2: search_relation: nvar -> 45, nsol -> 6, time -> 0.000000s.
+from thread 2: fit_relations: relations fit in 0.000000s.
+from thread 19: fit_relations: read from /scratch/ge45tuy/amflow/NumericalChecks/H/cache/H_amflow/4/diffeqsetup/cache/H_diffeq_red_1/search/1/30, and write to /scratch/ge45tuy/amflow/NumericalChecks/H/cache/H_amflow/4/diffeqsetup/cache/H_diffeq_red_1/search/1/30/fit/1.
+from thread 19: fit_relations: config 0
+from thread 19: search_relation: nvar -> 12, nsol -> 9, time -> 0.000000s.
+from thread 19: fit_relations: config 1
+from thread 19: search_relation: nvar -> 7, nsol -> 2, time -> 0.000000s.
+from thread 19: fit_relations: relations fit in 0.000000s.
+fitrel: works complete in 0.000000s.

@@ -1,0 +1,13 @@
+family = H;
+dimension = 4-2eps;
+loop = {k1, k2, k3};
+leg = {p1, p2, p3, HAuxLeg};
+conservation = {HAuxLeg -> -p1 - p2 - p3};
+replacement = {p1^2 -> 0, p1*p2 -> s/2, p1*p3 -> t/2, p2^2 -> 0, p2*p3 -> (pp4 - s - t)/2, p3^2 -> 0};
+propagator = {-eta + (k1 + p2)^2, (k2 - p2)^2, k2^2, (k1 + k2 + k3)^2, (k1 + k2 + k3 + p1)^2, (k3 + p1)^2, (k3 + p1 + p3)^2, (k1 - p1 - p3)^2, (k1 + k3)^2, (k1 + k2)^2, k1^2, k3^2, (k1 - p1)^2, (k2 - p3)^2, (k3 - p2)^2};
+topsector = {1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0};
+numeric = {s -> -1, t -> -3, pp4 -> -15};
+BLNthreads = 50;
+cut = {0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0};
+pres = {1, 1, 1};
+BLFamilyDefine[family, dimension, propagator, loop, leg, conservation, replacement, topsector, numeric, cut, pres];

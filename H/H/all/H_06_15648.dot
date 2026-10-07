@@ -1,0 +1,27 @@
+digraph H_6_15648 {
+  label="H_6_15648";
+  rankdir="LR";
+  subgraph edges {
+    -1 -> 4 [label="(p1,0;1)"];
+    -2 -> 3 [label="(p2,0;2)"];
+    -3 -> 3 [label="(p3,0;3)"];
+    -4 -> 3 [label="(-p1-p3-p2,m2;4)"];
+    2 -> 3 [label="(k3+p1,0;10)"];
+    1 -> 2 [label="(k3+k1,0;13)"];
+    4 -> 1 [label="(k1,0;15)"];
+    3 -> 1 [label="(k3,0;16)"];
+    2 -> 4 [label="(-p1+k1,0;17)"];
+    5 -> 5 [label="(-p3+k2,0;18)"];
+  }
+  subgraph incoming { rank="source"; -1; -2; -3; -4; }
+-4 [shape=point];
+-3 [shape=point];
+-2 [shape=point];
+-1 [shape=point];
+1 [shape=point];
+2 [shape=point];
+3 [shape=point];
+4 [shape=point];
+5 [shape=point];
+}
+

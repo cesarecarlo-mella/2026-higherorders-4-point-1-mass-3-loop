@@ -1,0 +1,6 @@
+{{((3 - 3*eps)*BLInternalEX[1])/(1 + eta) + (eps*BLInternalEX[3])/(1 + eta), 
+  ((3 - 3*eps)*BLInternalEX[1])/(eta + eta^2) + 
+   ((1 - eps + eta - 2*eps*eta)*BLInternalEX[3])/(eta + eta^2), 
+  ((3 - 3*eps)*BLInternalEX[1])/(eta + eta^2) + 
+   ((1 - eps + eta - 2*eps*eta)*BLInternalEX[3])/(eta + eta^2)}, 
+ BLInternalEX[1], BLInternalEX[3], BLInternalEX[3]}

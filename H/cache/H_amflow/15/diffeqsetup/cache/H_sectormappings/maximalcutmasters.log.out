@@ -1,0 +1,52 @@
+"Error: can not find LiteRed2025.m\nCheck if this file exists in /scratch/ge86hab/hep_tools/LiteRed2"
+CalcLoop: a tool for automated multiloop calculation in quantum field theory.
+Version 2022/07/10.
+Number of defined symbols=43. Please see ?CalcLoop`* for help.
+"BladeIBP: a package for generating IBP, LI and Symmetry relations."
+
+FrontEndObject::notavail: A front end is not available; certain operations require a front end.
+
+Part::partw: Part 5 of {1, 1} does not exist.
+
+Part::partw: Part 3 of {1, 1} does not exist.
+
+Part::partw: Part 4 of {1, 1} does not exist.
+
+General::stop: Further output of Part::partw will be suppressed during this calculation.
+Number of Families = 1. Number of Sectors = 10.
+"22 zero sectors found, 10 nonzero sectors found."
+"10 unique sectors found, 0 mapped sectors found, 0 extmapped sectors found."
+"kernel 1 (Local (50)):"
+"{1, 1, 1, 1, 1}\" done in: \"0.111594`5.499185838304151\"s.\"\n"
+"kernel 5 (Local (50)):"
+"{1, 0, 1, 1, 1}\" done in: \"0.112767`5.503727020317883\"s.\"\n"
+"kernel 2 (Local (50)):"
+"{1, 1, 1, 1, 0}\" done in: \"0.13074`5.567953474125872\"s.\"\n"
+"kernel 4 (Local (50)):"
+"{1, 1, 0, 1, 1}\" done in: \"0.129499`5.563811408274953\"s.\"\n"
+"kernel 6 (Local (50)):"
+"{0, 1, 1, 1, 1}\" done in: \"0.135529`5.583577227395785\"s.\"\n"
+"kernel 8 (Local (50)):"
+"{1, 1, 0, 1, 0}\" done in: \"0.126642`5.554122754021352\"s.\"\n"
+"kernel 9 (Local (50)):"
+"{1, 0, 0, 1, 1}\" done in: \"0.121948`5.537719675586586\"s.\"\n"
+"kernel 10 (Local (50)):"
+"{0, 1, 1, 1, 0}\" done in: \"0.125859`5.551429270278112\"s.\"\n"
+"kernel 3 (Local (50)):"
+"{1, 1, 1, 0, 1}\" done in: \"0.143351`5.607945720377131\"s.\"\n"
+"From kernel 7 (Local (50)):"
+"Part::partw: Part 5 of {1, 1} does not exist."
+"From kernel 7 (Local (50)):"
+"Part::partw: Part 3 of {1, 1} does not exist."
+"From kernel 7 (Local (50)):"
+"Part::partw: Part 4 of {1, 1} does not exist."
+"From kernel 7 (Local (50)):"
+"General::stop: Further output of Part::partw will be suppressed during this calculation."
+"kernel 7 (Local (50)):"
+"\"sectors involved: \"{{1, 1, 1, 0, 0}}\n"
+"kernel 7 (Local (50)):"
+"\"#Symmetry Relations:  \"0\n"
+"kernel 7 (Local (50)):"
+"{1, 1, 1, 0, 0}\" done in: \"0.197365`5.746815132434603\"s.\"\n"
+"fast determineMI done in: "3.499169`6.995509911684799
+"# rawmasters(nomap): "7", # rawmasters: "7

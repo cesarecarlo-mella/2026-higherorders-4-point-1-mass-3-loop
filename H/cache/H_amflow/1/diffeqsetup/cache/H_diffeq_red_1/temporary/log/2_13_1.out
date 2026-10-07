@@ -1,0 +1,12 @@
+ssolve: 
+current working directory: /scratch/ge45tuy/amflow/NumericalChecks/H/cache/H_amflow/1/diffeqsetup/cache/H_diffeq_red_1/temporary
+samples_start: 0, samples_size: 40424, nthreads: 50
+system_file from: system/2_13_1.txt, points_ordering: 12, points_file from: points/points_13.bt, out_file to: eval/2_13_1.fflow
+system loaded in 0.000000 s. 
+with 736 blocks, 10246 integrals, 785 masters.
+system learn in 3.000000 s.
+load points in 1.000000 s.
+trimming from points done in 0.000000 s.
+, with 736 blocks to evaluate
+system solve in 2614.000000 s.
+dump evaluations in 77.000000 s.

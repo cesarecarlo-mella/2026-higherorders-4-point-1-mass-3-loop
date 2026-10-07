@@ -1,0 +1,29 @@
+"Error: can not find LiteRed2025.m\nCheck if this file exists in /scratch/ge86hab/hep_tools/LiteRed2"
+Blade: a pacakge for block-triangular form improved Feynman integral decomposition.
+Version 2023/01/04.
+Author: Xin Guan, Xiao Liu, Yan-Qing Ma and Wen-Hao Wu.
+Number of defined symbols=64. Please see ?Blade`* for help.
+
+--------------------------------------------------
+BLSetReducerOptions->"IBPParameter" -> Automatic, "IntegralOrdering" -> 1, "CheckMastersQ" -> True, "FilterLevel" -> 3, "IBPForMapSector" -> False, "MaxIncrement" -> 2, "CloseSymmetry" -> False, "CutNoDot" -> False, "BlackBoxRank" -> 2, "BlackBoxDot" -> 0, "MaxPrime" -> 200, "MaxDegree" -> 1000
+BLSetSchemeOptions->"OperatorExtendGQ" -> True, "MinimalSchemeRank" -> 1, "PartitionDot" -> True, "PartitionRankThreshold" -> 400, "UniqueSubsectorQ" -> True"--------------------------------------------------"
+
+DivideLevel -> Infinity
+Begin BLReduce...
+      Begin BLMaximalCutMasters...
+            BLMaximalCutMasters use time : 39.587s,   LeafCount = 9
+      Solve system id -> 1, Sector -> BL[H, {1, 1, 1, 0, 0}]
+      Begin BLReduce...
+            Begin GenerateIBP...
+                  Begin BLIBPSystem...
+                        Rank: 2, Dots: 0, FilterLevel: 3
+                        BLIBPSystem use time : 36.81s,   LeafCount = 1
+                  Begin BLDatabaseInfo...
+                        BLDatabaseInfo use time : 26.263s,   LeafCount = 1
+                  GenerateIBP use time : 63.076s,   LeafCount = 3
+            BLReduce use time : 63.085s,   LeafCount = 22
+      Begin MergeReductionTable...
+            # masters ->1
+            merge system id -> 1
+            MergeReductionTable use time : 0.001s,   LeafCount = 22
+      BLReduce use time : 102.684s,   LeafCount = 9

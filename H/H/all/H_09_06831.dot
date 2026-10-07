@@ -1,0 +1,32 @@
+digraph H_9_6831 {
+  label="H_9_6831";
+  rankdir="LR";
+  subgraph edges {
+    -1 -> 6 [label="(p1,0;1)"];
+    -2 -> 1 [label="(p2,0;2)"];
+    -3 -> 7 [label="(p3,0;3)"];
+    -4 -> 2 [label="(-p1-p3-p2,m2;4)"];
+    3 -> 2 [label="(k1+p2,0;5)"];
+    3 -> 1 [label="(k2-p2,0;6)"];
+    1 -> 4 [label="(k2,0;7)"];
+    4 -> 5 [label="(k3+k1+k2,0;8)"];
+    6 -> 4 [label="(k3+p1,0;10)"];
+    2 -> 7 [label="(-p1+k1-p3,0;12)"];
+    5 -> 3 [label="(k1+k2,0;14)"];
+    5 -> 6 [label="(k3,0;16)"];
+    7 -> 4 [label="(-p1+k1,0;17)"];
+  }
+  subgraph incoming { rank="source"; -1; -2; -3; -4; }
+-4 [shape=point];
+-3 [shape=point];
+-2 [shape=point];
+-1 [shape=point];
+1 [shape=point];
+2 [shape=point];
+3 [shape=point];
+4 [shape=point];
+5 [shape=point];
+6 [shape=point];
+7 [shape=point];
+}
+

@@ -1,0 +1,28 @@
+digraph H_7_4924 {
+  label="H_7_4924";
+  rankdir="LR";
+  subgraph edges {
+    -1 -> 2 [label="(p1,0;1)"];
+    -2 -> 5 [label="(p2,0;2)"];
+    -3 -> 5 [label="(p3,0;3)"];
+    -4 -> 5 [label="(-p1-p3-p2,m2;4)"];
+    5 -> 1 [label="(k2,0;7)"];
+    1 -> 2 [label="(k3+k1+k2,0;8)"];
+    2 -> 3 [label="(k3+p1+k1+k2,0;9)"];
+    3 -> 4 [label="(k3+p1,0;10)"];
+    4 -> 1 [label="(k3+k1,0;13)"];
+    3 -> 5 [label="(k1+k2,0;14)"];
+    5 -> 4 [label="(-p1+k1,0;17)"];
+  }
+  subgraph incoming { rank="source"; -1; -2; -3; -4; }
+-4 [shape=point];
+-3 [shape=point];
+-2 [shape=point];
+-1 [shape=point];
+1 [shape=point];
+2 [shape=point];
+3 [shape=point];
+4 [shape=point];
+5 [shape=point];
+}
+

@@ -1,0 +1,36 @@
+"Error: can not find LiteRed2025.m\nCheck if this file exists in /scratch/ge86hab/hep_tools/LiteRed2"
+CalcLoop: a tool for automated multiloop calculation in quantum field theory.
+Version 2022/07/10.
+Number of defined symbols=43. Please see ?CalcLoop`* for help.
+"BladeIBP: a package for generating IBP, LI and Symmetry relations."
+
+FrontEndObject::notavail: A front end is not available; certain operations require a front end.
+
+Part::partw: Part 6 of {1, 1, 1} does not exist.
+
+Part::partw: Part 4 of {1, 1, 1} does not exist.
+
+Part::partw: Part 5 of {1, 1, 1} does not exist.
+
+General::stop: Further output of Part::partw will be suppressed during this calculation.
+Number of Families = 1. Number of Sectors = 8.
+"56 zero sectors found, 8 nonzero sectors found."
+"8 unique sectors found, 0 mapped sectors found, 0 extmapped sectors found."
+"kernel 8 (Local (50)):"
+"{1, 0, 1, 0, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0}\" done in: \"2.000824`6.752753881637177\"s.\"\n"
+"kernel 7 (Local (50)):"
+"{1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0}\" done in: \"2.01228`6.755233404270677\"s.\"\n"
+"kernel 4 (Local (50)):"
+"{1, 1, 1, 0, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0}\" done in: \"2.175681`6.7891402126031615\"s.\"\n"
+"kernel 3 (Local (50)):"
+"{1, 1, 1, 1, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0}\" done in: \"2.222638`6.798413728617596\"s.\"\n"
+"kernel 2 (Local (50)):"
+"{1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0}\" done in: \"2.402872`6.832275630228183\"s.\"\n"
+"kernel 6 (Local (50)):"
+"{1, 0, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0}\" done in: \"2.611854`6.868493890154706\"s.\"\n"
+"kernel 1 (Local (50)):"
+"{1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0}\" done in: \"2.634903`6.872309625439166\"s.\"\n"
+"kernel 5 (Local (50)):"
+"{1, 1, 0, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0}\" done in: \"4.061662`7.060248773312544\"s.\"\n"
+"fast determineMI done in: "5.873434`7.220437086428367
+"# rawmasters(nomap): "3", # rawmasters: "3

@@ -1,0 +1,159 @@
+"Error: can not find LiteRed2025.m\nCheck if this file exists in /scratch/ge86hab/hep_tools/LiteRed2"
+Blade: a pacakge for block-triangular form improved Feynman integral decomposition.
+Version 2023/01/04.
+Author: Xin Guan, Xiao Liu, Yan-Qing Ma and Wen-Hao Wu.
+Number of defined symbols=64. Please see ?Blade`* for help.
+
+--------------------------------------------------
+BLSetReducerOptions->"IBPParameter" -> Automatic, "IntegralOrdering" -> 1, "CheckMastersQ" -> True, "FilterLevel" -> 3, "IBPForMapSector" -> False, "MaxIncrement" -> 2, "CloseSymmetry" -> False, "CutNoDot" -> False, "BlackBoxRank" -> 2, "BlackBoxDot" -> 0, "MaxPrime" -> 200, "MaxDegree" -> 1000
+BLSetSchemeOptions->"OperatorExtendGQ" -> True, "MinimalSchemeRank" -> 1, "PartitionDot" -> True, "PartitionRankThreshold" -> 400, "UniqueSubsectorQ" -> True"--------------------------------------------------"
+
+Begin BLDifferentialEquation...
+      Begin determine master integrals...
+      Begin BLMaximalCutMasters...
+            BLMaximalCutMasters use time : 102.554s,   LeafCount = 739
+      Begin compute derivatives...
+      DivideLevel -> 0
+      Begin BLReduce...
+            MaximalCutMasters already exist.
+            Solve system id -> 1, Sector -> BL[H, {1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0}]
+            Begin BLReduce...
+                  Begin GenerateIBP...
+                        Begin BLIBPSystem...
+                              Rank: 2, Dots: 1, FilterLevel: 5
+                              BLIBPSystem use time : 111.303s,   LeafCount = 1
+                        Begin BLDatabaseInfo...
+                              BLDatabaseInfo use time : 221.131s,   LeafCount = 1
+                        GenerateIBP use time : 332.6s,   LeafCount = 3
+                  Begin BLNthreadsLearning...
+                        Database Nthreads-> 50, there is enough memory
+                        Average sample time for ibps (single core) -> 4.2041s.
+                        BLNthreadsLearning use time : 47.064s,   LeafCount = 1
+                  Begin BLDumpDegrees...
+                        BLDumpDegrees use time : 185.883s,   LeafCount = 1
+                  Begin BLDumpSamplePoints...
+                        BLDumpSamplePoints use time : 0.016s,   LeafCount = 1
+                  number of sample points -> 426
+                  Estimated wall time(IBP FiniteField) -> 35.819 s.
+                  Begin BLAdaptiveSearch...
+                        current options:  <|CutIncrement -> 2, DatanamePrefix -> 1, IntegralWeight -> {uniform}, Jobname -> 1, VariableGroup -> {{eta}}, VariableWeight -> {adaptive}|>
+                        Begin BLSearchRelations...
+                              Begin determine variable weights...
+                              Variables: {{eta}}, Weights: {{1}}
+                              Begin determine cut...
+                              Sorted vars: {{eta}}, Weights: {{1}}, IntMode: {uniform}, Cut: {}
+                              Begin BLSearchRelationsBasic...
+                                    Begin BLGenerateJob...
+                                          block number: 102, all integrals: 1188, reduced integrals: 1148, masters: 40
+                                          size of blocks ->8 8 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 55 55 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 12 12 12 12 12 12 12 12 12 12
+                                          BLGenerateJob use time : 44.651s,   LeafCount = 1
+                                    Begin BLDatabase...
+                                          50 data generated in 29.172s. name: 1
+                                          50 data write in 0.465s. name: 1
+                                          BLDatabase use time : 29.759s,   LeafCount = 1
+                                    Begin SearchTemplate...
+                                          search round ->0
+                                          current data number ->50
+                                          SearchTemplate use time : 1.865s,   LeafCount = 1
+                                    Begin FitTemplate...
+                                          FitTemplate use time : 0.015s,   LeafCount = 1
+                                    BLSearchRelationsBasic use time : 123.9s,   LeafCount = 4
+                              # database -> 50, time for fitting -> 1.1439000000000001s, time for solving -> 0.006200000000000001s.
+                              BLSearchRelations use time : 123.901s,   LeafCount = 4
+                        Estimated wall time(BL FiniteField) -> 35.819 s.
+                        current options:  <|CutIncrement -> 2, DatanamePrefix -> 2, IntegralWeight -> {uniform}, Jobname -> 2, VariableGroup -> {{eta, eps}}, VariableWeight -> {adaptive}|>
+                        Begin BLSearchRelations...
+                              Begin determine variable weights...
+                              Begin BLSearchRelationsBasic...
+                                    Begin BLGenerateJob...
+                                          block number: 102, all integrals: 1188, reduced integrals: 1148, masters: 40
+                                          size of blocks ->8 8 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 55 55 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 12 12 12 12 12 12 12 12 12 12
+                                          BLGenerateJob use time : 114.258s,   LeafCount = 1
+                                    Begin BLDatabase...
+                                          50 data generated in 6.252s. name: eta1uniform
+                                          50 data write in 0.51s. name: eta1uniform
+                                          BLDatabase use time : 6.884s,   LeafCount = 1
+                                    Begin SearchTemplate...
+                                          search round ->0
+                                          current data number ->50
+                                          SearchTemplate use time : 3.923s,   LeafCount = 1
+                                    BLSearchRelationsBasic use time : 254.767s,   LeafCount = 1
+                              Begin BLSearchRelationsBasic...
+                                    Begin BLGenerateJob...
+                                          block number: 102, all integrals: 1188, reduced integrals: 1148, masters: 40
+                                          size of blocks ->8 8 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 55 55 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 12 12 12 12 12 12 12 12 12 12
+                                          BLGenerateJob use time : 127.004s,   LeafCount = 1
+                                    Begin BLDatabase...
+                                          50 data generated in 8.116s. name: eps1uniform
+                                          50 data write in 0.612s. name: eps1uniform
+                                          BLDatabase use time : 8.85s,   LeafCount = 1
+                                    Begin SearchTemplate...
+                                          search round ->0
+                                          current data number ->50
+                                          SearchTemplate use time : 2.864s,   LeafCount = 1
+                                    BLSearchRelationsBasic use time : 267.572s,   LeafCount = 1
+                              Variables: {{eta, eps}}, Weights: {{2, 1}}
+                              Begin determine cut...
+                              Sorted vars: {{eta, eps}}, Weights: {{2, 1}}, IntMode: {uniform}, Cut: {}
+                              Begin BLSearchRelationsBasic...
+                                    Begin BLGenerateJob...
+                                          block number: 102, all integrals: 1188, reduced integrals: 1148, masters: 40
+                                          size of blocks ->8 8 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 55 55 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 12 12 12 12 12 12 12 12 12 12
+                                          BLGenerateJob use time : 115.313s,   LeafCount = 1
+                                    Begin BLDatabase...
+                                          50 data generated in 4.977s. name: 2_0_1
+                                          50 data write in 0.461s. name: 2_0_1
+                                          BLDatabase use time : 5.553s,   LeafCount = 1
+                                    Begin SearchTemplate...
+                                          search round ->0
+                                          current data number ->50
+                                          SearchTemplate use time : 2.084s,   LeafCount = 1
+                                    Begin FitTemplate...
+                                          FitTemplate use time : 0.s,   LeafCount = 1
+                                    BLSearchRelationsBasic use time : 253.019s,   LeafCount = 4
+                              # database -> 50, time for fitting -> 1.7269s, time for solving -> 0.0135s.
+                              BLSearchRelations use time : 775.384s,   LeafCount = 4
+                        Estimated wall time(BL FiniteField) -> 6.046 s.
+                        The optimal choice is NVariables -> 2
+                        BLAdaptiveSearch use time : 899.298s,   LeafCount = 1
+                  Begin BLSolveSemiBL...
+                        Begin SolveSemiBLMod...
+                              points/points_0.fflow already exists, nothing to do
+                              Begin Sampling...
+                                    sampling -> 1/1
+                                    Sampling use time : 4.6690000000000005s,   LeafCount = 1
+                              Begin FunctionalReconstruction...
+                                    FunctionalReconstruction use time : 4.518s,   LeafCount = 1
+                              SolveSemiBLMod use time : 9.195s,   LeafCount = 1
+                        rational reconstruct: start: 0, nparsout: 12713, nthreads: 50, read files from: 2_*_coeff, out_file: rrres
+
+                        
+                        Begin SolveSemiBLMod...
+                              Begin Sampling...
+                                    sampling -> 1/1
+                                    50 data generated in 6.126s. name: 2_1_1
+                                    50 data write in 0.462s. name: 2_1_1
+                                    Sampling use time : 10.417s,   LeafCount = 1
+                              Begin FunctionalReconstruction...
+                                    FunctionalReconstruction use time : 1.584s,   LeafCount = 1
+                              SolveSemiBLMod use time : 12.021s,   LeafCount = 1
+                        used primes-> 1, rest elements -> 1822
+
+                        Begin SolveSemiBLMod...
+                              Begin Sampling...
+                                    sampling -> 1/1
+                                    50 data generated in 10.262s. name: 2_2_1
+                                    50 data write in 0.848s. name: 2_2_1
+                                    Sampling use time : 21.915s,   LeafCount = 1
+                              Begin FunctionalReconstruction...
+                                    FunctionalReconstruction use time : 5.075s,   LeafCount = 1
+                              SolveSemiBLMod use time : 27.04s,   LeafCount = 1
+                        rational reconstruct success with primes: 2 + 1, total use 42.000000s. load use 0.000000s. ratrec use 0.000000s. dump in 0.000000s.
+                        BLSolveSemiBL use time : 55.572s,   LeafCount = 112769
+                  BLReduce use time : 1576.171s,   LeafCount = 114529
+            Begin MergeReductionTable...
+                  # masters ->40
+                  merge system id -> 1
+                  MergeReductionTable use time : 0.016s,   LeafCount = 114529
+            BLReduce use time : 1576.651s,   LeafCount = 115389
+      BLDifferentialEquation use time : 1679.4170000000001s,   LeafCount = 1

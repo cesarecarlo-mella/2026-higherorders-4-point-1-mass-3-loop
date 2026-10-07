@@ -1,0 +1,29 @@
+"Error: can not find LiteRed2025.m\nCheck if this file exists in /scratch/ge86hab/hep_tools/LiteRed2"
+Blade: a pacakge for block-triangular form improved Feynman integral decomposition.
+Version 2023/01/04.
+Author: Xin Guan, Xiao Liu, Yan-Qing Ma and Wen-Hao Wu.
+Number of defined symbols=64. Please see ?Blade`* for help.
+
+--------------------------------------------------
+BLSetReducerOptions->"IBPParameter" -> Automatic, "IntegralOrdering" -> 1, "CheckMastersQ" -> True, "FilterLevel" -> 3, "IBPForMapSector" -> False, "MaxIncrement" -> 2, "CloseSymmetry" -> False, "CutNoDot" -> False, "BlackBoxRank" -> 2, "BlackBoxDot" -> 0, "MaxPrime" -> 200, "MaxDegree" -> 1000
+BLSetSchemeOptions->"OperatorExtendGQ" -> True, "MinimalSchemeRank" -> 1, "PartitionDot" -> True, "PartitionRankThreshold" -> 400, "UniqueSubsectorQ" -> True"--------------------------------------------------"
+
+Modify default BLReducerOptions for one-loop reduction.
+BLSetReducerOptions->"IBPParameter" -> Automatic, "IntegralOrdering" -> 1, "CheckMastersQ" -> False, "FilterLevel" -> 3, "IBPForMapSector" -> False, "MaxIncrement" -> 2, "CloseSymmetry" -> False, "CutNoDot" -> False, "BlackBoxRank" -> 2, "BlackBoxDot" -> 0, "MaxPrime" -> 200, "MaxDegree" -> 1000
+DivideLevel -> 0
+Begin BLReduce...
+      Solve system id -> 1, Sector -> BL[H, {1, 0}]
+      Begin BLReduce...
+            Begin GenerateIBP...
+                  Begin BLIBPSystem...
+                        Rank: 2, Dots: 0, FilterLevel: 3
+                        BLIBPSystem use time : 54.387s,   LeafCount = 1
+                  Begin BLDatabaseInfo...
+                        BLDatabaseInfo use time : 35.126s,   LeafCount = 1
+                  GenerateIBP use time : 89.514s,   LeafCount = 3
+            BLReduce use time : 89.524s,   LeafCount = 16
+      Begin MergeReductionTable...
+            # masters ->1
+            merge system id -> 1
+            MergeReductionTable use time : 0.001s,   LeafCount = 16
+      BLReduce use time : 100.84400000000001s,   LeafCount = 6

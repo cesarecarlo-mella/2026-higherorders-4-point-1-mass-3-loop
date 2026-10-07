@@ -1,0 +1,17 @@
+redg1: working directory -> /scratch/ge45tuy/amflow/NumericalChecks/H/cache/H_amflow/5/boundaryreduce/cache/H_reduce_1/search, database -> 1_0_1, work -> 1, from 0 to 1.
+----------
+redg1: loading database.
+redg1: database loaded in 0.000000s.
+redg1: prime -> 9223372036854775783, parameter -> 1, integral -> 11, master -> 1, size -> 50 * 8.
+----------
+redg1: loading kinematics.
+redg1: kinematics loaded in 0.000000s.
+redg1: size -> 8 * 1.
+----------
+redg1: reducing works using 50 threads.
+from thread 43: reduce_g1: work in the folder /scratch/ge45tuy/amflow/NumericalChecks/H/cache/H_amflow/5/boundaryreduce/cache/H_reduce_1/search/1/0, to reduce 10 integrals.
+from thread 43: reduce_g1: config 0
+from thread 43: search_relation: nvar -> 11, nsol -> 10, time -> 0.000000s.
+from thread 43: reduce_g1: 10 independent relations searched.
+from thread 43: reduce_g1: g1 reduced in 0.000000s.
+redg1: works complete in 0.000000s.

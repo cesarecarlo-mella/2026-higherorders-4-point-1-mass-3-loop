@@ -1,0 +1,1089 @@
+redg1: working directory -> /scratch/ge45tuy/amflow/NumericalChecks/H/cache/H_amflow/3/diffeqsetup/cache/H_diffeq_red_1/search, database -> 2_0_1, work -> 2, from 0 to 102.
+----------
+redg1: loading database.
+redg1: database loaded in 0.000000s.
+redg1: prime -> 9223372036854775783, parameter -> 2, integral -> 1188, master -> 40, size -> 50 * 5922.
+----------
+redg1: loading kinematics.
+redg1: kinematics loaded in 0.000000s.
+redg1: size -> 20 * 2.
+----------
+redg1: reducing works using 50 threads.
+from thread 49: reduce_g1: work in the folder /scratch/ge45tuy/amflow/NumericalChecks/H/cache/H_amflow/3/diffeqsetup/cache/H_diffeq_red_1/search/2/32, to reduce 10 integrals.
+from thread 49: reduce_g1: config 0
+from thread 46: reduce_g1: work in the folder /scratch/ge45tuy/amflow/NumericalChecks/H/cache/H_amflow/3/diffeqsetup/cache/H_diffeq_red_1/search/2/45, to reduce 10 integrals.
+from thread 46: reduce_g1: config 0
+from thread 49: search_relation: nvar -> 174, nsol -> 117, time -> 0.000000s.
+from thread 46: search_relation: nvar -> 141, nsol -> 80, time -> 0.000000s.
+from thread 39: reduce_g1: work in the folder /scratch/ge45tuy/amflow/NumericalChecks/H/cache/H_amflow/3/diffeqsetup/cache/H_diffeq_red_1/search/2/20, to reduce 10 integrals.
+from thread 6: reduce_g1: work in the folder /scratch/ge45tuy/amflow/NumericalChecks/H/cache/H_amflow/3/diffeqsetup/cache/H_diffeq_red_1/search/2/17, to reduce 55 integrals.
+from thread 39: reduce_g1: config 0
+from thread 6: reduce_g1: config 0
+from thread 28: reduce_g1: work in the folder /scratch/ge45tuy/amflow/NumericalChecks/H/cache/H_amflow/3/diffeqsetup/cache/H_diffeq_red_1/search/2/19, to reduce 10 integrals.
+from thread 28: reduce_g1: config 0
+from thread 25: reduce_g1: work in the folder /scratch/ge45tuy/amflow/NumericalChecks/H/cache/H_amflow/3/diffeqsetup/cache/H_diffeq_red_1/search/2/21, to reduce 10 integrals.
+from thread 25: reduce_g1: config 0
+from thread 42: reduce_g1: work in the folder /scratch/ge45tuy/amflow/NumericalChecks/H/cache/H_amflow/3/diffeqsetup/cache/H_diffeq_red_1/search/2/22, to reduce 10 integrals.
+from thread 42: reduce_g1: config 0
+from thread 43: reduce_g1: work in the folder /scratch/ge45tuy/amflow/NumericalChecks/H/cache/H_amflow/3/diffeqsetup/cache/H_diffeq_red_1/search/2/39, to reduce 10 integrals.
+from thread 0: reduce_g1: work in the folder /scratch/ge45tuy/amflow/NumericalChecks/H/cache/H_amflow/3/diffeqsetup/cache/H_diffeq_red_1/search/2/15, to reduce 9 integrals.
+from thread 32: reduce_g1: work in the folder /scratch/ge45tuy/amflow/NumericalChecks/H/cache/H_amflow/3/diffeqsetup/cache/H_diffeq_red_1/search/2/24, to reduce 10 integrals.
+from thread 4: reduce_g1: work in the folder /scratch/ge45tuy/amflow/NumericalChecks/H/cache/H_amflow/3/diffeqsetup/cache/H_diffeq_red_1/search/2/2, to reduce 9 integrals.
+from thread 0: reduce_g1: config 0
+from thread 32: reduce_g1: config 0
+from thread 4: reduce_g1: config 0
+from thread 43: reduce_g1: config 0
+from thread 27: reduce_g1: work in the folder /scratch/ge45tuy/amflow/NumericalChecks/H/cache/H_amflow/3/diffeqsetup/cache/H_diffeq_red_1/search/2/3, to reduce 9 integrals.
+from thread 27: reduce_g1: config 0
+from thread 14: reduce_g1: work in the folder /scratch/ge45tuy/amflow/NumericalChecks/H/cache/H_amflow/3/diffeqsetup/cache/H_diffeq_red_1/search/2/27, to reduce 10 integrals.
+from thread 7: reduce_g1: work in the folder /scratch/ge45tuy/amflow/NumericalChecks/H/cache/H_amflow/3/diffeqsetup/cache/H_diffeq_red_1/search/2/28, to reduce 10 integrals.
+from thread 14: reduce_g1: config 0
+from thread 7: reduce_g1: config 0
+from thread 21: reduce_g1: work in the folder /scratch/ge45tuy/amflow/NumericalChecks/H/cache/H_amflow/3/diffeqsetup/cache/H_diffeq_red_1/search/2/10, to reduce 9 integrals.
+from thread 21: reduce_g1: config 0
+from thread 40: reduce_g1: work in the folder /scratch/ge45tuy/amflow/NumericalChecks/H/cache/H_amflow/3/diffeqsetup/cache/H_diffeq_red_1/search/2/38, to reduce 10 integrals.
+from thread 40: reduce_g1: config 0
+from thread 36: reduce_g1: work in the folder /scratch/ge45tuy/amflow/NumericalChecks/H/cache/H_amflow/3/diffeqsetup/cache/H_diffeq_red_1/search/2/16, to reduce 9 integrals.
+from thread 39: search_relation: nvar -> 128, nsol -> 66, time -> 0.000000s.
+from thread 36: reduce_g1: config 0
+from thread 17: reduce_g1: work in the folder /scratch/ge45tuy/amflow/NumericalChecks/H/cache/H_amflow/3/diffeqsetup/cache/H_diffeq_red_1/search/2/29, to reduce 10 integrals.
+from thread 17: reduce_g1: config 0
+from thread 28: search_relation: nvar -> 118, nsol -> 58, time -> 0.000000s.
+from thread 2: reduce_g1: work in the folder /scratch/ge45tuy/amflow/NumericalChecks/H/cache/H_amflow/3/diffeqsetup/cache/H_diffeq_red_1/search/2/11, to reduce 9 integrals.
+from thread 2: reduce_g1: config 0
+from thread 31: reduce_g1: work in the folder /scratch/ge45tuy/amflow/NumericalChecks/H/cache/H_amflow/3/diffeqsetup/cache/H_diffeq_red_1/search/2/30, to reduce 10 integrals.
+from thread 38: reduce_g1: work in the folder /scratch/ge45tuy/amflow/NumericalChecks/H/cache/H_amflow/3/diffeqsetup/cache/H_diffeq_red_1/search/2/41, to reduce 10 integrals.
+from thread 31: reduce_g1: config 0
+from thread 38: reduce_g1: config 0
+from thread 30: reduce_g1: work in the folder /scratch/ge45tuy/amflow/NumericalChecks/H/cache/H_amflow/3/diffeqsetup/cache/H_diffeq_red_1/search/2/42, to reduce 10 integrals.
+from thread 30: reduce_g1: config 0
+from thread 3: reduce_g1: work in the folder /scratch/ge45tuy/amflow/NumericalChecks/H/cache/H_amflow/3/diffeqsetup/cache/H_diffeq_red_1/search/2/18, to reduce 55 integrals.
+from thread 3: reduce_g1: config 0
+from thread 25: search_relation: nvar -> 118, nsol -> 59, time -> 0.000000s.
+from thread 12: reduce_g1: work in the folder /scratch/ge45tuy/amflow/NumericalChecks/H/cache/H_amflow/3/diffeqsetup/cache/H_diffeq_red_1/search/2/14, to reduce 9 integrals.
+from thread 12: reduce_g1: config 0
+from thread 14: search_relation: nvar -> 117, nsol -> 62, time -> 0.000000s.
+from thread 43: search_relation: nvar -> 118, nsol -> 67, time -> 0.000000s.
+from thread 38: search_relation: nvar -> 72, nsol -> 26, time -> 0.000000s.
+from thread 30: search_relation: nvar -> 82, nsol -> 34, time -> 0.000000s.
+from thread 32: search_relation: nvar -> 128, nsol -> 61, time -> 0.000000s.
+from thread 7: search_relation: nvar -> 127, nsol -> 69, time -> 0.000000s.
+from thread 45: reduce_g1: work in the folder /scratch/ge45tuy/amflow/NumericalChecks/H/cache/H_amflow/3/diffeqsetup/cache/H_diffeq_red_1/search/2/46, to reduce 10 integrals.
+from thread 45: reduce_g1: config 0
+from thread 8: reduce_g1: work in the folder /scratch/ge45tuy/amflow/NumericalChecks/H/cache/H_amflow/3/diffeqsetup/cache/H_diffeq_red_1/search/2/35, to reduce 10 integrals.
+from thread 8: reduce_g1: config 0
+from thread 42: search_relation: nvar -> 128, nsol -> 65, time -> 0.000000s.
+from thread 18: reduce_g1: work in the folder /scratch/ge45tuy/amflow/NumericalChecks/H/cache/H_amflow/3/diffeqsetup/cache/H_diffeq_red_1/search/2/49, to reduce 10 integrals.
+from thread 18: reduce_g1: config 0
+from thread 44: reduce_g1: work in the folder /scratch/ge45tuy/amflow/NumericalChecks/H/cache/H_amflow/3/diffeqsetup/cache/H_diffeq_red_1/search/2/36, to reduce 10 integrals.
+from thread 13: reduce_g1: work in the folder /scratch/ge45tuy/amflow/NumericalChecks/H/cache/H_amflow/3/diffeqsetup/cache/H_diffeq_red_1/search/2/13, to reduce 9 integrals.
+from thread 44: reduce_g1: config 0
+from thread 13: reduce_g1: config 0
+from thread 34: reduce_g1: work in the folder /scratch/ge45tuy/amflow/NumericalChecks/H/cache/H_amflow/3/diffeqsetup/cache/H_diffeq_red_1/search/2/47, to reduce 10 integrals.
+from thread 9: reduce_g1: work in the folder /scratch/ge45tuy/amflow/NumericalChecks/H/cache/H_amflow/3/diffeqsetup/cache/H_diffeq_red_1/search/2/40, to reduce 10 integrals.
+from thread 34: reduce_g1: config 0
+from thread 48: reduce_g1: work in the folder /scratch/ge45tuy/amflow/NumericalChecks/H/cache/H_amflow/3/diffeqsetup/cache/H_diffeq_red_1/search/2/23, to reduce 10 integrals.
+from thread 9: reduce_g1: config 0
+from thread 48: reduce_g1: config 0
+from thread 33: reduce_g1: work in the folder /scratch/ge45tuy/amflow/NumericalChecks/H/cache/H_amflow/3/diffeqsetup/cache/H_diffeq_red_1/search/2/33, to reduce 10 integrals.
+from thread 23: reduce_g1: work in the folder /scratch/ge45tuy/amflow/NumericalChecks/H/cache/H_amflow/3/diffeqsetup/cache/H_diffeq_red_1/search/2/34, to reduce 10 integrals.
+from thread 41: reduce_g1: work in the folder /scratch/ge45tuy/amflow/NumericalChecks/H/cache/H_amflow/3/diffeqsetup/cache/H_diffeq_red_1/search/2/25, to reduce 10 integrals.
+from thread 33: reduce_g1: config 0
+from thread 23: reduce_g1: config 0
+from thread 8: search_relation: nvar -> 95, nsol -> 44, time -> 0.000000s.
+from thread 41: reduce_g1: config 0
+from thread 15: reduce_g1: work in the folder /scratch/ge45tuy/amflow/NumericalChecks/H/cache/H_amflow/3/diffeqsetup/cache/H_diffeq_red_1/search/2/37, to reduce 10 integrals.
+from thread 18: search_relation: nvar -> 95, nsol -> 44, time -> 0.000000s.
+from thread 15: reduce_g1: config 0
+from thread 26: reduce_g1: work in the folder /scratch/ge45tuy/amflow/NumericalChecks/H/cache/H_amflow/3/diffeqsetup/cache/H_diffeq_red_1/search/2/48, to reduce 10 integrals.
+from thread 26: reduce_g1: config 0
+from thread 30: reduce_g1: 8 independent relations searched.
+from thread 38: reduce_g1: 9 independent relations searched.
+from thread 45: search_relation: nvar -> 151, nsol -> 86, time -> 0.000000s.
+from thread 44: search_relation: nvar -> 105, nsol -> 51, time -> 0.000000s.
+from thread 10: reduce_g1: work in the folder /scratch/ge45tuy/amflow/NumericalChecks/H/cache/H_amflow/3/diffeqsetup/cache/H_diffeq_red_1/search/2/31, to reduce 10 integrals.
+from thread 10: reduce_g1: config 0
+from thread 22: reduce_g1: work in the folder /scratch/ge45tuy/amflow/NumericalChecks/H/cache/H_amflow/3/diffeqsetup/cache/H_diffeq_red_1/search/2/26, to reduce 10 integrals.
+from thread 22: reduce_g1: config 0
+from thread 30: reduce_g1: config 1
+from thread 40: search_relation: nvar -> 185, nsol -> 115, time -> 0.000000s.
+from thread 16: reduce_g1: work in the folder /scratch/ge45tuy/amflow/NumericalChecks/H/cache/H_amflow/3/diffeqsetup/cache/H_diffeq_red_1/search/2/43, to reduce 10 integrals.
+from thread 17: search_relation: nvar -> 188, nsol -> 119, time -> 0.000000s.
+from thread 31: search_relation: nvar -> 198, nsol -> 124, time -> 0.000000s.
+from thread 16: reduce_g1: config 0
+from thread 38: reduce_g1: config 1
+from thread 21: search_relation: nvar -> 197, nsol -> 122, time -> 0.000000s.
+from thread 24: reduce_g1: work in the folder /scratch/ge45tuy/amflow/NumericalChecks/H/cache/H_amflow/3/diffeqsetup/cache/H_diffeq_red_1/search/2/44, to reduce 10 integrals.
+from thread 36: search_relation: nvar -> 232, nsol -> 150, time -> 0.000000s.
+from thread 24: reduce_g1: config 0
+from thread 4: search_relation: nvar -> 199, nsol -> 116, time -> 0.000000s.
+from thread 2: search_relation: nvar -> 206, nsol -> 127, time -> 0.000000s.
+from thread 9: search_relation: nvar -> 128, nsol -> 74, time -> 0.000000s.
+from thread 48: search_relation: nvar -> 118, nsol -> 56, time -> 0.000000s.
+from thread 30: search_relation: nvar -> 96, nsol -> 5, time -> 0.000000s.
+from thread 28: reduce_g1: 7 independent relations searched.
+from thread 25: reduce_g1: 8 independent relations searched.
+from thread 38: search_relation: nvar -> 92, nsol -> 4, time -> 0.000000s.
+from thread 39: reduce_g1: 8 independent relations searched.
+from thread 29: reduce_g1: work in the folder /scratch/ge45tuy/amflow/NumericalChecks/H/cache/H_amflow/3/diffeqsetup/cache/H_diffeq_red_1/search/2/12, to reduce 9 integrals.
+from thread 29: reduce_g1: config 0
+from thread 25: reduce_g1: config 1
+from thread 28: reduce_g1: config 1
+from thread 30: reduce_g1: 1 independent relations searched.
+from thread 32: reduce_g1: 5 independent relations searched.
+from thread 46: reduce_g1: 7 independent relations searched.
+from thread 23: search_relation: nvar -> 185, nsol -> 113, time -> 0.000000s.
+from thread 33: search_relation: nvar -> 175, nsol -> 108, time -> 0.000000s.
+from thread 39: reduce_g1: config 1
+from thread 34: search_relation: nvar -> 187, nsol -> 125, time -> 0.000000s.
+from thread 38: reduce_g1: 1 independent relations searched.
+from thread 30: reduce_g1: config 2
+from thread 1: reduce_g1: work in the folder /scratch/ge45tuy/amflow/NumericalChecks/H/cache/H_amflow/3/diffeqsetup/cache/H_diffeq_red_1/search/2/7, to reduce 9 integrals.
+from thread 32: reduce_g1: config 1
+from thread 1: reduce_g1: config 0
+from thread 14: reduce_g1: 7 independent relations searched.
+from thread 15: search_relation: nvar -> 175, nsol -> 110, time -> 0.000000s.
+from thread 43: reduce_g1: 9 independent relations searched.
+from thread 8: reduce_g1: 7 independent relations searched.
+from thread 14: reduce_g1: config 1
+from thread 46: reduce_g1: config 1
+from thread 18: reduce_g1: 6 independent relations searched.
+from thread 25: search_relation: nvar -> 118, nsol -> 13, time -> 0.000000s.
+from thread 7: reduce_g1: 7 independent relations searched.
+from thread 38: reduce_g1: g1 reduced in 0.000000s.
+from thread 43: reduce_g1: config 1
+from thread 8: reduce_g1: config 1
+from thread 28: search_relation: nvar -> 120, nsol -> 13, time -> 0.000000s.
+from thread 10: search_relation: nvar -> 164, nsol -> 110, time -> 0.000000s.
+from thread 18: reduce_g1: config 1
+from thread 27: search_relation: nvar -> 208, nsol -> 121, time -> 0.000000s.
+from thread 39: search_relation: nvar -> 124, nsol -> 14, time -> 0.000000s.
+from thread 7: reduce_g1: config 1
+from thread 44: reduce_g1: 7 independent relations searched.
+from thread 5: reduce_g1: work in the folder /scratch/ge45tuy/amflow/NumericalChecks/H/cache/H_amflow/3/diffeqsetup/cache/H_diffeq_red_1/search/2/9, to reduce 9 integrals.
+from thread 47: reduce_g1: work in the folder /scratch/ge45tuy/amflow/NumericalChecks/H/cache/H_amflow/3/diffeqsetup/cache/H_diffeq_red_1/search/2/6, to reduce 9 integrals.
+from thread 5: reduce_g1: config 0
+from thread 47: reduce_g1: config 0
+from thread 6: search_relation: nvar -> 288, nsol -> 184, time -> 0.000000s.
+from thread 42: reduce_g1: 6 independent relations searched.
+from thread 14: search_relation: nvar -> 110, nsol -> 8, time -> 0.000000s.
+from thread 16: search_relation: nvar -> 187, nsol -> 117, time -> 0.000000s.
+from thread 26: search_relation: nvar -> 197, nsol -> 131, time -> 0.000000s.
+from thread 32: search_relation: nvar -> 134, nsol -> 18, time -> 0.000000s.
+from thread 35: reduce_g1: work in the folder /scratch/ge45tuy/amflow/NumericalChecks/H/cache/H_amflow/3/diffeqsetup/cache/H_diffeq_red_1/search/2/8, to reduce 9 integrals.
+from thread 30: search_relation: nvar -> 182, nsol -> 7, time -> 0.000000s.
+from thread 41: search_relation: nvar -> 255, nsol -> 170, time -> 0.000000s.
+from thread 44: reduce_g1: config 1
+from thread 35: reduce_g1: config 0
+from thread 25: reduce_g1: 2 independent relations searched.
+from thread 8: search_relation: nvar -> 102, nsol -> 5, time -> 0.000000s.
+from thread 43: search_relation: nvar -> 102, nsol -> 8, time -> 0.000000s.
+from thread 24: search_relation: nvar -> 197, nsol -> 122, time -> 0.000000s.
+from thread 42: reduce_g1: config 1
+from thread 18: search_relation: nvar -> 102, nsol -> 8, time -> 0.000000s.
+from thread 46: search_relation: nvar -> 122, nsol -> 12, time -> 0.000000s.
+from thread 25: reduce_g1: g1 reduced in 0.000000s.
+from thread 39: reduce_g1: 1 independent relations searched.
+from thread 28: reduce_g1: 3 independent relations searched.
+from thread 7: search_relation: nvar -> 116, nsol -> 10, time -> 0.000000s.
+from thread 30: reduce_g1: 1 independent relations searched.
+from thread 39: reduce_g1: config 2
+from thread 14: reduce_g1: 3 independent relations searched.
+from thread 8: reduce_g1: 3 independent relations searched.
+from thread 44: search_relation: nvar -> 108, nsol -> 6, time -> 0.000000s.
+from thread 22: search_relation: nvar -> 265, nsol -> 175, time -> 0.000000s.
+from thread 43: reduce_g1: 1 independent relations searched.
+from thread 48: reduce_g1: 6 independent relations searched.
+from thread 18: reduce_g1: 3 independent relations searched.
+from thread 11: reduce_g1: work in the folder /scratch/ge45tuy/amflow/NumericalChecks/H/cache/H_amflow/3/diffeqsetup/cache/H_diffeq_red_1/search/2/4, to reduce 9 integrals.
+from thread 19: reduce_g1: work in the folder /scratch/ge45tuy/amflow/NumericalChecks/H/cache/H_amflow/3/diffeqsetup/cache/H_diffeq_red_1/search/2/5, to reduce 9 integrals.
+from thread 0: search_relation: nvar -> 340, nsol -> 240, time -> 0.000000s.
+from thread 28: reduce_g1: g1 reduced in 0.000000s.
+from thread 19: reduce_g1: config 0
+from thread 32: reduce_g1: 3 independent relations searched.
+from thread 11: reduce_g1: config 0
+from thread 12: search_relation: nvar -> 331, nsol -> 237, time -> 0.000000s.
+from thread 14: reduce_g1: g1 reduced in 0.000000s.
+from thread 38: reduce_g1: work in the folder /scratch/ge45tuy/amflow/NumericalChecks/H/cache/H_amflow/3/diffeqsetup/cache/H_diffeq_red_1/search/2/50, to reduce 10 integrals.
+from thread 49: reduce_g1: 7 independent relations searched.
+from thread 30: reduce_g1: g1 reduced in 0.000000s.
+from thread 38: reduce_g1: config 0
+from thread 18: reduce_g1: config 2
+from thread 32: reduce_g1: config 2
+from thread 48: reduce_g1: config 1
+from thread 8: reduce_g1: g1 reduced in 0.000000s.
+from thread 7: reduce_g1: 2 independent relations searched.
+from thread 44: reduce_g1: 1 independent relations searched.
+from thread 43: reduce_g1: g1 reduced in 0.000000s.
+from thread 46: reduce_g1: 2 independent relations searched.
+from thread 9: reduce_g1: 7 independent relations searched.
+from thread 7: reduce_g1: config 2
+from thread 42: search_relation: nvar -> 126, nsol -> 16, time -> 0.000000s.
+from thread 49: reduce_g1: config 1
+from thread 44: reduce_g1: config 2
+from thread 25: reduce_g1: work in the folder /scratch/ge45tuy/amflow/NumericalChecks/H/cache/H_amflow/3/diffeqsetup/cache/H_diffeq_red_1/search/2/51, to reduce 10 integrals.
+from thread 25: reduce_g1: config 0
+from thread 46: reduce_g1: config 2
+from thread 9: reduce_g1: config 1
+from thread 38: search_relation: nvar -> 106, nsol -> 52, time -> 0.000000s.
+from thread 45: reduce_g1: 6 independent relations searched.
+from thread 25: search_relation: nvar -> 106, nsol -> 52, time -> 0.000000s.
+from thread 30: reduce_g1: work in the folder /scratch/ge45tuy/amflow/NumericalChecks/H/cache/H_amflow/3/diffeqsetup/cache/H_diffeq_red_1/search/2/54, to reduce 10 integrals.
+from thread 30: reduce_g1: config 0
+from thread 28: reduce_g1: work in the folder /scratch/ge45tuy/amflow/NumericalChecks/H/cache/H_amflow/3/diffeqsetup/cache/H_diffeq_red_1/search/2/52, to reduce 10 integrals.
+from thread 28: reduce_g1: config 0
+from thread 48: search_relation: nvar -> 124, nsol -> 15, time -> 0.000000s.
+from thread 45: reduce_g1: config 1
+from thread 8: reduce_g1: work in the folder /scratch/ge45tuy/amflow/NumericalChecks/H/cache/H_amflow/3/diffeqsetup/cache/H_diffeq_red_1/search/2/55, to reduce 11 integrals.
+from thread 8: reduce_g1: config 0
+from thread 14: reduce_g1: work in the folder /scratch/ge45tuy/amflow/NumericalChecks/H/cache/H_amflow/3/diffeqsetup/cache/H_diffeq_red_1/search/2/53, to reduce 10 integrals.
+from thread 9: search_relation: nvar -> 108, nsol -> 10, time -> 0.000000s.
+from thread 14: reduce_g1: config 0
+from thread 49: search_relation: nvar -> 114, nsol -> 13, time -> 0.000000s.
+from thread 30: search_relation: nvar -> 84, nsol -> 36, time -> 0.000000s.
+from thread 42: reduce_g1: 3 independent relations searched.
+from thread 28: search_relation: nvar -> 84, nsol -> 36, time -> 0.000000s.
+from thread 43: reduce_g1: work in the folder /scratch/ge45tuy/amflow/NumericalChecks/H/cache/H_amflow/3/diffeqsetup/cache/H_diffeq_red_1/search/2/56, to reduce 11 integrals.
+from thread 18: search_relation: nvar -> 188, nsol -> 7, time -> 0.000000s.
+from thread 39: search_relation: nvar -> 220, nsol -> 16, time -> 0.000000s.
+from thread 43: reduce_g1: config 0
+from thread 8: search_relation: nvar -> 75, nsol -> 27, time -> 0.000000s.
+from thread 42: reduce_g1: config 2
+from thread 14: search_relation: nvar -> 95, nsol -> 44, time -> 0.000000s.
+from thread 43: search_relation: nvar -> 86, nsol -> 35, time -> 0.000000s.
+from thread 45: search_relation: nvar -> 130, nsol -> 14, time -> 0.000000s.
+from thread 44: search_relation: nvar -> 204, nsol -> 13, time -> 0.000000s.
+from thread 7: search_relation: nvar -> 212, nsol -> 14, time -> 0.000000s.
+from thread 9: reduce_g1: 2 independent relations searched.
+from thread 48: reduce_g1: 4 independent relations searched.
+from thread 32: search_relation: nvar -> 232, nsol -> 21, time -> 0.000000s.
+from thread 18: reduce_g1: 1 independent relations searched.
+from thread 9: reduce_g1: config 2
+from thread 13: search_relation: nvar -> 397, nsol -> 272, time -> 0.000000s.
+from thread 46: search_relation: nvar -> 220, nsol -> 16, time -> 0.000000s.
+from thread 37: reduce_g1: work in the folder /scratch/ge45tuy/amflow/NumericalChecks/H/cache/H_amflow/3/diffeqsetup/cache/H_diffeq_red_1/search/2/0, to reduce 8 integrals.
+from thread 37: reduce_g1: config 0
+from thread 39: reduce_g1: 1 independent relations searched.
+from thread 49: reduce_g1: 2 independent relations searched.
+from thread 30: reduce_g1: 8 independent relations searched.
+from thread 25: reduce_g1: 6 independent relations searched.
+from thread 48: reduce_g1: g1 reduced in 0.000000s.
+from thread 18: reduce_g1: g1 reduced in 0.000000s.
+from thread 38: reduce_g1: 6 independent relations searched.
+from thread 8: reduce_g1: 7 independent relations searched.
+from thread 33: reduce_g1: 7 independent relations searched.
+from thread 30: reduce_g1: config 1
+from thread 49: reduce_g1: config 2
+from thread 39: reduce_g1: g1 reduced in 0.000000s.
+from thread 29: search_relation: nvar -> 388, nsol -> 267, time -> 0.000000s.
+from thread 25: reduce_g1: config 1
+from thread 45: reduce_g1: 2 independent relations searched.
+from thread 44: reduce_g1: 2 independent relations searched.
+from thread 28: reduce_g1: 8 independent relations searched.
+from thread 8: reduce_g1: config 1
+from thread 38: reduce_g1: config 1
+from thread 7: reduce_g1: 1 independent relations searched.
+from thread 23: reduce_g1: 5 independent relations searched.
+from thread 43: reduce_g1: 8 independent relations searched.
+from thread 14: reduce_g1: 6 independent relations searched.
+from thread 45: reduce_g1: config 2
+from thread 33: reduce_g1: config 1
+from thread 30: search_relation: nvar -> 96, nsol -> 6, time -> 0.000000s.
+from thread 28: reduce_g1: config 1
+from thread 4: reduce_g1: 6 independent relations searched.
+from thread 44: reduce_g1: g1 reduced in 0.000000s.
+from thread 32: reduce_g1: 2 independent relations searched.
+from thread 14: reduce_g1: config 1
+from thread 25: search_relation: nvar -> 108, nsol -> 9, time -> 0.000000s.
+from thread 23: reduce_g1: config 1
+from thread 43: reduce_g1: config 1
+from thread 8: search_relation: nvar -> 96, nsol -> 4, time -> 0.000000s.
+from thread 7: reduce_g1: g1 reduced in 0.000000s.
+from thread 38: search_relation: nvar -> 108, nsol -> 9, time -> 0.000000s.
+from thread 30: reduce_g1: 2 independent relations searched.
+from thread 48: reduce_g1: work in the folder /scratch/ge45tuy/amflow/NumericalChecks/H/cache/H_amflow/3/diffeqsetup/cache/H_diffeq_red_1/search/2/57, to reduce 11 integrals.
+from thread 48: reduce_g1: config 0
+from thread 46: reduce_g1: 1 independent relations searched.
+from thread 39: reduce_g1: work in the folder /scratch/ge45tuy/amflow/NumericalChecks/H/cache/H_amflow/3/diffeqsetup/cache/H_diffeq_red_1/search/2/59, to reduce 11 integrals.
+from thread 28: search_relation: nvar -> 96, nsol -> 6, time -> 0.000000s.
+from thread 39: reduce_g1: config 0
+from thread 14: search_relation: nvar -> 102, nsol -> 8, time -> 0.000000s.
+from thread 43: search_relation: nvar -> 102, nsol -> 6, time -> 0.000000s.
+from thread 33: search_relation: nvar -> 134, nsol -> 15, time -> 0.000000s.
+from thread 9: search_relation: nvar -> 196, nsol -> 12, time -> 0.000000s.
+from thread 42: search_relation: nvar -> 220, nsol -> 18, time -> 0.000000s.
+from thread 4: reduce_g1: config 1
+from thread 32: reduce_g1: g1 reduced in 0.000000s.
+from thread 23: search_relation: nvar -> 144, nsol -> 16, time -> 0.000000s.
+from thread 15: reduce_g1: 7 independent relations searched.
+from thread 7: reduce_g1: work in the folder /scratch/ge45tuy/amflow/NumericalChecks/H/cache/H_amflow/3/diffeqsetup/cache/H_diffeq_red_1/search/2/61, to reduce 11 integrals.
+from thread 44: reduce_g1: work in the folder /scratch/ge45tuy/amflow/NumericalChecks/H/cache/H_amflow/3/diffeqsetup/cache/H_diffeq_red_1/search/2/60, to reduce 11 integrals.
+from thread 34: reduce_g1: 7 independent relations searched.
+from thread 18: reduce_g1: work in the folder /scratch/ge45tuy/amflow/NumericalChecks/H/cache/H_amflow/3/diffeqsetup/cache/H_diffeq_red_1/search/2/58, to reduce 11 integrals.
+from thread 48: search_relation: nvar -> 75, nsol -> 27, time -> 0.000000s.
+from thread 21: reduce_g1: 6 independent relations searched.
+from thread 49: search_relation: nvar -> 202, nsol -> 13, time -> 0.000000s.
+from thread 44: reduce_g1: config 0
+from thread 10: reduce_g1: 9 independent relations searched.
+from thread 40: reduce_g1: 5 independent relations searched.
+from thread 18: reduce_g1: config 0
+from thread 2: reduce_g1: 5 independent relations searched.
+from thread 31: reduce_g1: 5 independent relations searched.
+from thread 7: reduce_g1: config 0
+from thread 45: search_relation: nvar -> 232, nsol -> 21, time -> 0.000000s.
+from thread 17: reduce_g1: 6 independent relations searched.
+from thread 1: search_relation: nvar -> 492, nsol -> 336, time -> 0.000000s.
+from thread 25: reduce_g1: 3 independent relations searched.
+from thread 30: reduce_g1: g1 reduced in 0.000000s.
+from thread 44: search_relation: nvar -> 86, nsol -> 36, time -> 0.000000s.
+from thread 47: search_relation: nvar -> 483, nsol -> 334, time -> 0.000000s.
+from thread 4: search_relation: nvar -> 166, nsol -> 33, time -> 0.000000s.
+from thread 36: reduce_g1: 4 independent relations searched.
+from thread 16: reduce_g1: 7 independent relations searched.
+from thread 3: search_relation: nvar -> 343, nsol -> 219, time -> 0.000000s.
+from thread 23: reduce_g1: 1 independent relations searched.
+from thread 8: reduce_g1: 3 independent relations searched.
+from thread 14: reduce_g1: 3 independent relations searched.
+from thread 15: reduce_g1: config 1
+from thread 28: reduce_g1: 2 independent relations searched.
+from thread 10: reduce_g1: config 1
+from thread 27: reduce_g1: 5 independent relations searched.
+from thread 46: reduce_g1: g1 reduced in 0.000000s.
+from thread 18: search_relation: nvar -> 86, nsol -> 34, time -> 0.000000s.
+from thread 20: reduce_g1: work in the folder /scratch/ge45tuy/amflow/NumericalChecks/H/cache/H_amflow/3/diffeqsetup/cache/H_diffeq_red_1/search/2/1, to reduce 8 integrals.
+from thread 26: reduce_g1: 6 independent relations searched.
+from thread 24: reduce_g1: 5 independent relations searched.
+from thread 32: reduce_g1: work in the folder /scratch/ge45tuy/amflow/NumericalChecks/H/cache/H_amflow/3/diffeqsetup/cache/H_diffeq_red_1/search/2/62, to reduce 11 integrals.
+from thread 38: reduce_g1: 3 independent relations searched.
+from thread 32: reduce_g1: config 0
+from thread 39: search_relation: nvar -> 75, nsol -> 28, time -> 0.000000s.
+from thread 36: reduce_g1: config 1
+from thread 48: reduce_g1: 7 independent relations searched.
+from thread 43: reduce_g1: 2 independent relations searched.
+from thread 10: search_relation: nvar -> 108, nsol -> 11, time -> 0.000000s.
+from thread 20: reduce_g1: config 0
+from thread 49: reduce_g1: 1 independent relations searched.
+from thread 33: reduce_g1: 2 independent relations searched.
+from thread 40: reduce_g1: config 1
+from thread 27: reduce_g1: config 1
+from thread 30: reduce_g1: work in the folder /scratch/ge45tuy/amflow/NumericalChecks/H/cache/H_amflow/3/diffeqsetup/cache/H_diffeq_red_1/search/2/63, to reduce 11 integrals.
+from thread 17: reduce_g1: config 1
+from thread 23: reduce_g1: config 2
+from thread 45: reduce_g1: 2 independent relations searched.
+from thread 4: reduce_g1: 3 independent relations searched.
+from thread 30: reduce_g1: config 0
+from thread 42: reduce_g1: 1 independent relations searched.
+from thread 7: search_relation: nvar -> 99, nsol -> 49, time -> 0.000000s.
+from thread 34: reduce_g1: config 1
+from thread 8: reduce_g1: config 2
+from thread 31: reduce_g1: config 1
+from thread 44: reduce_g1: 8 independent relations searched.
+from thread 28: reduce_g1: g1 reduced in 0.000000s.
+from thread 41: reduce_g1: 6 independent relations searched.
+from thread 48: reduce_g1: config 1
+from thread 15: search_relation: nvar -> 130, nsol -> 14, time -> 0.000000s.
+from thread 21: reduce_g1: config 1
+from thread 16: reduce_g1: config 1
+from thread 14: reduce_g1: config 2
+from thread 10: reduce_g1: 1 independent relations searched.
+from thread 9: reduce_g1: 1 independent relations searched.
+from thread 43: reduce_g1: config 2
+from thread 24: reduce_g1: config 1
+from thread 33: reduce_g1: config 2
+from thread 2: reduce_g1: config 1
+from thread 18: reduce_g1: 7 independent relations searched.
+from thread 38: reduce_g1: config 2
+from thread 39: reduce_g1: 8 independent relations searched.
+from thread 44: reduce_g1: config 1
+from thread 25: reduce_g1: config 2
+from thread 30: search_relation: nvar -> 63, nsol -> 21, time -> 0.000000s.
+from thread 17: search_relation: nvar -> 138, nsol -> 17, time -> 0.000000s.
+from thread 39: reduce_g1: config 1
+from thread 26: reduce_g1: config 1
+from thread 49: reduce_g1: g1 reduced in 0.000000s.
+from thread 48: search_relation: nvar -> 96, nsol -> 4, time -> 0.000000s.
+from thread 18: reduce_g1: config 1
+from thread 34: search_relation: nvar -> 124, nsol -> 14, time -> 0.000000s.
+from thread 4: reduce_g1: g1 reduced in 0.000000s.
+from thread 39: search_relation: nvar -> 94, nsol -> 4, time -> 0.000000s.
+from thread 44: search_relation: nvar -> 100, nsol -> 5, time -> 0.000000s.
+from thread 41: reduce_g1: config 1
+from thread 15: reduce_g1: 2 independent relations searched.
+from thread 42: reduce_g1: g1 reduced in 0.000000s.
+from thread 30: reduce_g1: 10 independent relations searched.
+from thread 48: reduce_g1: 3 independent relations searched.
+from thread 46: reduce_g1: work in the folder /scratch/ge45tuy/amflow/NumericalChecks/H/cache/H_amflow/3/diffeqsetup/cache/H_diffeq_red_1/search/2/64, to reduce 11 integrals.
+from thread 46: reduce_g1: config 0
+from thread 36: search_relation: nvar -> 164, nsol -> 31, time -> 0.000000s.
+from thread 10: reduce_g1: g1 reduced in 0.000000s.
+from thread 9: reduce_g1: g1 reduced in 0.000000s.
+from thread 15: reduce_g1: config 2
+from thread 31: search_relation: nvar -> 148, nsol -> 19, time -> 0.000000s.
+from thread 30: reduce_g1: config 1
+from thread 40: search_relation: nvar -> 140, nsol -> 15, time -> 0.000000s.
+from thread 18: search_relation: nvar -> 104, nsol -> 6, time -> 0.000000s.
+from thread 39: reduce_g1: 3 independent relations searched.
+from thread 48: reduce_g1: config 2
+from thread 16: search_relation: nvar -> 140, nsol -> 16, time -> 0.000000s.
+from thread 44: reduce_g1: 1 independent relations searched.
+from thread 7: reduce_g1: 8 independent relations searched.
+from thread 45: reduce_g1: g1 reduced in 0.000000s.
+from thread 8: search_relation: nvar -> 184, nsol -> 5, time -> 0.000000s.
+from thread 39: reduce_g1: g1 reduced in 0.000000s.
+from thread 4: reduce_g1: work in the folder /scratch/ge45tuy/amflow/NumericalChecks/H/cache/H_amflow/3/diffeqsetup/cache/H_diffeq_red_1/search/2/67, to reduce 11 integrals.
+from thread 4: reduce_g1: config 0
+from thread 21: search_relation: nvar -> 150, nsol -> 24, time -> 0.000000s.
+from thread 34: reduce_g1: 2 independent relations searched.
+from thread 26: search_relation: nvar -> 132, nsol -> 17, time -> 0.000000s.
+from thread 25: search_relation: nvar -> 198, nsol -> 8, time -> 0.000000s.
+from thread 28: reduce_g1: work in the folder /scratch/ge45tuy/amflow/NumericalChecks/H/cache/H_amflow/3/diffeqsetup/cache/H_diffeq_red_1/search/2/65, to reduce 11 integrals.
+from thread 24: search_relation: nvar -> 150, nsol -> 17, time -> 0.000000s.
+from thread 28: reduce_g1: config 0
+from thread 30: search_relation: nvar -> 84, nsol -> 0, time -> 0.000000s.
+from thread 32: search_relation: nvar -> 110, nsol -> 56, time -> 0.000000s.
+from thread 44: reduce_g1: config 2
+from thread 46: search_relation: nvar -> 74, nsol -> 29, time -> 0.000000s.
+from thread 7: reduce_g1: config 1
+from thread 14: search_relation: nvar -> 188, nsol -> 7, time -> 0.000000s.
+from thread 34: reduce_g1: config 2
+from thread 4: search_relation: nvar -> 75, nsol -> 30, time -> 0.000000s.
+from thread 2: search_relation: nvar -> 158, nsol -> 27, time -> 0.000000s.
+from thread 30: reduce_g1: 0 independent relations searched.
+from thread 10: reduce_g1: work in the folder /scratch/ge45tuy/amflow/NumericalChecks/H/cache/H_amflow/3/diffeqsetup/cache/H_diffeq_red_1/search/2/69, to reduce 11 integrals.
+from thread 10: reduce_g1: config 0
+from thread 18: reduce_g1: 2 independent relations searched.
+from thread 23: search_relation: nvar -> 256, nsol -> 26, time -> 0.000000s.
+from thread 38: search_relation: nvar -> 198, nsol -> 8, time -> 0.000000s.
+from thread 30: reduce_g1: config 2
+from thread 8: reduce_g1: 1 independent relations searched.
+from thread 49: reduce_g1: work in the folder /scratch/ge45tuy/amflow/NumericalChecks/H/cache/H_amflow/3/diffeqsetup/cache/H_diffeq_red_1/search/2/66, to reduce 11 integrals.
+from thread 28: search_relation: nvar -> 99, nsol -> 51, time -> 0.000000s.
+from thread 49: reduce_g1: config 0
+from thread 10: search_relation: nvar -> 51, nsol -> 9, time -> 0.000000s.
+from thread 18: reduce_g1: config 2
+from thread 42: reduce_g1: work in the folder /scratch/ge45tuy/amflow/NumericalChecks/H/cache/H_amflow/3/diffeqsetup/cache/H_diffeq_red_1/search/2/68, to reduce 11 integrals.
+from thread 41: search_relation: nvar -> 170, nsol -> 23, time -> 0.000000s.
+from thread 42: reduce_g1: config 0
+from thread 9: reduce_g1: work in the folder /scratch/ge45tuy/amflow/NumericalChecks/H/cache/H_amflow/3/diffeqsetup/cache/H_diffeq_red_1/search/2/70, to reduce 11 integrals.
+from thread 43: search_relation: nvar -> 192, nsol -> 8, time -> 0.000000s.
+from thread 9: reduce_g1: config 0
+from thread 7: search_relation: nvar -> 100, nsol -> 4, time -> 0.000000s.
+from thread 33: search_relation: nvar -> 238, nsol -> 21, time -> 0.000000s.
+from thread 25: reduce_g1: 1 independent relations searched.
+from thread 9: search_relation: nvar -> 62, nsol -> 17, time -> 0.000000s.
+from thread 27: search_relation: nvar -> 174, nsol -> 36, time -> 0.000000s.
+from thread 42: search_relation: nvar -> 86, nsol -> 40, time -> 0.000000s.
+from thread 49: search_relation: nvar -> 110, nsol -> 58, time -> 0.000000s.
+from thread 39: reduce_g1: work in the folder /scratch/ge45tuy/amflow/NumericalChecks/H/cache/H_amflow/3/diffeqsetup/cache/H_diffeq_red_1/search/2/72, to reduce 11 integrals.
+from thread 39: reduce_g1: config 0
+from thread 48: search_relation: nvar -> 184, nsol -> 6, time -> 0.000000s.
+from thread 14: reduce_g1: 1 independent relations searched.
+from thread 8: reduce_g1: g1 reduced in 0.000000s.
+from thread 7: reduce_g1: 2 independent relations searched.
+from thread 45: reduce_g1: work in the folder /scratch/ge45tuy/amflow/NumericalChecks/H/cache/H_amflow/3/diffeqsetup/cache/H_diffeq_red_1/search/2/71, to reduce 11 integrals.
+from thread 40: reduce_g1: 1 independent relations searched.
+from thread 45: reduce_g1: config 0
+from thread 30: search_relation: nvar -> 168, nsol -> 2, time -> 0.000000s.
+from thread 24: reduce_g1: 1 independent relations searched.
+from thread 16: reduce_g1: 2 independent relations searched.
+from thread 17: reduce_g1: 3 independent relations searched.
+from thread 25: reduce_g1: g1 reduced in 0.000000s.
+from thread 22: reduce_g1: 5 independent relations searched.
+from thread 43: reduce_g1: 1 independent relations searched.
+from thread 10: reduce_g1: 9 independent relations searched.
+from thread 38: reduce_g1: 1 independent relations searched.
+from thread 4: reduce_g1: 9 independent relations searched.
+from thread 44: search_relation: nvar -> 190, nsol -> 9, time -> 0.000000s.
+from thread 14: reduce_g1: g1 reduced in 0.000000s.
+from thread 39: search_relation: nvar -> 110, nsol -> 54, time -> 0.000000s.
+from thread 7: reduce_g1: config 2
+from thread 46: reduce_g1: 8 independent relations searched.
+from thread 24: reduce_g1: config 2
+from thread 16: reduce_g1: config 2
+from thread 30: reduce_g1: 1 independent relations searched.
+from thread 40: reduce_g1: config 2
+from thread 9: reduce_g1: 8 independent relations searched.
+from thread 45: search_relation: nvar -> 99, nsol -> 48, time -> 0.000000s.
+from thread 26: reduce_g1: 3 independent relations searched.
+from thread 48: reduce_g1: 1 independent relations searched.
+from thread 10: reduce_g1: config 1
+from thread 17: reduce_g1: config 2
+from thread 31: reduce_g1: 2 independent relations searched.
+from thread 43: reduce_g1: g1 reduced in 0.000000s.
+from thread 34: search_relation: nvar -> 220, nsol -> 17, time -> 0.000000s.
+from thread 22: reduce_g1: config 1
+from thread 38: reduce_g1: g1 reduced in 0.000000s.
+from thread 4: reduce_g1: config 1
+from thread 21: reduce_g1: 3 independent relations searched.
+from thread 15: search_relation: nvar -> 232, nsol -> 19, time -> 0.000000s.
+from thread 18: search_relation: nvar -> 196, nsol -> 10, time -> 0.000000s.
+from thread 30: reduce_g1: g1 reduced in 0.000000s.
+from thread 23: reduce_g1: 4 independent relations searched.
+from thread 2: reduce_g1: 3 independent relations searched.
+from thread 46: reduce_g1: config 1
+from thread 8: reduce_g1: work in the folder /scratch/ge45tuy/amflow/NumericalChecks/H/cache/H_amflow/3/diffeqsetup/cache/H_diffeq_red_1/search/2/73, to reduce 11 integrals.
+from thread 36: reduce_g1: 3 independent relations searched.
+from thread 41: reduce_g1: 4 independent relations searched.
+from thread 8: reduce_g1: config 0
+from thread 26: reduce_g1: config 2
+from thread 32: reduce_g1: 7 independent relations searched.
+from thread 33: reduce_g1: 1 independent relations searched.
+from thread 9: reduce_g1: config 1
+from thread 25: reduce_g1: work in the folder /scratch/ge45tuy/amflow/NumericalChecks/H/cache/H_amflow/3/diffeqsetup/cache/H_diffeq_red_1/search/2/74, to reduce 11 integrals.
+from thread 48: reduce_g1: g1 reduced in 0.000000s.
+from thread 31: reduce_g1: config 2
+from thread 10: search_relation: nvar -> 84, nsol -> 1, time -> 0.000000s.
+from thread 25: reduce_g1: config 0
+from thread 28: reduce_g1: 9 independent relations searched.
+from thread 4: search_relation: nvar -> 90, nsol -> 3, time -> 0.000000s.
+from thread 2: reduce_g1: config 2
+from thread 36: reduce_g1: config 2
+from thread 44: reduce_g1: 2 independent relations searched.
+from thread 42: reduce_g1: 10 independent relations searched.
+from thread 23: reduce_g1: g1 reduced in 0.000000s.
+from thread 32: reduce_g1: config 1
+from thread 46: search_relation: nvar -> 90, nsol -> 0, time -> 0.000000s.
+from thread 41: reduce_g1: g1 reduced in 0.000000s.
+from thread 10: reduce_g1: 1 independent relations searched.
+from thread 25: search_relation: nvar -> 86, nsol -> 35, time -> 0.000000s.
+from thread 28: reduce_g1: config 1
+from thread 9: search_relation: nvar -> 90, nsol -> 3, time -> 0.000000s.
+from thread 21: reduce_g1: g1 reduced in 0.000000s.
+from thread 18: reduce_g1: 2 independent relations searched.
+from thread 4: reduce_g1: 2 independent relations searched.
+from thread 33: reduce_g1: g1 reduced in 0.000000s.
+from thread 42: reduce_g1: config 1
+from thread 44: reduce_g1: g1 reduced in 0.000000s.
+from thread 8: search_relation: nvar -> 75, nsol -> 27, time -> 0.000000s.
+from thread 14: reduce_g1: work in the folder /scratch/ge45tuy/amflow/NumericalChecks/H/cache/H_amflow/3/diffeqsetup/cache/H_diffeq_red_1/search/2/75, to reduce 11 integrals.
+from thread 10: reduce_g1: config 2
+from thread 14: reduce_g1: config 0
+from thread 46: reduce_g1: 0 independent relations searched.
+from thread 38: reduce_g1: work in the folder /scratch/ge45tuy/amflow/NumericalChecks/H/cache/H_amflow/3/diffeqsetup/cache/H_diffeq_red_1/search/2/77, to reduce 11 integrals.
+from thread 38: reduce_g1: config 0
+from thread 30: reduce_g1: work in the folder /scratch/ge45tuy/amflow/NumericalChecks/H/cache/H_amflow/3/diffeqsetup/cache/H_diffeq_red_1/search/2/78, to reduce 11 integrals.
+from thread 34: reduce_g1: 1 independent relations searched.
+from thread 30: reduce_g1: config 0
+from thread 18: reduce_g1: g1 reduced in 0.000000s.
+from thread 32: search_relation: nvar -> 108, nsol -> 6, time -> 0.000000s.
+from thread 4: reduce_g1: g1 reduced in 0.000000s.
+from thread 9: reduce_g1: 2 independent relations searched.
+from thread 12: reduce_g1: 3 independent relations searched.
+from thread 28: search_relation: nvar -> 96, nsol -> 3, time -> 0.000000s.
+from thread 46: reduce_g1: config 2
+from thread 7: search_relation: nvar -> 192, nsol -> 9, time -> 0.000000s.
+from thread 39: reduce_g1: 6 independent relations searched.
+from thread 49: reduce_g1: 7 independent relations searched.
+from thread 38: search_relation: nvar -> 75, nsol -> 30, time -> 0.000000s.
+from thread 42: search_relation: nvar -> 92, nsol -> 3, time -> 0.000000s.
+from thread 30: search_relation: nvar -> 86, nsol -> 39, time -> 0.000000s.
+from thread 48: reduce_g1: work in the folder /scratch/ge45tuy/amflow/NumericalChecks/H/cache/H_amflow/3/diffeqsetup/cache/H_diffeq_red_1/search/2/79, to reduce 11 integrals.
+from thread 27: reduce_g1: 3 independent relations searched.
+from thread 34: reduce_g1: g1 reduced in 0.000000s.
+from thread 9: reduce_g1: config 2
+from thread 48: reduce_g1: config 0
+from thread 15: reduce_g1: 1 independent relations searched.
+from thread 14: search_relation: nvar -> 99, nsol -> 52, time -> 0.000000s.
+from thread 23: reduce_g1: work in the folder /scratch/ge45tuy/amflow/NumericalChecks/H/cache/H_amflow/3/diffeqsetup/cache/H_diffeq_red_1/search/2/80, to reduce 11 integrals.
+from thread 39: reduce_g1: config 1
+from thread 23: reduce_g1: config 0
+from thread 33: reduce_g1: work in the folder /scratch/ge45tuy/amflow/NumericalChecks/H/cache/H_amflow/3/diffeqsetup/cache/H_diffeq_red_1/search/2/83, to reduce 11 integrals.
+from thread 33: reduce_g1: config 0
+from thread 44: reduce_g1: work in the folder /scratch/ge45tuy/amflow/NumericalChecks/H/cache/H_amflow/3/diffeqsetup/cache/H_diffeq_red_1/search/2/84, to reduce 11 integrals.
+from thread 44: reduce_g1: config 0
+from thread 43: reduce_g1: work in the folder /scratch/ge45tuy/amflow/NumericalChecks/H/cache/H_amflow/3/diffeqsetup/cache/H_diffeq_red_1/search/2/76, to reduce 11 integrals.
+from thread 41: reduce_g1: work in the folder /scratch/ge45tuy/amflow/NumericalChecks/H/cache/H_amflow/3/diffeqsetup/cache/H_diffeq_red_1/search/2/81, to reduce 11 integrals.
+from thread 28: reduce_g1: 1 independent relations searched.
+from thread 43: reduce_g1: config 0
+from thread 41: reduce_g1: config 0
+from thread 32: reduce_g1: 2 independent relations searched.
+from thread 4: reduce_g1: work in the folder /scratch/ge45tuy/amflow/NumericalChecks/H/cache/H_amflow/3/diffeqsetup/cache/H_diffeq_red_1/search/2/86, to reduce 11 integrals.
+from thread 49: reduce_g1: config 1
+from thread 27: reduce_g1: config 2
+from thread 4: reduce_g1: config 0
+from thread 25: reduce_g1: 8 independent relations searched.
+from thread 12: reduce_g1: config 1
+from thread 48: search_relation: nvar -> 75, nsol -> 30, time -> 0.000000s.
+from thread 33: search_relation: nvar -> 63, nsol -> 19, time -> 0.000000s.
+from thread 8: reduce_g1: 8 independent relations searched.
+from thread 42: reduce_g1: 0 independent relations searched.
+from thread 44: search_relation: nvar -> 51, nsol -> 9, time -> 0.000000s.
+from thread 5: search_relation: nvar -> 582, nsol -> 388, time -> 0.000000s.
+from thread 15: reduce_g1: g1 reduced in 0.000000s.
+from thread 18: reduce_g1: work in the folder /scratch/ge45tuy/amflow/NumericalChecks/H/cache/H_amflow/3/diffeqsetup/cache/H_diffeq_red_1/search/2/85, to reduce 11 integrals.
+from thread 28: reduce_g1: config 2
+from thread 4: search_relation: nvar -> 51, nsol -> 9, time -> 0.000000s.
+from thread 32: reduce_g1: config 2
+from thread 18: reduce_g1: config 0
+from thread 45: reduce_g1: 8 independent relations searched.
+from thread 10: search_relation: nvar -> 166, nsol -> 1, time -> 0.000000s.
+from thread 41: search_relation: nvar -> 87, nsol -> 40, time -> 0.000000s.
+from thread 23: search_relation: nvar -> 86, nsol -> 39, time -> 0.000000s.
+from thread 7: reduce_g1: 1 independent relations searched.
+from thread 22: search_relation: nvar -> 180, nsol -> 25, time -> 0.000000s.
+from thread 25: reduce_g1: config 1
+from thread 21: reduce_g1: work in the folder /scratch/ge45tuy/amflow/NumericalChecks/H/cache/H_amflow/3/diffeqsetup/cache/H_diffeq_red_1/search/2/82, to reduce 11 integrals.
+from thread 21: reduce_g1: config 0
+from thread 42: reduce_g1: config 2
+from thread 8: reduce_g1: config 1
+from thread 34: reduce_g1: work in the folder /scratch/ge45tuy/amflow/NumericalChecks/H/cache/H_amflow/3/diffeqsetup/cache/H_diffeq_red_1/search/2/87, to reduce 11 integrals.
+from thread 39: search_relation: nvar -> 112, nsol -> 9, time -> 0.000000s.
+from thread 34: reduce_g1: config 0
+from thread 18: search_relation: nvar -> 63, nsol -> 20, time -> 0.000000s.
+from thread 43: search_relation: nvar -> 110, nsol -> 60, time -> 0.000000s.
+from thread 45: reduce_g1: config 1
+from thread 16: search_relation: nvar -> 248, nsol -> 24, time -> 0.000000s.
+from thread 7: reduce_g1: g1 reduced in 0.000000s.
+from thread 49: search_relation: nvar -> 104, nsol -> 5, time -> 0.000000s.
+from thread 38: reduce_g1: 9 independent relations searched.
+from thread 4: reduce_g1: 9 independent relations searched.
+from thread 44: reduce_g1: 9 independent relations searched.
+from thread 10: reduce_g1: 1 independent relations searched.
+from thread 30: reduce_g1: 9 independent relations searched.
+from thread 34: search_relation: nvar -> 63, nsol -> 19, time -> 0.000000s.
+from thread 46: search_relation: nvar -> 180, nsol -> 5, time -> 0.000000s.
+from thread 17: search_relation: nvar -> 242, nsol -> 22, time -> 0.000000s.
+from thread 33: reduce_g1: 8 independent relations searched.
+from thread 25: search_relation: nvar -> 102, nsol -> 8, time -> 0.000000s.
+from thread 38: reduce_g1: config 1
+from thread 4: reduce_g1: config 1
+from thread 21: search_relation: nvar -> 98, nsol -> 49, time -> 0.000000s.
+from thread 44: reduce_g1: config 1
+from thread 26: search_relation: nvar -> 230, nsol -> 21, time -> 0.000000s.
+from thread 15: reduce_g1: work in the folder /scratch/ge45tuy/amflow/NumericalChecks/H/cache/H_amflow/3/diffeqsetup/cache/H_diffeq_red_1/search/2/88, to reduce 11 integrals.
+from thread 15: reduce_g1: config 0
+from thread 9: search_relation: nvar -> 174, nsol -> 4, time -> 0.000000s.
+from thread 10: reduce_g1: g1 reduced in 0.000000s.
+from thread 30: reduce_g1: config 1
+from thread 8: search_relation: nvar -> 96, nsol -> 6, time -> 0.000000s.
+from thread 39: reduce_g1: 3 independent relations searched.
+from thread 40: search_relation: nvar -> 250, nsol -> 23, time -> 0.000000s.
+from thread 33: reduce_g1: config 1
+from thread 45: search_relation: nvar -> 102, nsol -> 6, time -> 0.000000s.
+from thread 49: reduce_g1: 2 independent relations searched.
+from thread 15: search_relation: nvar -> 51, nsol -> 9, time -> 0.000000s.
+from thread 4: search_relation: nvar -> 84, nsol -> 1, time -> 0.000000s.
+from thread 48: reduce_g1: 9 independent relations searched.
+from thread 39: reduce_g1: config 2
+from thread 18: reduce_g1: 9 independent relations searched.
+from thread 25: reduce_g1: 2 independent relations searched.
+from thread 44: search_relation: nvar -> 84, nsol -> 1, time -> 0.000000s.
+from thread 38: search_relation: nvar -> 90, nsol -> 3, time -> 0.000000s.
+from thread 46: reduce_g1: 3 independent relations searched.
+from thread 36: search_relation: nvar -> 266, nsol -> 24, time -> 0.000000s.
+from thread 30: search_relation: nvar -> 94, nsol -> 4, time -> 0.000000s.
+from thread 34: reduce_g1: 8 independent relations searched.
+from thread 24: search_relation: nvar -> 266, nsol -> 30, time -> 0.000000s.
+from thread 7: reduce_g1: work in the folder /scratch/ge45tuy/amflow/NumericalChecks/H/cache/H_amflow/3/diffeqsetup/cache/H_diffeq_red_1/search/2/89, to reduce 11 integrals.
+from thread 33: search_relation: nvar -> 88, nsol -> 2, time -> 0.000000s.
+from thread 7: reduce_g1: config 0
+from thread 23: reduce_g1: 9 independent relations searched.
+from thread 41: reduce_g1: 10 independent relations searched.
+from thread 4: reduce_g1: 1 independent relations searched.
+from thread 28: search_relation: nvar -> 186, nsol -> 7, time -> 0.000000s.
+from thread 32: search_relation: nvar -> 204, nsol -> 13, time -> 0.000000s.
+from thread 34: reduce_g1: config 1
+from thread 44: reduce_g1: 1 independent relations searched.
+from thread 23: reduce_g1: config 1
+from thread 42: search_relation: nvar -> 178, nsol -> 5, time -> 0.000000s.
+from thread 7: search_relation: nvar -> 63, nsol -> 19, time -> 0.000000s.
+from thread 4: reduce_g1: config 2
+from thread 38: reduce_g1: 2 independent relations searched.
+from thread 41: reduce_g1: config 1
+from thread 49: reduce_g1: config 2
+from thread 9: reduce_g1: 1 independent relations searched.
+from thread 48: reduce_g1: config 1
+from thread 6: reduce_g1: 37 independent relations searched.
+from thread 14: reduce_g1: 9 independent relations searched.
+from thread 31: search_relation: nvar -> 258, nsol -> 26, time -> 0.000000s.
+from thread 34: search_relation: nvar -> 88, nsol -> 2, time -> 0.000000s.
+from thread 18: reduce_g1: config 1
+from thread 10: reduce_g1: work in the folder /scratch/ge45tuy/amflow/NumericalChecks/H/cache/H_amflow/3/diffeqsetup/cache/H_diffeq_red_1/search/2/90, to reduce 11 integrals.
+from thread 10: reduce_g1: config 0
+from thread 44: reduce_g1: config 2
+from thread 12: search_relation: nvar -> 188, nsol -> 38, time -> 0.000000s.
+from thread 41: search_relation: nvar -> 94, nsol -> 3, time -> 0.000000s.
+from thread 23: search_relation: nvar -> 94, nsol -> 4, time -> 0.000000s.
+from thread 34: reduce_g1: 2 independent relations searched.
+from thread 38: reduce_g1: g1 reduced in 0.000000s.
+from thread 10: search_relation: nvar -> 63, nsol -> 19, time -> 0.000000s.
+from thread 15: reduce_g1: 9 independent relations searched.
+from thread 48: search_relation: nvar -> 90, nsol -> 3, time -> 0.000000s.
+from thread 25: reduce_g1: config 2
+from thread 18: search_relation: nvar -> 86, nsol -> 2, time -> 0.000000s.
+from thread 8: reduce_g1: 3 independent relations searched.
+from thread 45: reduce_g1: 2 independent relations searched.
+from thread 2: search_relation: nvar -> 262, nsol -> 31, time -> 0.000000s.
+from thread 22: reduce_g1: 2 independent relations searched.
+from thread 7: reduce_g1: 8 independent relations searched.
+from thread 30: reduce_g1: 1 independent relations searched.
+from thread 4: search_relation: nvar -> 166, nsol -> 1, time -> 0.000000s.
+from thread 39: search_relation: nvar -> 206, nsol -> 13, time -> 0.000000s.
+from thread 0: reduce_g1: 3 independent relations searched.
+from thread 44: search_relation: nvar -> 166, nsol -> 1, time -> 0.000000s.
+from thread 38: reduce_g1: work in the folder /scratch/ge45tuy/amflow/NumericalChecks/H/cache/H_amflow/3/diffeqsetup/cache/H_diffeq_red_1/search/2/91, to reduce 11 integrals.
+from thread 14: reduce_g1: config 1
+from thread 21: reduce_g1: 9 independent relations searched.
+from thread 46: reduce_g1: g1 reduced in 0.000000s.
+from thread 42: reduce_g1: 1 independent relations searched.
+from thread 49: search_relation: nvar -> 198, nsol -> 11, time -> 0.000000s.
+from thread 25: search_relation: nvar -> 188, nsol -> 8, time -> 0.000000s.
+from thread 33: reduce_g1: 2 independent relations searched.
+from thread 35: search_relation: nvar -> 573, nsol -> 386, time -> 0.000000s.
+from thread 28: reduce_g1: 1 independent relations searched.
+from thread 43: reduce_g1: 8 independent relations searched.
+from thread 16: reduce_g1: 1 independent relations searched.
+from thread 38: reduce_g1: config 0
+from thread 41: reduce_g1: 0 independent relations searched.
+from thread 9: reduce_g1: g1 reduced in 0.000000s.
+from thread 15: reduce_g1: config 1
+from thread 38: search_relation: nvar -> 63, nsol -> 20, time -> 0.000000s.
+from thread 17: reduce_g1: 1 independent relations searched.
+from thread 6: reduce_g1: config 1
+from thread 26: reduce_g1: 1 independent relations searched.
+from thread 27: search_relation: nvar -> 276, nsol -> 35, time -> 0.000000s.
+from thread 33: reduce_g1: config 2
+from thread 14: search_relation: nvar -> 94, nsol -> 5, time -> 0.000000s.
+from thread 34: reduce_g1: config 2
+from thread 48: reduce_g1: 2 independent relations searched.
+from thread 36: reduce_g1: 2 independent relations searched.
+from thread 24: reduce_g1: 4 independent relations searched.
+from thread 0: reduce_g1: config 1
+from thread 46: reduce_g1: work in the folder /scratch/ge45tuy/amflow/NumericalChecks/H/cache/H_amflow/3/diffeqsetup/cache/H_diffeq_red_1/search/2/92, to reduce 12 integrals.
+from thread 7: reduce_g1: config 1
+from thread 22: reduce_g1: config 2
+from thread 15: search_relation: nvar -> 84, nsol -> 1, time -> 0.000000s.
+from thread 32: reduce_g1: 2 independent relations searched.
+from thread 44: reduce_g1: 1 independent relations searched.
+from thread 10: reduce_g1: 8 independent relations searched.
+from thread 40: reduce_g1: 3 independent relations searched.
+from thread 16: reduce_g1: g1 reduced in 0.000000s.
+from thread 19: search_relation: nvar -> 639, nsol -> 443, time -> 0.000000s.
+from thread 8: reduce_g1: g1 reduced in 0.000000s.
+from thread 23: reduce_g1: 1 independent relations searched.
+from thread 41: reduce_g1: config 2
+from thread 46: reduce_g1: config 0
+from thread 45: reduce_g1: config 2
+from thread 25: reduce_g1: 1 independent relations searched.
+from thread 18: reduce_g1: 2 independent relations searched.
+from thread 28: reduce_g1: g1 reduced in 0.000000s.
+from thread 4: reduce_g1: 1 independent relations searched.
+from thread 34: search_relation: nvar -> 172, nsol -> 4, time -> 0.000000s.
+from thread 11: search_relation: nvar -> 630, nsol -> 441, time -> 0.000000s.
+from thread 46: search_relation: nvar -> 52, nsol -> 11, time -> 0.000000s.
+from thread 12: reduce_g1: 4 independent relations searched.
+from thread 9: reduce_g1: work in the folder /scratch/ge45tuy/amflow/NumericalChecks/H/cache/H_amflow/3/diffeqsetup/cache/H_diffeq_red_1/search/2/93, to reduce 12 integrals.
+from thread 39: reduce_g1: 2 independent relations searched.
+from thread 7: search_relation: nvar -> 88, nsol -> 2, time -> 0.000000s.
+from thread 16: reduce_g1: work in the folder /scratch/ge45tuy/amflow/NumericalChecks/H/cache/H_amflow/3/diffeqsetup/cache/H_diffeq_red_1/search/2/94, to reduce 12 integrals.
+from thread 33: search_relation: nvar -> 172, nsol -> 4, time -> 0.000000s.
+from thread 31: reduce_g1: 2 independent relations searched.
+from thread 30: reduce_g1: config 2
+from thread 16: reduce_g1: config 0
+from thread 21: reduce_g1: config 1
+from thread 9: reduce_g1: config 0
+from thread 48: reduce_g1: g1 reduced in 0.000000s.
+from thread 27: reduce_g1: 1 independent relations searched.
+from thread 14: reduce_g1: 2 independent relations searched.
+from thread 41: search_relation: nvar -> 182, nsol -> 6, time -> 0.000000s.
+from thread 0: search_relation: nvar -> 200, nsol -> 44, time -> 0.000000s.
+from thread 15: reduce_g1: 1 independent relations searched.
+from thread 6: search_relation: nvar -> 208, nsol -> 39, time -> 0.000000s.
+from thread 49: reduce_g1: 2 independent relations searched.
+from thread 10: reduce_g1: config 1
+from thread 21: search_relation: nvar -> 98, nsol -> 3, time -> 0.000000s.
+from thread 30: search_relation: nvar -> 180, nsol -> 6, time -> 0.000000s.
+from thread 24: reduce_g1: g1 reduced in 0.000000s.
+from thread 32: reduce_g1: g1 reduced in 0.000000s.
+from thread 48: reduce_g1: work in the folder /scratch/ge45tuy/amflow/NumericalChecks/H/cache/H_amflow/3/diffeqsetup/cache/H_diffeq_red_1/search/2/97, to reduce 12 integrals.
+from thread 48: reduce_g1: config 0
+from thread 2: reduce_g1: 1 independent relations searched.
+from thread 45: search_relation: nvar -> 192, nsol -> 8, time -> 0.000000s.
+from thread 23: reduce_g1: config 2
+from thread 31: reduce_g1: config 3
+from thread 29: reduce_g1: 6 independent relations searched.
+from thread 43: reduce_g1: config 1
+from thread 12: reduce_g1: config 2
+from thread 39: reduce_g1: g1 reduced in 0.000000s.
+from thread 10: search_relation: nvar -> 88, nsol -> 2, time -> 0.000000s.
+from thread 40: reduce_g1: config 3
+from thread 36: reduce_g1: g1 reduced in 0.000000s.
+from thread 42: reduce_g1: g1 reduced in 0.000000s.
+from thread 9: search_relation: nvar -> 64, nsol -> 20, time -> 0.000000s.
+from thread 44: reduce_g1: g1 reduced in 0.000000s.
+from thread 34: reduce_g1: 1 independent relations searched.
+from thread 16: search_relation: nvar -> 52, nsol -> 11, time -> 0.000000s.
+from thread 28: reduce_g1: work in the folder /scratch/ge45tuy/amflow/NumericalChecks/H/cache/H_amflow/3/diffeqsetup/cache/H_diffeq_red_1/search/2/96, to reduce 12 integrals.
+from thread 21: reduce_g1: 0 independent relations searched.
+from thread 38: reduce_g1: 9 independent relations searched.
+from thread 28: reduce_g1: config 0
+from thread 8: reduce_g1: work in the folder /scratch/ge45tuy/amflow/NumericalChecks/H/cache/H_amflow/3/diffeqsetup/cache/H_diffeq_red_1/search/2/95, to reduce 12 integrals.
+from thread 7: reduce_g1: 2 independent relations searched.
+from thread 13: reduce_g1: 5 independent relations searched.
+from thread 8: reduce_g1: config 0
+from thread 25: reduce_g1: g1 reduced in 0.000000s.
+from thread 24: reduce_g1: work in the folder /scratch/ge45tuy/amflow/NumericalChecks/H/cache/H_amflow/3/diffeqsetup/cache/H_diffeq_red_1/search/2/98, to reduce 12 integrals.
+from thread 33: reduce_g1: 1 independent relations searched.
+from thread 24: reduce_g1: config 0
+from thread 17: reduce_g1: g1 reduced in 0.000000s.
+from thread 14: reduce_g1: g1 reduced in 0.000000s.
+from thread 26: reduce_g1: g1 reduced in 0.000000s.
+from thread 28: search_relation: nvar -> 76, nsol -> 31, time -> 0.000000s.
+from thread 46: reduce_g1: 11 independent relations searched.
+from thread 18: reduce_g1: g1 reduced in 0.000000s.
+from thread 4: reduce_g1: g1 reduced in 0.000000s.
+from thread 48: search_relation: nvar -> 88, nsol -> 43, time -> 0.000000s.
+from thread 21: reduce_g1: config 2
+from thread 34: reduce_g1: g1 reduced in 0.000000s.
+from thread 10: reduce_g1: 2 independent relations searched.
+from thread 43: search_relation: nvar -> 100, nsol -> 7, time -> 0.000000s.
+from thread 49: reduce_g1: g1 reduced in 0.000000s.
+from thread 23: search_relation: nvar -> 180, nsol -> 6, time -> 0.000000s.
+from thread 29: reduce_g1: config 1
+from thread 45: reduce_g1: 1 independent relations searched.
+from thread 32: reduce_g1: work in the folder /scratch/ge45tuy/amflow/NumericalChecks/H/cache/H_amflow/3/diffeqsetup/cache/H_diffeq_red_1/search/2/99, to reduce 12 integrals.
+from thread 15: reduce_g1: config 2
+from thread 39: reduce_g1: work in the folder /scratch/ge45tuy/amflow/NumericalChecks/H/cache/H_amflow/3/diffeqsetup/cache/H_diffeq_red_1/search/2/100, to reduce 12 integrals.
+from thread 8: search_relation: nvar -> 64, nsol -> 21, time -> 0.000000s.
+from thread 41: reduce_g1: 1 independent relations searched.
+from thread 2: reduce_g1: g1 reduced in 0.000000s.
+from thread 39: reduce_g1: config 0
+from thread 30: reduce_g1: 1 independent relations searched.
+from thread 36: reduce_g1: work in the folder /scratch/ge45tuy/amflow/NumericalChecks/H/cache/H_amflow/3/diffeqsetup/cache/H_diffeq_red_1/search/2/101, to reduce 12 integrals.
+from thread 32: reduce_g1: config 0
+from thread 36: reduce_g1: config 0
+from thread 24: search_relation: nvar -> 52, nsol -> 10, time -> 0.000000s.
+from thread 27: reduce_g1: g1 reduced in 0.000000s.
+from thread 7: reduce_g1: config 2
+from thread 16: reduce_g1: 11 independent relations searched.
+from thread 38: reduce_g1: config 1
+from thread 36: search_relation: nvar -> 52, nsol -> 11, time -> 0.000000s.
+from thread 13: reduce_g1: config 1
+from thread 32: search_relation: nvar -> 64, nsol -> 19, time -> 0.000000s.
+from thread 39: search_relation: nvar -> 52, nsol -> 11, time -> 0.000000s.
+from thread 33: reduce_g1: g1 reduced in 0.000000s.
+from thread 10: reduce_g1: config 2
+from thread 45: reduce_g1: g1 reduced in 0.000000s.
+from thread 46: reduce_g1: config 1
+from thread 9: reduce_g1: 9 independent relations searched.
+from thread 43: reduce_g1: 2 independent relations searched.
+from thread 3: reduce_g1: 35 independent relations searched.
+from thread 22: search_relation: nvar -> 310, nsol -> 42, time -> 0.000000s.
+from thread 0: reduce_g1: 5 independent relations searched.
+from thread 30: reduce_g1: g1 reduced in 0.000000s.
+from thread 43: reduce_g1: config 2
+from thread 46: search_relation: nvar -> 82, nsol -> 0, time -> 0.000000s.
+from thread 15: search_relation: nvar -> 166, nsol -> 1, time -> 0.000000s.
+from thread 0: reduce_g1: config 2
+from thread 38: search_relation: nvar -> 86, nsol -> 2, time -> 0.000000s.
+from thread 21: search_relation: nvar -> 190, nsol -> 8, time -> 0.000000s.
+from thread 3: reduce_g1: config 1
+from thread 7: search_relation: nvar -> 172, nsol -> 4, time -> 0.000000s.
+from thread 15: reduce_g1: 1 independent relations searched.
+from thread 10: search_relation: nvar -> 172, nsol -> 4, time -> 0.000000s.
+from thread 15: reduce_g1: g1 reduced in 0.000000s.
+from thread 10: reduce_g1: 1 independent relations searched.
+from thread 43: search_relation: nvar -> 186, nsol -> 8, time -> 0.000000s.
+from thread 10: reduce_g1: g1 reduced in 0.000000s.
+from thread 41: reduce_g1: g1 reduced in 0.000000s.
+from thread 6: reduce_g1: 13 independent relations searched.
+from thread 23: reduce_g1: 1 independent relations searched.
+from thread 29: search_relation: nvar -> 242, nsol -> 49, time -> 0.000000s.
+from thread 36: reduce_g1: 11 independent relations searched.
+from thread 39: reduce_g1: 11 independent relations searched.
+from thread 16: reduce_g1: config 1
+from thread 24: reduce_g1: 10 independent relations searched.
+from thread 28: reduce_g1: 12 independent relations searched.
+from thread 8: reduce_g1: 10 independent relations searched.
+from thread 9: reduce_g1: config 1
+from thread 46: reduce_g1: 0 independent relations searched.
+from thread 38: reduce_g1: 2 independent relations searched.
+from thread 32: reduce_g1: 9 independent relations searched.
+from thread 36: reduce_g1: config 1
+from thread 21: reduce_g1: 2 independent relations searched.
+from thread 39: reduce_g1: config 1
+from thread 6: reduce_g1: config 2
+from thread 23: reduce_g1: g1 reduced in 0.000000s.
+from thread 8: reduce_g1: config 1
+from thread 7: reduce_g1: 1 independent relations searched.
+from thread 46: reduce_g1: config 2
+from thread 48: reduce_g1: 12 independent relations searched.
+from thread 16: search_relation: nvar -> 82, nsol -> 0, time -> 0.000000s.
+from thread 28: reduce_g1: g1 reduced in 0.000000s.
+from thread 24: reduce_g1: config 1
+from thread 9: search_relation: nvar -> 88, nsol -> 1, time -> 0.000000s.
+from thread 43: reduce_g1: 1 independent relations searched.
+from thread 21: reduce_g1: g1 reduced in 0.000000s.
+from thread 38: reduce_g1: g1 reduced in 0.000000s.
+from thread 36: search_relation: nvar -> 82, nsol -> 0, time -> 0.000000s.
+from thread 32: reduce_g1: config 1
+from thread 39: search_relation: nvar -> 82, nsol -> 0, time -> 0.000000s.
+from thread 12: search_relation: nvar -> 300, nsol -> 43, time -> 0.000000s.
+from thread 48: reduce_g1: g1 reduced in 0.000000s.
+from thread 31: search_relation: nvar -> 328, nsol -> 1, time -> 0.000000s.
+from thread 13: search_relation: nvar -> 250, nsol -> 50, time -> 0.000000s.
+from thread 7: reduce_g1: g1 reduced in 0.000000s.
+from thread 16: reduce_g1: 0 independent relations searched.
+from thread 8: search_relation: nvar -> 86, nsol -> 1, time -> 0.000000s.
+from thread 36: reduce_g1: 0 independent relations searched.
+from thread 43: reduce_g1: g1 reduced in 0.000000s.
+from thread 39: reduce_g1: 0 independent relations searched.
+from thread 24: search_relation: nvar -> 84, nsol -> 1, time -> 0.000000s.
+from thread 40: search_relation: nvar -> 323, nsol -> 1, time -> 0.000000s.
+from thread 9: reduce_g1: 1 independent relations searched.
+from thread 32: search_relation: nvar -> 90, nsol -> 3, time -> 0.000000s.
+from thread 16: reduce_g1: config 2
+from thread 36: reduce_g1: config 2
+from thread 39: reduce_g1: config 2
+from thread 8: reduce_g1: 1 independent relations searched.
+from thread 31: reduce_g1: 1 independent relations searched.
+from thread 9: reduce_g1: config 2
+from thread 24: reduce_g1: 1 independent relations searched.
+from thread 32: reduce_g1: 2 independent relations searched.
+from thread 8: reduce_g1: config 2
+from thread 46: search_relation: nvar -> 164, nsol -> 1, time -> 0.000000s.
+from thread 24: reduce_g1: config 2
+from thread 32: reduce_g1: config 2
+from thread 40: reduce_g1: 1 independent relations searched.
+from thread 31: reduce_g1: g1 reduced in 0.000000s.
+from thread 46: reduce_g1: 1 independent relations searched.
+from thread 39: search_relation: nvar -> 164, nsol -> 1, time -> 0.000000s.
+from thread 40: reduce_g1: g1 reduced in 0.000000s.
+from thread 46: reduce_g1: g1 reduced in 0.000000s.
+from thread 22: reduce_g1: 3 independent relations searched.
+from thread 36: search_relation: nvar -> 164, nsol -> 1, time -> 0.000000s.
+from thread 39: reduce_g1: 1 independent relations searched.
+from thread 16: search_relation: nvar -> 164, nsol -> 1, time -> 0.000000s.
+from thread 9: search_relation: nvar -> 174, nsol -> 4, time -> 0.000000s.
+from thread 39: reduce_g1: g1 reduced in 0.000000s.
+from thread 22: reduce_g1: g1 reduced in 0.000000s.
+from thread 36: reduce_g1: 1 independent relations searched.
+from thread 8: search_relation: nvar -> 170, nsol -> 3, time -> 0.000000s.
+from thread 32: search_relation: nvar -> 174, nsol -> 4, time -> 0.000000s.
+from thread 24: search_relation: nvar -> 166, nsol -> 1, time -> 0.000000s.
+from thread 36: reduce_g1: g1 reduced in 0.000000s.
+from thread 16: reduce_g1: 1 independent relations searched.
+from thread 9: reduce_g1: 2 independent relations searched.
+from thread 8: reduce_g1: 1 independent relations searched.
+from thread 32: reduce_g1: 1 independent relations searched.
+from thread 16: reduce_g1: g1 reduced in 0.000000s.
+from thread 24: reduce_g1: 1 independent relations searched.
+from thread 0: search_relation: nvar -> 312, nsol -> 48, time -> 0.000000s.
+from thread 9: reduce_g1: g1 reduced in 0.000000s.
+from thread 32: reduce_g1: g1 reduced in 0.000000s.
+from thread 8: reduce_g1: g1 reduced in 0.000000s.
+from thread 24: reduce_g1: g1 reduced in 0.000000s.
+from thread 29: reduce_g1: 2 independent relations searched.
+from thread 12: reduce_g1: 2 independent relations searched.
+from thread 29: reduce_g1: config 2
+from thread 12: reduce_g1: g1 reduced in 0.000000s.
+from thread 13: reduce_g1: 1 independent relations searched.
+from thread 13: reduce_g1: config 2
+from thread 3: search_relation: nvar -> 248, nsol -> 53, time -> 0.000000s.
+from thread 6: search_relation: nvar -> 338, nsol -> 43, time -> 0.000000s.
+from thread 0: reduce_g1: 1 independent relations searched.
+from thread 0: reduce_g1: g1 reduced in 0.000000s.
+from thread 47: reduce_g1: 4 independent relations searched.
+from thread 47: reduce_g1: config 1
+from thread 29: search_relation: nvar -> 386, nsol -> 60, time -> 0.000000s.
+from thread 6: reduce_g1: 5 independent relations searched.
+from thread 6: reduce_g1: g1 reduced in 0.000000s.
+from thread 1: reduce_g1: 2 independent relations searched.
+from thread 13: search_relation: nvar -> 400, nsol -> 64, time -> 0.000000s.
+from thread 1: reduce_g1: config 1
+from thread 47: search_relation: nvar -> 298, nsol -> 66, time -> 0.000000s.
+from thread 3: reduce_g1: 14 independent relations searched.
+from thread 3: reduce_g1: config 2
+from thread 29: reduce_g1: 1 independent relations searched.
+from thread 29: reduce_g1: g1 reduced in 0.000000s.
+from thread 1: search_relation: nvar -> 312, nsol -> 66, time -> 0.000000s.
+from thread 13: reduce_g1: 2 independent relations searched.
+from thread 13: reduce_g1: config 3
+from thread 47: reduce_g1: 3 independent relations searched.
+from thread 47: reduce_g1: config 2
+from thread 1: reduce_g1: 0 independent relations searched.
+from thread 1: reduce_g1: config 2
+from thread 13: search_relation: nvar -> 452, nsol -> 2, time -> 0.000000s.
+from thread 37: search_relation: nvar -> 1180, nsol -> 817, time -> 0.000000s.
+from thread 13: reduce_g1: 1 independent relations searched.
+from thread 13: reduce_g1: g1 reduced in 0.000000s.
+from thread 3: search_relation: nvar -> 390, nsol -> 63, time -> 0.000000s.
+from thread 47: search_relation: nvar -> 464, nsol -> 82, time -> 0.000000s.
+from thread 5: reduce_g1: 2 independent relations searched.
+from thread 5: reduce_g1: config 1
+from thread 35: reduce_g1: 4 independent relations searched.
+from thread 20: search_relation: nvar -> 1188, nsol -> 819, time -> 0.000000s.
+from thread 1: search_relation: nvar -> 492, nsol -> 88, time -> 0.000000s.
+from thread 35: reduce_g1: config 1
+from thread 3: reduce_g1: 6 independent relations searched.
+from thread 3: reduce_g1: g1 reduced in 0.000000s.
+from thread 47: reduce_g1: 2 independent relations searched.
+from thread 47: reduce_g1: g1 reduced in 0.000000s.
+from thread 1: reduce_g1: 5 independent relations searched.
+from thread 1: reduce_g1: config 3
+from thread 5: search_relation: nvar -> 388, nsol -> 90, time -> 0.000000s.
+from thread 35: search_relation: nvar -> 374, nsol -> 89, time -> 0.000000s.
+from thread 19: reduce_g1: 2 independent relations searched.
+from thread 11: reduce_g1: 2 independent relations searched.
+from thread 19: reduce_g1: config 1
+from thread 11: reduce_g1: config 1
+from thread 5: reduce_g1: 1 independent relations searched.
+from thread 5: reduce_g1: config 2
+from thread 35: reduce_g1: 2 independent relations searched.
+from thread 35: reduce_g1: config 2
+from thread 1: search_relation: nvar -> 536, nsol -> 3, time -> 0.000000s.
+from thread 1: reduce_g1: 2 independent relations searched.
+from thread 1: reduce_g1: g1 reduced in 0.000000s.
+from thread 11: search_relation: nvar -> 378, nsol -> 95, time -> 0.000000s.
+from thread 19: search_relation: nvar -> 392, nsol -> 95, time -> 0.000000s.
+from thread 11: reduce_g1: 3 independent relations searched.
+from thread 11: reduce_g1: config 2
+from thread 19: reduce_g1: 0 independent relations searched.
+from thread 19: reduce_g1: config 2
+from thread 35: search_relation: nvar -> 570, nsol -> 109, time -> 1.000000s.
+from thread 5: search_relation: nvar -> 596, nsol -> 116, time -> 1.000000s.
+from thread 35: reduce_g1: 2 independent relations searched.
+from thread 35: reduce_g1: config 3
+from thread 5: reduce_g1: 5 independent relations searched.
+from thread 5: reduce_g1: config 3
+from thread 11: search_relation: nvar -> 566, nsol -> 109, time -> 0.000000s.
+from thread 19: search_relation: nvar -> 594, nsol -> 117, time -> 0.000000s.
+from thread 35: search_relation: nvar -> 598, nsol -> 0, time -> 0.000000s.
+from thread 35: reduce_g1: 0 independent relations searched.
+from thread 35: reduce_g1: config 4
+from thread 11: reduce_g1: 4 independent relations searched.
+from thread 11: reduce_g1: g1 reduced in 1.000000s.
+from thread 5: search_relation: nvar -> 623, nsol -> 1, time -> 0.000000s.
+from thread 5: reduce_g1: 1 independent relations searched.
+from thread 5: reduce_g1: g1 reduced in 1.000000s.
+from thread 19: reduce_g1: 6 independent relations searched.
+from thread 19: reduce_g1: config 3
+from thread 35: search_relation: nvar -> 815, nsol -> 1, time -> 0.000000s.
+from thread 35: reduce_g1: 1 independent relations searched.
+from thread 35: reduce_g1: g1 reduced in 1.000000s.
+from thread 19: search_relation: nvar -> 617, nsol -> 3, time -> 0.000000s.
+from thread 19: reduce_g1: 1 independent relations searched.
+from thread 19: reduce_g1: g1 reduced in 1.000000s.
+from thread 37: reduce_g1: 3 independent relations searched.
+from thread 37: reduce_g1: config 1
+from thread 20: reduce_g1: 2 independent relations searched.
+from thread 20: reduce_g1: config 1
+from thread 37: search_relation: nvar -> 726, nsol -> 206, time -> 0.000000s.
+from thread 20: search_relation: nvar -> 738, nsol -> 206, time -> 0.000000s.
+from thread 37: reduce_g1: 1 independent relations searched.
+from thread 37: reduce_g1: config 2
+from thread 20: reduce_g1: 0 independent relations searched.
+from thread 20: reduce_g1: config 2
+from thread 37: search_relation: nvar -> 1040, nsol -> 237, time -> 0.000000s.
+from thread 20: search_relation: nvar -> 1064, nsol -> 241, time -> 0.000000s.
+from thread 37: reduce_g1: 3 independent relations searched.
+from thread 37: reduce_g1: config 3
+from thread 20: reduce_g1: 4 independent relations searched.
+from thread 20: reduce_g1: config 3
+from thread 37: search_relation: nvar -> 999, nsol -> 9, time -> 0.000000s.
+from thread 37: reduce_g1: 1 independent relations searched.
+from thread 37: reduce_g1: g1 reduced in 1.000000s.
+from thread 20: search_relation: nvar -> 1027, nsol -> 12, time -> 0.000000s.
+from thread 20: reduce_g1: 2 independent relations searched.
+from thread 20: reduce_g1: g1 reduced in 1.000000s.
+redg1: works complete in 1.000000s.

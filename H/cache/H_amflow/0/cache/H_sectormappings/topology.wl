@@ -1,0 +1,10 @@
+SetSystemOptions[ParallelOptions->ParallelThreadNumber->1];
+SetSystemOptions[ParallelOptions->MKLThreadNumber->1];
+SetDim[4 - 2*eps];
+Internal = {k1, k2, k3};
+External = {p1, p2, p3, HAuxLeg};
+MomentumConservation = {HAuxLeg -> -p1 - p2 - p3};
+Replacements = {p1^2 -> 0, p1*p2 -> s/2, p1*p3 -> t/2, p2^2 -> 0, p2*p3 -> (pp4 - s - t)/2, p3^2 -> 0};
+Propagators = {(k1 + p2)^2, (k2 - p2)^2, k2^2, (k1 + k2 + k3)^2, (k1 + k2 + k3 + p1)^2, (k3 + p1)^2, (k3 + p1 + p3)^2, (k1 - p1 - p3)^2, (k1 + k3)^2, (k1 + k2)^2, k1^2, k3^2, (k1 - p1)^2, (k2 - p3)^2, (k3 - p2)^2}/. MomentumConservation//Expand;
+NewBasis[H,Propagators,Internal, External, MomentumConservation, Replacements,"ExtraIntDeriv"->{{{0}, {0}, {0}, {0}, {0}, {0}, {0}, {0}, {0}, {0}, {0}, {0}, {0}, {0}, {0}}}];
+AnalyzeSectors[H,{1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0},"CutDs"->{0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0},"Prescription"->{1, 1, 1},"CloseSyms"->False];

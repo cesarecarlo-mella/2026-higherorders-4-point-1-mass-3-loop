@@ -1,0 +1,2 @@
+{{(1 - eps + eta - 2*eps*eta)/(eta + eta^2), (3 - 3*eps)/(eta + eta^2)}, 
+ {eps/(1 + eta), (3 - 3*eps)/(1 + eta)}}

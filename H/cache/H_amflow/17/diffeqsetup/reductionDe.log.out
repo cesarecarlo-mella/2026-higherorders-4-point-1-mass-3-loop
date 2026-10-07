@@ -1,0 +1,38 @@
+"Error: can not find LiteRed2025.m\nCheck if this file exists in /scratch/ge86hab/hep_tools/LiteRed2"
+Blade: a pacakge for block-triangular form improved Feynman integral decomposition.
+Version 2023/01/04.
+Author: Xin Guan, Xiao Liu, Yan-Qing Ma and Wen-Hao Wu.
+Number of defined symbols=64. Please see ?Blade`* for help.
+
+--------------------------------------------------
+BLSetReducerOptions->"IBPParameter" -> Automatic, "IntegralOrdering" -> 1, "CheckMastersQ" -> True, "FilterLevel" -> 3, "IBPForMapSector" -> False, "MaxIncrement" -> 2, "CloseSymmetry" -> False, "CutNoDot" -> False, "BlackBoxRank" -> 2, "BlackBoxDot" -> 0, "MaxPrime" -> 200, "MaxDegree" -> 1000
+BLSetSchemeOptions->"OperatorExtendGQ" -> True, "MinimalSchemeRank" -> 1, "PartitionDot" -> True, "PartitionRankThreshold" -> 400, "UniqueSubsectorQ" -> True"--------------------------------------------------"
+
+Modify default BLReducerOptions for one-loop reduction.
+BLSetReducerOptions->"IBPParameter" -> Automatic, "IntegralOrdering" -> 1, "CheckMastersQ" -> False, "FilterLevel" -> 3, "IBPForMapSector" -> False, "MaxIncrement" -> 2, "CloseSymmetry" -> False, "CutNoDot" -> False, "BlackBoxRank" -> 2, "BlackBoxDot" -> 0, "MaxPrime" -> 200, "MaxDegree" -> 1000
+Begin BLDifferentialEquation...
+      Begin determine master integrals...
+      Begin BLMaximalCutMasters...
+            BLMaximalCutMasters use time : 45.899s,   LeafCount = 11
+      Begin compute derivatives...
+      DivideLevel -> 0
+      Begin BLReduce...
+            ZeroSectors already exist.
+            Solve system id -> 1, Sector -> BL[H, {1, 1}]
+            Begin BLReduce...
+                  Begin GenerateIBP...
+                        Begin BLIBPSystem...
+                              Rank: 2, Dots: 1, FilterLevel: 3
+                              BLIBPSystem use time : 47.416000000000004s,   LeafCount = 1
+                        Begin BLDatabaseInfo...
+                              BLDatabaseInfo use time : 22.687s,   LeafCount = 1
+                        GenerateIBP use time : 70.106s,   LeafCount = 3
+                  Begin BLSolveNoBL...
+                        BLSolveNoBL use time : 10.922s,   LeafCount = 83
+                  BLReduce use time : 81.038s,   LeafCount = 83
+            Begin MergeReductionTable...
+                  # masters ->2
+                  merge system id -> 1
+                  MergeReductionTable use time : 0.001s,   LeafCount = 83
+            BLReduce use time : 81.053s,   LeafCount = 73
+      BLDifferentialEquation use time : 126.967s,   LeafCount = 1

@@ -1,0 +1,12 @@
+ssolve: 
+current working directory: /scratch/ge45tuy/amflow/NumericalChecks/H/cache/H_amflow/0/cache/H_reduce_1/temporary
+samples_start: 0, samples_size: 100, nthreads: 50
+system_file from: system/1_4_1.txt, points_ordering: 1, points_file from: points/points_4.bt, out_file to: eval/1_4_1.fflow
+system loaded in 0.000000 s. 
+with 418 blocks, 4588 integrals, 474 masters.
+system learn in 0.000000 s.
+load points in 0.000000 s.
+trimming from points done in 0.000000 s.
+, with 418 blocks to evaluate
+system solve in 1.000000 s.
+dump evaluations in 0.000000 s.

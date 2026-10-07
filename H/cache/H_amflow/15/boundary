@@ -1,0 +1,16 @@
+{{{-1, 0, -1, -1, -1, -1, -1}, {"Family" -> H, "Loop" -> {k1, k2}, 
+   "Leg" -> {k3}, "Conservation" -> {}, "Replacement" -> {k3^2 -> -1}, 
+   "Propagator" -> {k1^2, (k1 - k2 - k3)^2, (k1 - k2)^2, (k2 + k3)^2, 
+     (k1 + k2)^2}, "Numeric" -> {}, "NThread" -> 50}, {j[H, 1, 0, 1, 1, 0]}, 
+  {{}, {{1}}, {}, {}, {}, {}, {}}}, 
+ {{1 - 2*eps, 1 - 2*eps, 1 - 2*eps, 1 - 2*eps, 2 - 2*eps, -2*eps, -2*eps}, 
+  {"Family" -> H, "Loop" -> {k1, k2}, "Leg" -> {k3}, "Conservation" -> {}, 
+   "Replacement" -> {k3^2 -> -1}, "Propagator" -> 
+    {k1^2, -1 + k2^2, (k1 - k2)^2, (k1 + k3)^2, (k2 + k3)^2}, 
+   "Numeric" -> {}, "NThread" -> 50}, {j[H, 1, 1, 1, 0, 0]}, 
+  {{{1}}, {}, {}, {}, {{1}}, {}, {}}}, 
+ {{-eps, -eps, 1 - eps, -eps, 1 - eps, -1 - eps, -eps}, 
+  {"Family" -> H, "Loop" -> {k1, k2}, "Leg" -> {k3}, "Conservation" -> {}, 
+   "Replacement" -> {k3^2 -> -1}, "Propagator" -> {-1 + k1^2, (k2 - k3)^2, 
+     k2^2, (k1 + k2)^2, (k1 + k3)^2}, "Numeric" -> {}, "NThread" -> 50}, 
+  {j[H, 1, 1, 1, 0, 0]}, {{}, {}, {{1}}, {}, {}, {}, {}}}}

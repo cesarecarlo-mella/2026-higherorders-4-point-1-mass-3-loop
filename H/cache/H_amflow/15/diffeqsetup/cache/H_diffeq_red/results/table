@@ -1,0 +1,15 @@
+{{((-1 + eps)*BLInternalEX[4])/(eta + eta^2) + ((1 - 2*eps)*BLInternalEX[10])/
+    (1 + eta), ((-eps + eta - 3*eps*eta)*BLInternalEX[2])/(eta + eta^2) + 
+   ((-1 + eps)*BLInternalEX[6])/(eta + eta^2) + ((2 - 3*eps)*BLInternalEX[8])/
+    (eta + eta^2), ((3/2 - (3*eps)/2)*BLInternalEX[3])/eta + 
+   ((1/2 - eps/2 + eta/2 - (eps*eta)/2)*BLInternalEX[9])/eta, 
+  ((1 - eps)*BLInternalEX[4])/eta, 0, ((1 - 2*eps)*BLInternalEX[6])/eta, 
+  ((-3/2 + (3*eps)/2)*BLInternalEX[3])/(eta + eta^2) + 
+   ((-1/2 + eps/2 + (5*eta)/2 - (7*eps*eta)/2)*BLInternalEX[9])/
+    (eta + eta^2), 0, ((-3/2 + (3*eps)/2)*BLInternalEX[3])/(eta + eta^2) + 
+   ((-1/2 + eps/2 + (5*eta)/2 - (7*eps*eta)/2)*BLInternalEX[9])/
+    (eta + eta^2), ((-1 + eps)*BLInternalEX[4])/(eta + eta^2) + 
+   ((1 - 2*eps)*BLInternalEX[10])/(1 + eta)}, BLInternalEX[10], 
+ BLInternalEX[2], BLInternalEX[3], BLInternalEX[4], BLInternalEX[8], 
+ BLInternalEX[6], BLInternalEX[9], BLInternalEX[8], BLInternalEX[9], 
+ BLInternalEX[10]}

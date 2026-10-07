@@ -1,0 +1,5 @@
+"Error: can not find LiteRed2025.m\nCheck if this file exists in /scratch/ge86hab/hep_tools/LiteRed2"
+SetGlobalOptions -> {"WorkingPre" -> 100, "ChopPre" -> 20, "SilentMode" -> False, "RationalizePre" -> 20}
+SetExpansionOptions -> {"XOrder" -> 100, "ExtraXOrder" -> 20, "LearnXOrder" -> -1, "TestXOrder" -> 5}
+SetRunningOptions -> {"RunRadius" -> 2, "RunLength" -> 200, "RunCandidate" -> 10, "RunDirection" -> "NegIm"}
+SetExpansionOptions -> {"XOrder" -> 100, "ExtraXOrder" -> 20, "LearnXOrder" -> -1, "TestXOrder" -> 5}

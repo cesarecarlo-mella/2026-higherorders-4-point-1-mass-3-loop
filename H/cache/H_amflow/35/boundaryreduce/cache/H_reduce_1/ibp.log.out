@@ -1,0 +1,53 @@
+"Error: can not find LiteRed2025.m\nCheck if this file exists in /scratch/ge86hab/hep_tools/LiteRed2"
+CalcLoop: a tool for automated multiloop calculation in quantum field theory.
+Version 2022/07/10.
+Number of defined symbols=43. Please see ?CalcLoop`* for help.
+"BladeIBP: a package for generating IBP, LI and Symmetry relations."
+
+FrontEndObject::notavail: A front end is not available; certain operations require a front end.
+Number of Families = 1. Number of Sectors = 1.
+"1 zero sectors found, 1 nonzero sectors found."
+"1 unique sectors found, 0 mapped sectors found, 0 extmapped sectors found."
+"Seeding Id type ->""IBP"
+"Seeding Id type ->""LI"
+"Seeding Id type ->""SR"
+"====================="
+"Id type -> ""IBP"" # chunks -> "1
+"====================="
+"kernel 1 (Local (50)):"
+"\"IBP\"\" #\"1\" of \"1\n"
+"kernel 1 (Local (50)):"
+"\" -> \"\"done in \"{0.488105, Null}\n"
+"====================="
+"Id type -> ""SR"" # chunks -> "1
+"====================="
+"kernel 1 (Local (50)):"
+"\"SR\"\" #\"1\" of \"1\n"
+"kernel 1 (Local (50)):"
+"\"sectors involved: \"{{1, 0}}\n"
+"kernel 1 (Local (50)):"
+"\"#Symmetry Relations:  \"4\n"
+"kernel 1 (Local (50)):"
+"\" -> \"\"done in \"{0.070637, Null}\n"
+"Generating list of integrals ..."
+" -> list of integrals generated"
+"Exporting positions maps ..."
+" -> positions maps exported"
+"Serialize identities ..."
+"kernel 1 (Local (50)):"
+"\"File: \"\"ibps/ids_H_exints.mx\"\n"
+"kernel 2 (Local (50)):"
+"\"File: \"\"ibps/ids_H_IBP1.mx\"\n"
+"kernel 3 (Local (50)):"
+"\"File: \"\"ibps/ids_H_SR1.mx\"\n"
+"kernel 4 (Local (50)):"
+"\"File: \"\"ibps/ids_H_usints.mx\"\n"
+"kernel 1 (Local (50)):"
+"\"File: \"\"ibps/ids_H_exints.mx\"\" done in \"{0.076432, Null}\n"
+"kernel 4 (Local (50)):"
+"\"File: \"\"ibps/ids_H_usints.mx\"\" done in \"{0.73777, Null}\n"
+"kernel 2 (Local (50)):"
+"\"File: \"\"ibps/ids_H_IBP1.mx\"\" done in \"{0.858222, Null}\n"
+"kernel 3 (Local (50)):"
+"\"File: \"\"ibps/ids_H_SR1.mx\"\" done in \"{0.894233, Null}\n"
+"-> all in :"{1.066624, Null}
