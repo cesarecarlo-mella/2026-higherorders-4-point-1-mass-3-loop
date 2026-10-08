@@ -1,0 +1,8 @@
+matrices saved to work/task1_matrices.mx and work/reg{X1,Y1,XmY}.m
+rank check: 289
+NullSpace dimension: 2  t=0.212459s
+=== nonzero positions in each null vector ===
+null vector 1: 122 nonzero entries, positions (first 10): {0, 1, 2, 3, 4, 5, 6, 7, 8, 9}
+null vector 2: 6 nonzero entries, positions (first 10): {0, 133, 150, 155, 156, 157}
+Null
+EXIT:0

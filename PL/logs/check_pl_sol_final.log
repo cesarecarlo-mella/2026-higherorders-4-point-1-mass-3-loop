@@ -1,0 +1,11 @@
+  basis[[1]] ep^5: sol=(-29*Pi^2*Zeta[3])/4 + (1263*Zeta[5])/5  -ser1=0  MATCH=False
+  basis[[1]] ep^6: sol=(11539*Pi^6)/24192 - (841*Zeta[3]^2)/2  -ser1=0  MATCH=False
+basis[[1]]: all orders 0..6 match -ser1 exactly? False
+  basis[[2]] ep^5: sol=(-29*Pi^2*Zeta[3])/4 + (1263*Zeta[5])/5  -ser1=0  MATCH=False
+  basis[[2]] ep^6: sol=(11539*Pi^6)/24192 - (841*Zeta[3]^2)/2  -ser1=0  MATCH=False
+basis[[2]]: all orders 0..6 match -ser1 exactly? False
+  basis[[3]] ep^5: sol=(-29*Pi^2*Zeta[3])/4 + (1263*Zeta[5])/5  -ser1=0  MATCH=False
+  basis[[3]] ep^6: sol=(11539*Pi^6)/24192 - (841*Zeta[3]^2)/2  -ser1=0  MATCH=False
+basis[[3]]: all orders 0..6 match -ser1 exactly? False
+Null
+EXIT:0

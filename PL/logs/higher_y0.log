@@ -1,0 +1,9 @@
+=== y0 ===
+spectrum: {{5, 2}, {3, 7}, {2, 5}, {1, 122}, {0, 155}}  t=0.65566
+positive eigenvalues: {5, 3, 2, 1}
+  lambda=5 mult=2 traceOK=True idemOK=True t=1.815224
+  lambda=3 mult=7 traceOK=True idemOK=True t=1.736741
+  lambda=2 mult=5 traceOK=True idemOK=True t=1.614688
+  lambda=1 mult=122 traceOK=True idemOK=True t=8.189184
+y0 done, exported work/allP_y0.m
+EXIT:0

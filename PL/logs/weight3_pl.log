@@ -1,0 +1,89 @@
+(****** PolyLogTools 1.3 ******)
+    Authors: Claude Duhr, Falko Dulat
+    Emails: claude.duhr@cern.ch, dulatf@slac.stanford.edu
+    PolyLogTools uses the implementation of the PSLQ algorithm by P. Bertok (http://library.wolfram.com/infocenter/MathSource/4263/)
+*-*-*-*-*-* HPL 2.0 *-*-*-*-*-*
+
+Author: Daniel Maitre, University of Zurich
+Rules for minimal set loaded for weights: 2, 3, 4, 5, 6.
+Rules for minimal set for + - weights loaded for weights: 2, 3, 4, 5, 6.
+Table of MZVs loaded up to weight 6
+Table of values at I loaded up to weight 6
+$HPLFunctions gives a list of the functions of the package.
+$HPLOptions gives a list of the options of the package.
+More info in hep-ph/0507152, hep-ph/0703052 and at 
+ http://krone.physik.unizh.ch/~maitreda/HPL/
+
+GraphJoin::shdw: Symbol GraphJoin appears in multiple contexts {Combinatorica`, System`}; definitions in context Combinatorica` may shadow or be shadowed by other definitions.
+
+GraphProduct::shdw: Symbol GraphProduct appears in multiple contexts {Combinatorica`, System`}; definitions in context Combinatorica` may shadow or be shadowed by other definitions.
+
+GraphSum::shdw: Symbol GraphSum appears in multiple contexts {Combinatorica`, System`}; definitions in context Combinatorica` may shadow or be shadowed by other definitions.
+
+SetDelayed::write: Tag EdgeChromaticNumber in EdgeChromaticNumber[g_Graph] is Protected.
+/opt/homebrew/bin/ginsh
+
+Global`x::shdw: Symbol x appears in multiple contexts {Global`, PolyLogTools`}; definitions in context Global` may shadow or be shadowed by other definitions.
+
+Global`y::shdw: Symbol y appears in multiple contexts {Global`, PolyLogTools`}; definitions in context Global` may shadow or be shadowed by other definitions.
+
+Global`t::shdw: Symbol t appears in multiple contexts {Global`, PolyLogTools`}; definitions in context Global` may shadow or be shadowed by other definitions.
+
+Global`delta::shdw: Symbol delta appears in multiple contexts {Global`, PolyLogTools`}; definitions in context Global` may shadow or be shadowed by other definitions.
+=== PL weight 3 ===
+=== loading precompute + boundary/regularity matrices ===
+=== loading sol[2] ===
+=== building IntPart via GIntegrate (correctness-first, no M_a optimization yet) ===
+IntPart timings: {4.150346, 2.807062, 2.519802, 2.525901, 2.543559, 3.468207, 2.35071, 3.557913, 2.575041}
+=== loading fibration-change table (needed for t->1 evaluation beyond weight 1) ===
+tto1Red: 126 rules
+=== matching: build delta vectors d2..d6, d00,d01,d10 (all KNOWN, previous-weight data only) ===
+
+                                 1
+Power::infy: Infinite expression - encountered.
+                                 0
+
+Infinity::indet: Indeterminate expression 0 ComplexInfinity encountered.
+
+                                 1
+Power::infy: Infinite expression - encountered.
+                                 0
+
+Infinity::indet: Indeterminate expression 0 ComplexInfinity encountered.
+
+                                 1
+Power::infy: Infinite expression - encountered.
+                                 0
+
+General::stop: Further output of Power::infy will be suppressed during this calculation.
+
+Infinity::indet: Indeterminate expression 0 ComplexInfinity encountered.
+
+General::stop: Further output of Infinity::indet will be suppressed during this calculation.
+delta vectors built
+=== express CNST1..6,x1,y1,xmy symbolically in terms of unknown CNST5 ===
+=== boundary + regularity equations (should reduce to pure numbers, no G-dependence) ===
+  eq1: distinct G-words remaining after plugging CNST5->0 (should be {}): {G[0, 0], G[1, t], G[1 - delta, 1], G[-delta, 1], G[delta, t], G[0, 0, 0], G[0, 1 - delta, 1], G[1, 0, t], G[1, -delta, t], G[1, delta, t], G[1 - delta, 0, 1], G[1 - delta, -delta, 1], G[delta, 0, t], G[delta, -delta, t], G[delta, delta, t], G[1 + delta, delta, t], G[1, 0, 1 - delta, t], G[1, 1, 0, t], G[1, 1 - delta, 0, t], G[1, -delta, 1 - delta, t], G[1, 1 + delta, delta, t], G[delta, 0, 1 - delta, t], G[delta, 1, 0, t], G[delta, 1 - delta, 0, t], G[delta, -delta, 1 - delta, t], G[delta, delta, delta, t], G[delta, 1 + delta, delta, t], G[1 + delta, delta, delta, t], G[1 + delta, 1 + delta, delta, t]}
+  eq2: distinct G-words remaining after plugging CNST5->0 (should be {}): {G[0, 0], G[0, t], G[1, t], G[1 - delta, 1], G[1 - delta, t], G[-delta, 1], G[-delta, t], G[0, 0, 0], G[0, 0, t], G[0, 1 - delta, 1], G[0, 1 - delta, t], G[0, -delta, 1], G[0, -delta, t], G[1, 0, t], G[1, -delta, 1], G[1 - delta, 0, 1], G[1 - delta, 0, t], G[1 - delta, 1 - delta, 1], G[1 - delta, 1 - delta, t], G[1 - delta, -delta, 1], G[1 - delta, -delta, t], G[-delta, 0, 1], G[-delta, 0, t], G[-delta, 1 - delta, 1], G[-delta, 1 - delta, t], G[-delta, -delta, 1], G[-delta, -delta, t], G[0, 0, 0, 0], G[0, 0, 0, t], G[0, 0, 1 - delta, 1], G[0, 0, 1 - delta, t], G[0, 1, 0, t], G[0, 1 - delta, 0, 1], G[0, 1 - delta, 0, t], G[0, 1 - delta, 1 - delta, 1], G[0, 1 - delta, 1 - delta, t], G[0, -delta, 1 - delta, 1], G[0, -delta, 1 - delta, t], G[1, 0, 0, t], G[1, 0, 1 - delta, 1], G[1, 0, 1 - delta, t], G[1, 1, 0, t], G[1, 1 - delta, 0, 1], G[1, 1 - delta, 0, t], G[1, -delta, 1 - delta, 1], G[1 - delta, 0, 0, 1], G[1 - delta, 0, 0, t], G[1 - delta, 0, 1 - delta, 1], G[1 - delta, 0, 1 - delta, t], G[1 - delta, 1, 0, 1], G[1 - delta, 1, 0, t], G[1 - delta, 1 - delta, 0, 1], G[1 - delta, 1 - delta, 0, t], G[1 - delta, 1 - delta, 1 - delta, 1], G[1 - delta, 1 - delta, 1 - delta, t], G[1 - delta, -delta, 1 - delta, 1], G[1 - delta, -delta, 1 - delta, t], G[-delta, 0, 1 - delta, 1], G[-delta, 0, 1 - delta, t], G[-delta, 1 - delta, 0, 1], G[-delta, 1 - delta, 0, t], G[-delta, 1 - delta, 1 - delta, 1], G[-delta, 1 - delta, 1 - delta, t], G[-delta, -delta, 1 - delta, 1], G[-delta, -delta, 1 - delta, t]}
+  eq7: distinct G-words remaining after plugging CNST5->0 (should be {}): {G[0, 0], G[0, t], G[1, t], G[1 - delta, 1], G[-delta, 1], G[0, 0, 0], G[0, 0, t], G[0, 1, t], G[0, 1 - delta, 1], G[0, -delta, 1], G[0, -delta, t], G[1, 0, t], G[1, 1, t], G[1, -delta, 1], G[1, -delta, t], G[1 - delta, 0, 1], G[1 - delta, -delta, 1], G[0, 0, 0, 0], G[0, 0, 1, t], G[0, 0, 1 - delta, 1], G[0, 0, 1 - delta, t], G[0, 1, 0, t], G[0, 1, 1, t], G[0, 1 - delta, 0, 1], G[0, 1 - delta, 0, t], G[0, -delta, 1 - delta, 1], G[0, -delta, 1 - delta, t], G[1, 0, 1, t], G[1, 0, 1 - delta, 1], G[1, 0, 1 - delta, t], G[1, 1, 0, t], G[1, 1, 1, t], G[1, 1 - delta, 0, 1], G[1, 1 - delta, 0, t], G[1, -delta, 1 - delta, 1], G[1, -delta, 1 - delta, t]}
+  eq4: distinct G-words remaining after plugging CNST5->0 (should be {}): {G[-1, y], G[0, 0], G[0, t], G[0, y], G[1 - delta, 1], G[-delta, 1], G[-delta, t], G[-1, -1, y], G[-1, 0, y], G[0, -1, y], G[0, 0, 0], G[0, 0, y], G[0, 1 - delta, 1], G[0, 1 - delta, t], G[0, -delta, 1], G[1, 0, t], G[1, -delta, 1], G[1 - delta, 0, 1], G[1 - delta, 0, t], G[1 - delta, -delta, 1], G[-delta, 1 - delta, 1], G[-delta, 1 - delta, t], G[-1, -1, 0, y], G[-1, 0, 0, y], G[0, -1, 0, y], G[0, 0, 0, 0], G[0, 0, 0, y], G[0, 0, 1 - delta, 1], G[0, 1 - delta, 0, 1], G[0, -delta, 1 - delta, 1], G[1, 0, 1 - delta, 1], G[1, 1 - delta, 0, 1], G[1, -delta, 1 - delta, 1]}
+  eq5: distinct G-words remaining after plugging CNST5->0 (should be {}): {G[-1, x], G[0, 0], G[0, t], G[0, x], G[1, x], G[1 - delta, 1], G[-delta, 1], G[-delta, t], G[-1, -1, x], G[-1, 0, x], G[0, -1, x], G[0, 0, 0], G[0, 0, x], G[0, 1, x], G[0, 1 - delta, 1], G[0, 1 - delta, t], G[0, -delta, 1], G[1, 0, t], G[1, 0, x], G[1, 1, x], G[1, -delta, 1], G[1 - delta, 0, 1], G[1 - delta, 0, t], G[1 - delta, -delta, 1], G[-delta, 1 - delta, 1], G[-delta, 1 - delta, t], G[-1, -1, 0, x], G[-1, 0, 0, x], G[0, -1, 0, x], G[0, 0, 0, 0], G[0, 0, 0, x], G[0, 0, 1 - delta, 1], G[0, 1, 0, x], G[0, 1 - delta, 0, 1], G[0, -delta, 1 - delta, 1], G[1, 0, 0, x], G[1, 0, 1 - delta, 1], G[1, 1, 0, x], G[1, 1 - delta, 0, 1], G[1, -delta, 1 - delta, 1]}
+  eq6: distinct G-words remaining after plugging CNST5->0 (should be {}): {G[-1, y], G[0, 0], G[0, t], G[0, y], G[1 - delta, 1], G[-delta, 1], G[-delta, t], G[-1, -1, y], G[-1, 0, y], G[0, -1, y], G[0, 0, 0], G[0, 0, y], G[0, 1 - delta, 1], G[0, 1 - delta, t], G[1, 0, t], G[1 - delta, 0, 1], G[1 - delta, 0, t], G[1 - delta, -delta, 1], G[-delta, 1 - delta, 1], G[-delta, 1 - delta, t], G[-1, -1, 0, y], G[-1, 0, 0, y], G[0, -1, 0, y], G[0, 0, 0, y]}
+known banana boundary value at weight 3 (position 1): 29*Zeta[3]
+total equations: 707
+Solve time: 57.069045s, num solutions: 0
+
+Part::partw: Part 1 of {} does not exist.
+
+ReplaceAll::reps: {{}[[1]]} is neither a list of replacement rules nor a valid dispatch table, and so cannot be used for replacing.
+WARNING: unresolved cS5 symbols remain!
+ReplaceAll[{cS5[1], cS5[2], cS5[3], cS5[4], cS5[5], cS5[6], cS5[7], cS5[8], cS5[9], cS5[10], cS5[11], cS5[12], cS5[13], cS5[14], cS5[15], cS5[16], cS5[17], cS5[18], cS5[19], cS5[20], cS5[21], cS5[22], cS5[23], cS5[24], cS5[25], cS5[26], cS5[27], cS5[28], cS5[29], cS5[30], cS5[31], cS5[32], cS5[33], cS5[34], cS5[35], cS5[36], cS5[37], cS5[38], cS5[39], cS5[40], cS5[41], cS5[42], cS5[43], cS5[44], cS5[45], cS5[46], cS5[47], cS5[48], cS5[49], cS5[50], cS5[51], cS5[52], cS5[53], cS5[54], cS5[55], cS5[56], cS5[57], cS5[58], cS5[59], cS5[60], cS5[61], cS5[62], cS5[63], cS5[64], cS5[65], cS5[66], cS5[67], cS5[68], cS5[69], cS5[70], cS5[71], cS5[72], cS5[73], cS5[74], cS5[75], cS5[76], cS5[77], cS5[78], cS5[79], cS5[80], cS5[81], cS5[82], cS5[83], cS5[84], cS5[85], cS5[86], cS5[87], cS5[88], cS5[89], cS5[90], cS5[91], cS5[92], cS5[93], cS5[94], cS5[95], cS5[96], cS5[97], cS5[98], cS5[99], cS5[100], cS5[101], cS5[102], cS5[103], cS5[104], cS5[105], cS5[106], cS5[107], cS5[108], cS5[109], cS5[110], cS5[111], cS5[112], cS5[113], cS5[114], cS5[115], cS5[116], cS5[117], cS5[118], cS5[119], cS5[120], cS5[121], cS5[122], cS5[123], cS5[124], cS5[125], cS5[126], cS5[127], cS5[128], cS5[129], cS5[130], cS5[131], cS5[132], cS5[133], cS5[134], cS5[135], cS5[136], cS5[137], cS5[138], cS5[139], cS5[140], cS5[141], cS5[142], cS5[143], cS5[144], cS5[145], cS5[146], cS5[147], cS5[148], cS5[149], cS5[150], cS5[151], cS5[152], cS5[153], cS5[154], cS5[155], cS5[156], cS5[157], cS5[158], cS5[159], cS5[160], cS5[161], cS5[162], cS5[163], cS5[164], cS5[165], cS5[166], cS5[167], cS5[168], cS5[169], cS5[170], cS5[171], cS5[172], cS5[173], cS5[174], cS5[175], cS5[176], cS5[177], cS5[178], cS5[179], cS5[180], cS5[181], cS5[182], cS5[183], cS5[184], cS5[185], cS5[186], cS5[187], cS5[188], cS5[189], cS5[190], cS5[191], cS5[192], cS5[193], cS5[194], cS5[195], cS5[196], cS5[197], cS5[198], cS5[199], cS5[200], cS5[201], cS5[202], cS5[203], cS5[204], cS5[205], cS5[206], cS5[207], cS5[208], cS5[209], cS5[210], cS5[211], cS5[212], cS5[213], cS5[214], cS5[215], cS5[216], cS5[217], cS5[218], cS5[219], cS5[220], cS5[221], cS5[222], cS5[223], cS5[224], cS5[225], cS5[226], cS5[227], cS5[228], cS5[229], cS5[230], cS5[231], cS5[232], cS5[233], cS5[234], cS5[235], cS5[236], cS5[237], cS5[238], cS5[239], cS5[240], cS5[241], cS5[242], cS5[243], cS5[244], cS5[245], cS5[246], cS5[247], cS5[248], cS5[249], cS5[250], cS5[251], cS5[252], cS5[253], cS5[254], cS5[255], cS5[256], cS5[257], cS5[258], cS5[259], cS5[260], cS5[261], cS5[262], cS5[263], cS5[264], cS5[265], cS5[266], cS5[267], cS5[268], cS5[269], cS5[270], cS5[271], cS5[272], cS5[273], cS5[274], cS5[275], cS5[276], cS5[277], cS5[278], cS5[279], cS5[280], cS5[281], cS5[282], cS5[283], cS5[284], cS5[285], cS5[286], cS5[287], cS5[288], cS5[289], cS5[290], cS5[291]}]
+=== back-substituting to all segments ===
+
+ReplaceAll::reps: {{}[[1]]} is neither a list of replacement rules nor a valid dispatch table, and so cannot be used for replacing.
+
+ReplaceAll::reps: {{}[[1]]} is neither a list of replacement rules nor a valid dispatch table, and so cannot be used for replacing.
+
+General::stop: Further output of ReplaceAll::reps will be suppressed during this calculation.
+=== DONE: exported sol3_{1..6,x1,y1,xmy}.m ===
+EXIT:0

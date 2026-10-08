@@ -1,0 +1,10 @@
+Solve time: 0.078522s
+my solved weight-0 vector: all numeric? True
+Length[plSol] = 291
+extraction time: 0.576362s
+=== COMPARISON: my solved cnst[0,i] vs actual Planar_Sol_W6.m coefficient of ep^0 ===
+Number of mismatches (out of 291): 1
+mismatch positions: {0}
+  i=0: mine=List  actual=List  diff=List
+Null
+EXIT:0

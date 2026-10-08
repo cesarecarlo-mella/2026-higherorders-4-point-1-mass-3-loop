@@ -1,0 +1,7 @@
+ser1 coeff at ep^5: (29*Pi^2*Zeta[3])/4 - (1263*Zeta[5])/5
+ser1 coeff at ep^6: (-11539*Pi^6)/24192 + (841*Zeta[3]^2)/2
+basis[[1]]: all orders 0..6 match -ser1 exactly? True
+basis[[2]]: all orders 0..6 match -ser1 exactly? True
+basis[[3]]: all orders 0..6 match -ser1 exactly? True
+Null
+EXIT:0

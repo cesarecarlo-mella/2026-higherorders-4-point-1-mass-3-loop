@@ -1,0 +1,54 @@
+(****** PolyLogTools 1.3 ******)
+    Authors: Claude Duhr, Falko Dulat
+    Emails: claude.duhr@cern.ch, dulatf@slac.stanford.edu
+    PolyLogTools uses the implementation of the PSLQ algorithm by P. Bertok (http://library.wolfram.com/infocenter/MathSource/4263/)
+*-*-*-*-*-* HPL 2.0 *-*-*-*-*-*
+
+Author: Daniel Maitre, University of Zurich
+Rules for minimal set loaded for weights: 2, 3, 4, 5, 6.
+Rules for minimal set for + - weights loaded for weights: 2, 3, 4, 5, 6.
+Table of MZVs loaded up to weight 6
+Table of values at I loaded up to weight 6
+$HPLFunctions gives a list of the functions of the package.
+$HPLOptions gives a list of the options of the package.
+More info in hep-ph/0507152, hep-ph/0703052 and at 
+ http://krone.physik.unizh.ch/~maitreda/HPL/
+
+GraphJoin::shdw: Symbol GraphJoin appears in multiple contexts {Combinatorica`, System`}; definitions in context Combinatorica` may shadow or be shadowed by other definitions.
+
+GraphProduct::shdw: Symbol GraphProduct appears in multiple contexts {Combinatorica`, System`}; definitions in context Combinatorica` may shadow or be shadowed by other definitions.
+
+GraphSum::shdw: Symbol GraphSum appears in multiple contexts {Combinatorica`, System`}; definitions in context Combinatorica` may shadow or be shadowed by other definitions.
+
+SetDelayed::write: Tag EdgeChromaticNumber in EdgeChromaticNumber[g_Graph] is Protected.
+/opt/homebrew/bin/ginsh
+
+Global`x::shdw: Symbol x appears in multiple contexts {Global`, PolyLogTools`}; definitions in context Global` may shadow or be shadowed by other definitions.
+
+Global`y::shdw: Symbol y appears in multiple contexts {Global`, PolyLogTools`}; definitions in context Global` may shadow or be shadowed by other definitions.
+
+Global`t::shdw: Symbol t appears in multiple contexts {Global`, PolyLogTools`}; definitions in context Global` may shadow or be shadowed by other definitions.
+
+Global`delta::shdw: Symbol delta appears in multiple contexts {Global`, PolyLogTools`}; definitions in context Global` may shadow or be shadowed by other definitions.
+=== PL weight 2 ===
+=== loading precompute + boundary/regularity matrices ===
+=== loading sol[1] ===
+=== building IntPart via GIntegrate (correctness-first, no M_a optimization yet) ===
+IntPart timings: {0.274317, 0.131872, 0.168232, 0.264375, 0.132713, 0.091368, 0.243347, 0.329998, 0.235066}
+=== loading fibration-change table (needed for t->1 evaluation beyond weight 1) ===
+tto1Red: 126 rules
+=== matching: build delta vectors d2..d6, d00,d01,d10 (all KNOWN, previous-weight data only) ===
+delta vectors built
+=== express CNST1..6,x1,y1,xmy symbolically in terms of unknown CNST5 ===
+=== boundary + regularity equations (should reduce to pure numbers, no G-dependence) ===
+  eq1: distinct G-words remaining after plugging CNST5->0 (should be {}): {G[0, 0], G[0, t], G[0, 0, t], G[1, 0, t]}
+  eq2: distinct G-words remaining after plugging CNST5->0 (should be {}): {G[0, 0], G[0, t], G[1, t], G[0, 0, 0], G[0, 0, t], G[0, 1, t], G[1, 0, t], G[1, 1, t]}
+  eq7: distinct G-words remaining after plugging CNST5->0 (should be {}): {G[0, 0], G[1, t], G[0, 0, 0], G[0, 1, t], G[1, 1, t]}
+  eq4: distinct G-words remaining after plugging CNST5->0 (should be {}): {G[-1, y], G[0, 0], G[0, y], G[-1, 0, y], G[0, 0, 0], G[0, 0, y]}
+  eq5: distinct G-words remaining after plugging CNST5->0 (should be {}): {G[-1, x], G[0, 0], G[0, x], G[1, x], G[-1, 0, x], G[0, 0, 0], G[0, 0, x], G[1, 0, x]}
+  eq6: distinct G-words remaining after plugging CNST5->0 (should be {}): {G[-1, y], G[0, 0], G[0, y], G[-1, 0, y], G[0, 0, y]}
+known banana boundary value at weight 2 (position 1): Pi^2/4
+total equations: 705
+Solve time: 1.567646s, num solutions: 1
+=== back-substituting to all segments ===
+=== DONE: exported sol2_{1..6,x1,y1,xmy}.m ===

@@ -1,0 +1,10 @@
+=== locus xy1 (inline, no Module) ===
+spectrum={{-4, 1}, {-3, 100}, {3, 1}, {-2, 39}, {-1, 27}, {1, 40}, {0, 83}}  t=0.272121s
+lambda=1
+gOfA done, t=1.60974
+coeffs done, t=0.0155 num=40
+qOfA (Horner) done, t=2.440313
+P done, t=0.04977 Tr[P]=40 expected=40
+idempotency bad entries: 0
+=== DONE, exported work/result_xy1.m ===
+EXIT:0

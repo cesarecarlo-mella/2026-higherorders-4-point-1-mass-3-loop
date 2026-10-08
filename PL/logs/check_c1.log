@@ -1,0 +1,10 @@
+=== H banana closed form (2,2,2,1), series to eps^6 ===
+C1
+=== generic Banana[{1,1,1,1}, d] (PL normalization, unit powers), d=4-2eps ===
+SingleScale3L`Private`Banana[{1, 1, 1, 1}, 4] - 2*eps*Derivative[{0, 0, 0, 0}, 1][SingleScale3L`Private`Banana][{1, 1, 1, 1}, 4] + 2*eps^2*Derivative[{0, 0, 0, 0}, 2][SingleScale3L`Private`Banana][{1, 1, 1, 1}, 4] + (2*eps^3*(-30*Derivative[{0, 0, 0, 0}, 3][SingleScale3L`Private`Banana][{1, 1, 1, 1}, 4] + eps*(15*Derivative[{0, 0, 0, 0}, 4][SingleScale3L`Private`Banana][{1, 1, 1, 1}, 4] + 2*eps*(-3*Derivative[{0, 0, 0, 0}, 5][SingleScale3L`Private`Banana][{1, 1, 1, 1}, 4] + eps*Derivative[{0, 0, 0, 0}, 6][SingleScale3L`Private`Banana][{1, 1, 1, 1}, 4]))))/45
+=== PL basis[[1]] prefactor polynomial ===
+6*ep*(-6 + 71*ep - 321*ep^2 + 694*ep^3 - 720*ep^4 + 288*ep^5)
+=== compare: pref1 (m2->1,...) vs banUnitSeries, ratio ===
+(6*eps*(-6 + 71*eps - 321*eps^2 + 694*eps^3 - 720*eps^4 + 288*eps^5))/(SingleScale3L`Private`Banana[{1, 1, 1, 1}, 4] - 2*eps*Derivative[{0, 0, 0, 0}, 1][SingleScale3L`Private`Banana][{1, 1, 1, 1}, 4] + 2*eps^2*Derivative[{0, 0, 0, 0}, 2][SingleScale3L`Private`Banana][{1, 1, 1, 1}, 4] + (2*eps^3*(-30*Derivative[{0, 0, 0, 0}, 3][SingleScale3L`Private`Banana][{1, 1, 1, 1}, 4] + eps*(15*Derivative[{0, 0, 0, 0}, 4][SingleScale3L`Private`Banana][{1, 1, 1, 1}, 4] + 2*eps*(-3*Derivative[{0, 0, 0, 0}, 5][SingleScale3L`Private`Banana][{1, 1, 1, 1}, 4] + eps*Derivative[{0, 0, 0, 0}, 6][SingleScale3L`Private`Banana][{1, 1, 1, 1}, 4]))))/45)
+Null
+EXIT:0

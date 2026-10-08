@@ -1,0 +1,11 @@
+x0: status=OK lambda=1 mult=31
+y0: status=OK lambda=1 mult=122
+x1: status=OK lambda=1 mult=6
+y1: status=OK lambda=2 mult=2
+xmy: status=OK lambda=1 mult=4
+xy1: status=OK lambda=1 mult=40
+xy0: status=OK lambda=1 mult=1
+=== Rank of 6 single-letter projectors stacked: 195  (291 - rank = 96) t=0.563768s ===
+=== Rank including combined xy0 corner: 195  (291 - rank = 96) t=0.522083s ===
+Null
+EXIT:0

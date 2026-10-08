@@ -1,0 +1,8 @@
+=== y -> 1 ===
+rank(residue at y->1) = 16
+=== x -> 1 ===
+rank(residue at x->1) = 96
+=== x -> -y ===
+rank(residue at x->-y, via dx) = 85
+The product exited because of a license error.
+EXIT:137
