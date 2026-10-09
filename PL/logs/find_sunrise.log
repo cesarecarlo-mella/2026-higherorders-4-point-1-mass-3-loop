@@ -1,8 +1,0 @@
-Total distinct raw PL[...] masters appearing in Canonical_basis.m: 291
-distribution of nonzero-entry counts: {{4, 3}, {5, 24}, {6, 63}, {7, 74}, {8, 62}, {9, 43}, {10, 15}, {11, 7}}
-candidates with <=4 nonzero propagator powers (3):
-  PL[0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 1, 1, 0]
-  PL[0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 1, 0, 1, 1, 0]
-  PL[0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 1, 0]
-Null
-EXIT:0

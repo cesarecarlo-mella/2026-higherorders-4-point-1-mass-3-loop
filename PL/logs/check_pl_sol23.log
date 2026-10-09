@@ -1,5 +1,0 @@
-basis[[1]]: constant-part + ser1 (should be identically 0): ep^5*((11539*ep*Pi^6)/24192 - (29*Pi^2*Zeta[3])/4 - (841*ep*Zeta[3]^2)/2 + (1263*Zeta[5])/5)
-basis[[2]]: constant-part + ser1 (should be identically 0): ep^5*((11539*ep*Pi^6)/24192 - (29*Pi^2*Zeta[3])/4 - (841*ep*Zeta[3]^2)/2 + (1263*Zeta[5])/5)
-basis[[3]]: constant-part + ser1 (should be identically 0): ep^5*((11539*ep*Pi^6)/24192 - (29*Pi^2*Zeta[3])/4 - (841*ep*Zeta[3]^2)/2 + (1263*Zeta[5])/5)
-Null
-EXIT:0

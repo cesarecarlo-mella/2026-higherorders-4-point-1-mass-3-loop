@@ -1,5 +1,0 @@
-knownW2plm[[1]] = Pi^2/4 - 9*G[0, 0, x]
-knownW2plm[[2]] = Pi^2/4 - 9*G[1, y]*G[1 - y, x] - 9*G[1, 1, y] - 9*G[1 - y, 1 - y, x]
-any unevaluated BASISLC remaining? 0
-Null
-EXIT:0

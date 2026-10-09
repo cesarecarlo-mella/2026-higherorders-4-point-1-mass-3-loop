@@ -1,6 +1,0 @@
-rankX1=96 rankY1=16 rankXmY=85
-=== CORRECTED rank (3 projectors + 3 regularity residues) = 289  (291 - rank = 2) t=0.118673s ===
-rank of 3 regularity residues alone = 195
-rank of 3 projectors alone (x0,y0,xy1) = 183
-Null
-EXIT:0

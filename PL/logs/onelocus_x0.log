@@ -1,5 +1,0 @@
-=== locus x0 ===
-spectrum={{-4, 1}, {-3, 121}, {3, 1}, {-2, 40}, {1, 31}, {-1, 24}, {0, 73}}  t=0.275794s
-lambda=1 (smallest positive eigenvalue); computing projector...
-traceOK=True idemOK=True mult=31  t=3.553247s
-=== DONE, result exported to work/result_x0.m ===

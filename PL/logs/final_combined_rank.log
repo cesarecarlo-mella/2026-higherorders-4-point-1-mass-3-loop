@@ -1,5 +1,0 @@
-=== rank with ALL positive-eigenvalue projectors at x0,y0,xy1 (not just smallest) + 3 regularity residues ===
-rank = 290  (291-rank=1)  t=0.162001s
-for comparison: smallest-eigenvalue-only rank was 289 (291-289=2 integrals needed)
-Null
-EXIT:0

@@ -1,7 +1,0 @@
-=== x0 ===
-spectrum: {{-4, 1}, {-3, 121}, {3, 1}, {-2, 40}, {1, 31}, {-1, 24}, {0, 73}}  t=0.274634
-positive eigenvalues: {3, 1}
-  lambda=3 mult=1 traceOK=True idemOK=True t=1.933944
-  lambda=1 mult=31 traceOK=True idemOK=True t=3.290334
-x0 done, exported work/allP_x0.m
-EXIT:0

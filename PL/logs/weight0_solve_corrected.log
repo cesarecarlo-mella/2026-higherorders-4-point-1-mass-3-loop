@@ -1,8 +1,0 @@
-total equations: 705
-Solve time: 0.082273s,  num solutions: 1
-cnst[2] = -1  (expect -1)
-cnst[3] = -1  (expect -1)
-cnst[156] = 2/9  (expect a definite number now, not free)
-any still-undetermined (symbolic) entries? {}
-Null
-EXIT:0
