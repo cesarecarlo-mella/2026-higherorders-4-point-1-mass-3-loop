@@ -2257,12 +2257,14 @@ Cell[BoxData["$Aborted"], "Output",
 }, Closed]],
 
 Cell[BoxData[
- RowBox[{"(*", 
-  RowBox[{
-   RowBox[{"Export", "[", 
-    RowBox[{"\"\<./pl_gpls_7_8/w7.m\>\"", ",", " ", "sol7"}], "]"}], "\[IndentingNewLine]", 
-   RowBox[{"Export", "[", 
-    RowBox[{"\"\<./pl_gpls_7_8/w8.m\>\"", ",", " ", "sol8"}], "]"}]}], 
+ RowBox[{"(*",
+  RowBox[{"superseded", ":", " ",
+   RowBox[{"run_gpl_xy_fast", ".", "wls"}], " ", "+", " ",
+   RowBox[{"export_planar_w8", ".", "wls"}], " ", "write", " ",
+   RowBox[{"../", "planar_stuff_w8", "/", "pl", "*", ".", "m"}], " ",
+   RowBox[{"(",
+    RowBox[{"all", " ", "crossings", ",", " ",
+     RowBox[{"eps", "^", "0"}], "..", "8"}], ")"}]}],
   "*)"}]], "Input",
  CellChangeTimes->{{4.0005198886657047`*^9, 4.000519961795158*^9}, {
    4.000520403251174*^9, 4.0005204128501253`*^9}, 
@@ -2293,8 +2295,13 @@ Cell[BoxData[{
 
 Cell[BoxData[
  RowBox[{
-  RowBox[{"sol7", " ", "=", " ", 
-   RowBox[{"Import", "[", "\"\<./pl_gpls_7_8/w7.m\>\"", "]"}]}], 
+  RowBox[{"sol7", " ", "=", " ",
+   RowBox[{"Coefficient", "[",
+    RowBox[{
+     RowBox[{
+      RowBox[{"Import", "[", "\"\<../planar_stuff_w8/pl.m\>\"", "]"}], "[",
+      RowBox[{"[",
+       RowBox[{";;", ",", "2"}], "]"}], "]"}], ",", "eps", ",", "7"}], "]"}]}],
   ";"}]], "Input",
  CellChangeTimes->{{4.000523872140764*^9, 4.000523878694397*^9}},
  CellLabel->"In[45]:=",ExpressionUUID->"16b52da6-4776-4c89-9f98-55441f25a9b3"],
