@@ -28,7 +28,9 @@ SetSystemOptions["SparseArrayOptions" -> {"TreatRepeatedEntries" -> 1}];
 args = Association[Cases[$ScriptCommandLine[[2 ;;]], s_String /; StringContainsQ[s, "="] :>
      Rule @@ StringSplit[s, "=", 2]]];
 need[k_] := If[KeyExistsQ[args, k], args[k], Print["missing argument ", k, "="]; Exit[1]];
-famName = need["family"]; fam = Symbol["Global`" <> famName];
+(* resolve the family name exactly as the input files do: "D" is System`D (Mathematica's
+   derivative), "H" is Global`H *)
+famName = need["family"]; fam = ToExpression[famName];
 cross = need["cross"]; crossLabel = If[cross === "x", "", cross];
 wmax = ToExpression[need["wmax"]];
 out = need["out"]; Quiet[CreateDirectory[out, CreateIntermediateDirectories -> True]];
