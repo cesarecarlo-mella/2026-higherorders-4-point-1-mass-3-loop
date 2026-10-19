@@ -279,15 +279,27 @@ CNSTxmyval = CNSTxmysym /. s1;
 CNSTy1val = CNSTy1sym /. s1;
 CNSTx1val = CNSTx1sym /. s1;
 
-solOut[1] = IntPart1 + CNST1val;
-solOut[2] = IntPart2 + CNST2val;
-solOut[3] = IntPart3 + CNST3val;
-solOut[4] = IntPart4 + CNST4val;
-solOut[5] = IntPart5 + CNST5val;
-solOut[6] = IntPart6 + CNST6val;
-solOut[xmy] = IntPartxmy + CNSTxmyval;
-solOut[x1] = IntPartx1 + CNSTx1val;
-solOut[y1] = IntParty1 + CNSTy1val;
+(* CRITICAL FIX: exported solutions were NEVER simplified before saving, letting redundant
+   shuffle-equivalent G-word representations compound weight over weight. Found via direct
+   measurement: sol7_y1.m had ballooned to 2.3M leaves (975 distinct words, one single entry
+   at 54806 leaves) by weight 7, versus 327 words at weight 6 -- this is almost certainly why
+   IntParty1 at weight 8 ran for 2+ hours without even finishing Apart/GIntegrate on the first
+   component: the matrix-vector product + Apart had to process an already-bloated input.
+   ShuffleG cuts this vector's LeafCount in half (2.3M->1.07M) in 7.4s and is verified to
+   preserve the value exactly -- applying it here keeps every future weight's input compact. *)
+Print["=== simplifying solutions via ShuffleG before export (prevents weight-over-weight bloat) ==="];
+{tShuf1, solOut1} = AbsoluteTiming[ShuffleG /@ (IntPart1 + CNST1val)];
+{tShuf2, solOut2} = AbsoluteTiming[ShuffleG /@ (IntPart2 + CNST2val)];
+{tShuf3, solOut3} = AbsoluteTiming[ShuffleG /@ (IntPart3 + CNST3val)];
+{tShuf4, solOut4} = AbsoluteTiming[ShuffleG /@ (IntPart4 + CNST4val)];
+{tShuf5, solOut5} = AbsoluteTiming[ShuffleG /@ (IntPart5 + CNST5val)];
+{tShuf6, solOut6} = AbsoluteTiming[ShuffleG /@ (IntPart6 + CNST6val)];
+{tShufXmy, solOutXmy} = AbsoluteTiming[ShuffleG /@ (IntPartxmy + CNSTxmyval)];
+{tShufX1, solOutX1} = AbsoluteTiming[ShuffleG /@ (IntPartx1 + CNSTx1val)];
+{tShufY1, solOutY1} = AbsoluteTiming[ShuffleG /@ (IntParty1 + CNSTy1val)];
+Print["ShuffleG timings: ", {tShuf1, tShuf2, tShuf3, tShuf4, tShuf5, tShuf6, tShufXmy, tShufX1, tShufY1}];
+solOut[1] = solOut1; solOut[2] = solOut2; solOut[3] = solOut3; solOut[4] = solOut4;
+solOut[5] = solOut5; solOut[6] = solOut6; solOut[xmy] = solOutXmy; solOut[x1] = solOutX1; solOut[y1] = solOutY1;
 
 Do[Export["work/sol" <> ToString[wgt] <> "_" <> ToString[j] <> ".m", solOut[j]], {j, 1, 6}];
 Export["work/sol" <> ToString[wgt] <> "_xmy.m", solOut[xmy]];

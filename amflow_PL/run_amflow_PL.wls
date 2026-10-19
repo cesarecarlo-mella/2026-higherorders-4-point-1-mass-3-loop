@@ -26,7 +26,7 @@
 
    Usage: wolframscript -file run_amflow_PL.wls *)
 
-Get["/space/ttpmath/tools_src/amflow/AMFlow.m"];
+Get["/Users/cesarecarlomella/Software/amflow/AMFlow.m"];
 SetReductionOptions["IBPReducer" -> "Blade"];
 
 AMFlowInfo["Family"] = PL;
@@ -57,6 +57,18 @@ Print["loaded ", Length[targetInts], " target integrals"];
 
 amflowtarget = targetInts /. PL[a___] :> ToJ[{a}];
 
-sol = SolveIntegrals[amflowtarget, 10, 8];
+(* SolveIntegrals[jints,goal,order]'s raw epsilon-expansion target is
+   order + leading, leading = -2*Length[Loop] = -6 for this 3-loop family.
+   order=8 (raw eps^2) is enough for the DEEP top-sector term, whose own
+   Canonical_basis.m coefficient already carries ~eps^6 (matching that
+   term's own true leading pole). But each basis entry is a SUM of terms
+   from many different sectors, and lower-propagator (milder-pole) masters
+   carry a SMALLER explicit eps-power in their own coefficient (as low as
+   eps^1, confirmed by direct inspection of Canonical_basis.m's last 10
+   entries). To get THAT term's canonical eps^8 contribution, its bare
+   master needs raw data up to eps^(8-1)=eps^7 -- order=8 never computed
+   anywhere near that depth (uniformly stopped at raw eps^2 for everyone).
+   order=13 reaches raw eps^7 exactly (order+leading = 13-6 = 7 = 8-1). *)
+sol = SolveIntegrals[amflowtarget, 10, 13];
 sol >> "amflow_solution_PL.m";
 Print["done, exported amflow_solution_PL.m"];
