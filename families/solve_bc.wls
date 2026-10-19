@@ -7,12 +7,16 @@
      a_tildes/<fam>_atilde.m (letters l[i], letters.dict.m), bases/<fam>_canon.m,
      result/<fam>_shift.m or SLC/Solutions/<fam>/shiftedBasis (planar entries),
      boundaries_all/<fam>_bc.m (weight 0, and validation of ep^1..6).
-   This version handles the rational alphabet l[1..6] = x, y, 1-x-y, 1-x, 1-y, x+y.
-   - segment connections: along each segment every letter is delta^p g(t) as delta -> 0;
-     d log g gives the letters in t, the powers p give todelta (analytic continuation);
-   - boundary equations: projectors on every positive eigenvalue of A_1 (x->0, segment 5),
-     A_2 (y->0, segment 1), A_3 (x+y->1, segment 3); regularity residues A_4 (x=1), A_5 (y=1),
-     A_6 (x=-y) on the x1, y1, xmy segments;
+   Letters: the common 20-letter alphabet (a_tildes/letters.dict.m). Everything is built per
+   letter, exactly as in H_opt/run_precompute.wls, then combined with the family's A_l:
+   - segments 1-6: d/dt log of the delta-series of each letter along the path, delta -> 0
+     (H's recipe); letters vanishing as delta -> 0 give todelta (analytic continuation);
+   - x1, y1, xmy: d log along the line; the sqrt letters l[7], l[8] use H's derivative formulas
+     with H's branches sqrt(x y (1-x-y)) -> I y (x=1), I x (y=1), -I y (x=-y);
+   - boundary equations: projectors on every positive eigenvalue of the residue at x->0
+     (segment 5), y->0 (segment 1), x+y->1 (segment 3) (sum of A_l over the letters vanishing
+     there, as in H); regularity: residues of the connection at x=1, y=1, x=-y (H's breg) on the
+     x1, y1, xmy segments;
    - planar constants: planar entries (fully reduced to BASISLC) x PL crossings
      (PL/pl_gpls_7_8), regularized at x->0, then y->1.
    BC[fam, X, i] = sol0 + Sum_w ep^w const_w(corner): "",x23 -> segment 6; x12,x132 -> 4; x13,x123 -> 2.
@@ -40,10 +44,12 @@ SetAttributes[tic, HoldRest];
 (* ---------- inputs ---------- *)
 atilde = Import[atildeFile[f]]; n = Length[atilde];
 lets = Union@Cases[atilde, l[i_] :> i, Infinity];
-If[! SubsetQ[Range[6], lets], Print[f, ": letters ", lets, " -- only the rational alphabet l[1..6] is handled"]; Exit[1]];
-A = Association[Table[i -> SparseArray[Coefficient[atilde, l[i]]], {i, 6}]];
-If[Expand[atilde - Sum[Normal[A[i]] l[i], {i, 6}]] =!= ConstantArray[0, {n, n}], Print["atilde not linear in l[i]"]; Exit[1]];
-letter = <|1 -> x, 2 -> y, 3 -> 1 - x - y, 4 -> 1 - x, 5 -> 1 - y, 6 -> x + y|>;
+Alet = Association[Table[i -> SparseArray[Coefficient[atilde, l[i]]], {i, lets}]];
+If[Expand[atilde - Sum[Normal[Alet[i]] l[i], {i, lets}]] =!= ConstantArray[0, {n, n}], Print["atilde not linear in l[i]"]; Exit[1]];
+arg = Association[(#[[1, 1]] -> (#[[2]] /. Log -> Identity)) & /@ Import[lettersDictFile]];
+(* derivatives; sqrt = Sqrt[x y (1-x-y)] kept as a symbol for the two sqrt letters (H's formulas) *)
+dX[i_] := Switch[i, 7, I y (-1 + 2 x + y)/(sqrt (-1 + x) (x + y)), 8, I y/(sqrt (1 - x)), _, D[Log[arg[i]], x]];
+dY[i_] := Switch[i, 7, -I x/(sqrt (x + y)), 8, I x/(sqrt (1 - y)), _, D[Log[arg[i]], y]];
 bcOld = Association[Import[bcFile[f]]];
 sol0 = Table[Coefficient[bcOld[BC[fsym, "", i]], ep, 0], {i, n}];
 Print[f, ": ", n, " masters, letters ", lets];
@@ -128,23 +134,54 @@ param = <|1 -> {x -> t, y -> delta}, 2 -> {y -> delta t^2, x -> 1 - delta ((1 - 
    4 -> {x -> delta (1 - t)^2, y -> 1 - delta ((1 - t)^2 + t^2)}, 5 -> {x -> delta, y -> 1 - t}, 6 -> {x -> delta t^2, y -> delta (1 - t)^2},
    "x1" -> {x -> 1}, "y1" -> {y -> 1}, "xmy" -> {x -> -y}|>;
 segVar = <|1 -> t, 2 -> t, 3 -> t, 4 -> t, 5 -> t, 6 -> t, "x1" -> y, "y1" -> x, "xmy" -> y|>;
-(* along a segment: letter -> delta^p g(var); d log g = Sum_roots mult/(var - root) *)
-segData[s_] := Module[{var = segVar[s], Lt = <||>, td = SparseArray[{}, {n, n}], e, p, g, roots},
-  Do[e = Expand[letter[i] /. param[s]];
-    If[e === 0, Continue[]];            (* letter vanishing identically on x1/xmy: no contribution *)
-    p = If[FreeQ[e, delta], 0, Exponent[e, delta, Min]];
-    g = If[p == 0, e /. delta -> 0, Coefficient[e, delta, p]];
-    td += p A[i];
-    roots = With[{sl = Solve[g == 0, var]}, If[sl === {}, {}, Tally[canon[var /. sl]]]];
-    Do[Lt[r[[1]]] = Lookup[Lt, r[[1]], 0] + r[[2]] A[i], {r, roots}],
-    {i, 6}];
-  {Lt, td}];
+(* simple poles of a rational function of var: {root -> residue}; anything else is an error *)
+poles[e_, var_] := Module[{tg = Together[e], num, den, sl, rts},
+  If[tg === 0, Return[{}]];
+  If[! FreeQ[tg, Complement[{x, y, t, delta, sqrt}, {var}]], Print["poles: unexpected variables in ", tg]; Exit[1]];
+  num = Numerator[tg]; den = Denominator[tg];
+  If[Exponent[num, var] >= Exponent[den, var], Print["poles: polynomial part in ", tg]; Exit[1]];
+  sl = Solve[den == 0, var]; rts = Tally[If[sl === {}, {}, var /. sl]];
+  If[AnyTrue[rts[[All, 2]], # > 1 &], Print["poles: double pole in ", tg]; Exit[1]];
+  (canon[#] -> canon[Together[num/D[den, var] /. var -> #]]) & /@ rts[[All, 1]]];
+addPoles[acc_, prs_, M_] := Fold[Function[{a, r}, Append[a, r[[1]] -> Lookup[a, r[[1]], 0] + r[[2]] M]], acc, prs];
+(* segments 1-6: H's recipe per letter *)
+segLetter[j_, i_] := Module[{ser, v0, dl},
+  ser = Normal[Series[arg[i] /. param[j], {delta, 0, 2}, Assumptions -> {delta > 0, 0 < t < 1}]];
+  v0 = Simplify[ser /. delta -> 0, 0 < t < 1];
+  dl = Simplify[Simplify[D[Log[ser], t], {delta > 0, 0 < t < 1}] /. delta -> 0, 0 < t < 1];
+  {v0 === 0, dl}];
+(* lines: d log along the line, H's branches for sqrt *)
+lineDlog[s_, i_] := Switch[s,
+  "x1", Together[dY[i]] /. x -> 1 /. sqrt -> I y,
+  "y1", Together[dX[i]] /. y -> 1 /. sqrt -> I x,
+  "xmy", Together[dY[i] - dX[i]] /. x -> -y /. sqrt -> -I y];
+(* regularity residues (H's breg): (x-1) dx at x=1, (y-1) dy at y=1, (x+y) dx at x=-y *)
+regRes[r_, i_] := Module[{v = Switch[r,
+     "R1", Together[(x - 1) dX[i]] /. x -> 1 /. sqrt -> I y,
+     "R2", Together[(y - 1) dY[i]] /. y -> 1 /. sqrt -> I x,
+     "R3", Together[(x + y) dX[i]] /. x -> -y /. sqrt -> -I y]},
+  v = Simplify[v];
+  If[! FreeQ[v, x | y], Print["regularity residue of l[", i, "] at ", r, " is not constant: ", v]; Exit[1]]; canon[v]];
+(* letters vanishing at the boundary loci (H: Series of the letters, zero coefficient at order 0) *)
+vanishAt["x0", i_] := Simplify[Coefficient[Normal[Series[arg[i], {x, 0, 1}, Assumptions -> {x > 0, y > 0, y < 1}]], x, 0]] === 0;
+vanishAt["y0", i_] := Simplify[Coefficient[Normal[Series[arg[i], {y, 0, 1}, Assumptions -> {y > 0, x > 0, x < 1}]], y, 0]] === 0;
+vanishAt["xy1", i_] := Simplify[Coefficient[Normal[Series[arg[i] /. {x -> (1 - delta) rho, y -> (1 - delta) (1 - rho)}, {delta, 0, 1},
+       Assumptions -> {delta > 0, 0 < rho < 1}]], delta, 0]] === 0;
 dataFile = FileNameJoin[{work, "precompute.mx"}];
 If[FileExistsQ[dataFile], Get[dataFile],
   Print["=== precompute ==="];
-  Do[{L[s], todelta[s]} = segData[s], {s, segs}];
-  bm = <|"P1" -> allPositive[A[1], "x->0"], "P2" -> allPositive[A[2], "y->0"], "P7" -> allPositive[A[3], "x+y->1"],
-     "R1" -> A[4], "R2" -> A[5], "R3" -> A[6]|>;
+  Do[L[j] = <||>; todelta[j] = SparseArray[{}, {n, n}];
+    Do[{v0, dl} = segLetter[j, i];
+      If[v0, todelta[j] += Alet[i]];
+      L[j] = addPoles[L[j], poles[dl, t], Alet[i]], {i, lets}], {j, 1, 6}];
+  Do[L[s] = <||>; todelta[s] = SparseArray[{}, {n, n}];
+    Do[L[s] = addPoles[L[s], poles[lineDlog[s, i], segVar[s]], Alet[i]], {i, lets}], {s, {"x1", "y1", "xmy"}}];
+  Do[L[s] = Select[L[s], Max[Abs[#]] =!= 0 &], {s, segs}];
+  res = Association[Table[r -> Sum[regRes[r, i] Alet[i], {i, lets}], {r, {"R1", "R2", "R3"}}]];
+  loc = Association[Table[lc -> Select[lets, vanishAt[lc, #] &], {lc, {"x0", "y0", "xy1"}}]];
+  Print["  letters vanishing at x->0: ", loc["x0"], ", y->0: ", loc["y0"], ", x+y->1: ", loc["xy1"]];
+  bm = <|"P1" -> allPositive[Sum[Alet[i], {i, loc["x0"]}], "x->0"], "P2" -> allPositive[Sum[Alet[i], {i, loc["y0"]}], "y->0"],
+     "P7" -> allPositive[Sum[Alet[i], {i, loc["xy1"]}], "x+y->1"], "R1" -> res["R1"], "R2" -> res["R2"], "R3" -> res["R3"]|>;
   DumpSave[dataFile, {L, todelta, bm}]];
 (* powers of todelta for the analytic continuation, computed on demand (any weight) *)
 tdP[j_, 1] := todelta[j];
@@ -199,16 +236,18 @@ planarConst[w_] := Module[{vals, dif, k, S, sel},
 
 (* ---------- boundary system (weight independent) ---------- *)
 eqs = {{"P1", 5}, {"P2", 1}, {"P7", 3}, {"R1", "x1"}, {"R2", "y1"}, {"R3", "xmy"}};
+eqs = Select[eqs, Length[bm[#[[1]]]] > 0 &];   (* a locus without positive eigenvalues gives no equation *)
 Amat = Join @@ (bm[#[[1]]] & /@ eqs);
 Au = Amat[[All, unk]]; Ap = Amat[[All, op]];
 pivFile = FileNameJoin[{work, "pivots.mx"}];
-If[FileExistsQ[pivFile], Get[pivFile],
+If[unk === {}, pivRows = {}; invA = {}; Print["  all entries planar: no unknowns, every equation is a check"]];
+If[unk =!= {}, If[FileExistsQ[pivFile], Get[pivFile],
   rr = tic["RowReduce", RowReduce[Transpose[Normal[Au]]]];
   pivRows = Flatten[FirstPosition[#, Except[0], Missing[], {1}, Heads -> False] & /@ Select[rr, AnyTrue[#, # =!= 0 &] &]];
   Print["  boundary system: ", Length[Amat], " equations, rank ", Length[pivRows], " for ", Length[unk], " unknowns (", Length[op], " planar)"];
   If[Length[pivRows] < Length[unk], Print[f, ": boundary system is rank-deficient by ", Length[unk] - Length[pivRows], " -- more input needed"]; Exit[1]];
   invA = tic["inverse", Inverse[Normal[Au[[pivRows]]]]];
-  DumpSave[pivFile, {pivRows, invA}]];
+  DumpSave[pivFile, {pivRows, invA}]]];
 
 (* ---------- weights ---------- *)
 Do[sol[0][s] = constF[sol0], {s, segs}];
@@ -236,8 +275,8 @@ Do[
   rhs = Join @@ (align[#, monos] & /@ rhsB);
   plV = If[pl[[1]] === {}, SparseArray[{}, {Length[op], Length[monos]}], align[pl, monos]];
   rhs2 = rhs - Ap . plV; mark["rhs2"];
-  xs = Expand[invA . Normal[rhs2[[pivRows]]]];
-  nres = Count[Flatten[Normal[Expand[Au . xs - rhs2]]], Except[0]];
+  xs = If[unk === {}, {}, Expand[invA . Normal[rhs2[[pivRows]]]]];
+  nres = Count[Flatten[Normal[Expand[If[unk === {}, -rhs2, Au . xs - rhs2]]]], Except[0]];
   c5M = Normal[SparseArray[{}, {n, Length[monos]}]]; c5M[[unk]] = xs; c5M[[op]] = Normal[plV];
   c5 = prune[{monos, SparseArray[c5M]}];
   Do[sol[w][s] = add[IP[s], c5, delta[s]], {s, segs}];

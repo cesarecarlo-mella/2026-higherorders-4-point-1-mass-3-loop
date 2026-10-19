@@ -24,12 +24,18 @@ canonFile[f_] := $ALLINTS <> "bases/" <> f <> "_canon.m";
 propsFile[f_] := $ALLINTS <> "bases/" <> f <> "_props.m";
 bcFile[f_] := $ALLINTS <> "boundaries_all/" <> f <> "_bc.m";              (* BC[f, crossing, i], eps^0..6 *)
 rootPos = Association[Get[$ALLINTS <> "bases/rootpos.m"]];
-shiftMapFile[f_] := With[{p = $ALLINTS <> "result/" <> f <> "_shift.m"}, If[FileExistsQ[p], p, Missing[]]];
+(* F1, G1, I2 have no shift map in all.ints: their Kira shifts (same propagators, checked) are
+   taken from DEQ_solutions/Leading_Color, together with the PL -> BASISLC table found there *)
+$LC = $INT <> "NPL/DEQ_solutions/Leading_Color/";
+lcShiftDir = <|"F1" -> $LC <> "F1/NPL1_30389_F1_rotated_boundaries/toshift/",
+   "G1" -> $LC <> "G1/NPL1_30629_G1_rotated_boundaries/toshift/", "I2" -> $LC <> "I2/NPL2_15275_I2_rotated_boundaries/toshift/"|>;
+shiftMapFile[f_] := With[{p = $ALLINTS <> "result/" <> f <> "_shift.m"},
+   Which[FileExistsQ[p], p, KeyExistsQ[lcShiftDir, f], lcShiftDir[f] <> "list.m", True, Missing[]]];
 slcShiftedBasisFile[f_] := With[{p = $SLC <> legacyName[f] <> "/shiftedBasis/shiftedBasis.m"}, If[FileExistsQ[p], p, Missing[]]];
 
 (* PL -> BASISLC reduction tables (PL[...] -> Sum BASISLC[i] coeff(s13, s23, d)) *)
 plTableFiles := Select[Join[
    {$ALLINTS <> "result/kira_inputtoinvertPL.txt.m", $ALLINTS <> "result/kira_inputextra.txt.m",
     $SLC <> "kira_inputPLtoBASISLC_5.txt.m", $SLC <> "kira_inputtoPL_BASISLC.txt.m"},
-   FileNames["kira_inputextra*.m", $SLC, 2]], FileExistsQ];
+   FileNames["kira_inputextra*.m", $SLC, 2], (# <> "kira_inputPLtoBASISLC.txt.m") & /@ Values[lcShiftDir]], FileExistsQ];
 plHeads = {"PL", "PLx12", "PLx13", "PLx23", "PLx123", "PLx132"};

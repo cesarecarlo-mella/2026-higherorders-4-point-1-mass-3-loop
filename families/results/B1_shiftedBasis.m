@@ -1,22 +1,19 @@
 (* Created with the Wolfram Language : www.wolfram.com *)
 {-BASISLC[3], -BASISLC[1], -1/16*((-4 + d)^4*(-1 + x)*
    INT[PLx13, 0, 1, 0, 0, 0, 2, 0, 0, 0, 0, 1, 0, 2, 1, 0]), BASISLCx13[87], 
- -BASISLC[5], BASISLC[9], 
- ((-4 + d)^5*(-1 + x)*INT[PL, 0, 1, 2, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1, 1, 0])/
-  32, ((-4 + d)^4*(-1 + x)*INT[PL, 0, 1, 2, 0, 0, 0, 1, 0, 0, 0, 2, 0, 1, 1, 
-    0])/16, BASISLCx13[88], BASISLC[25], 
- -1/32*((-4 + d)^5*(-1 + x)^2*INT[B1, 0, 1, 1, 0, 1, 1, 0, 2, 1, 1, 0, 0, 0, 
-    0, 0]), -1/32*((-4 + d)^5*(-1 + x)*x*INT[B1, 2, 1, 0, 0, 1, 1, 0, 1, 1, 
-    1, 0, 0, 0, 0, 0]), -1/32*((-4 + d)^5*(-1 + x)*
-   INT[B1, 1, 1, 0, 0, 1, 2, 0, 1, 1, 1, 0, 0, 0, 0, 0]), BASISLC[4], 
- BASISLC[26], BASISLCx13[89], BASISLC[8], BASISLC[27], -BASISLCx12[12], 
- -BASISLCx123[39], -BASISLC[12], BASISLCx123[40], -BASISLC[7], 
- -1/32*((-4 + d)^5*(-1 + x + y)*INT[PLx132, 0, 0, 1, 0, 0, 1, 0, 2, 0, 1, 0, 
-    0, 1, 1, 0]), ((-4 + d)^5*(-1 + x + y)*INT[B1x12, 0, 0, 1, 0, 1, 1, 1, 2, 
-    1, 1, 0, 0, 0, 0, 0])/32, -BASISLC[32], -1/36*BASISLCx12[2] + 
-  BASISLCx12[3]/36 - BASISLCx12[12]/4 + BASISLCx12[16]/3, 
- BASISLCx12[31] - BASISLCx12[37]/2, BASISLCx123[1]/36, 
- -1/2*BASISLCx13[39] + BASISLCx13[99], 
+ -BASISLC[5], BASISLC[9], BASISLC[23], -BASISLC[24], BASISLCx13[88], 
+ BASISLC[25], -1/32*((-4 + d)^5*(-1 + x)^2*INT[B1, 0, 1, 1, 0, 1, 1, 0, 2, 1, 
+    1, 0, 0, 0, 0, 0]), -1/32*((-4 + d)^5*(-1 + x)*x*
+   INT[B1, 2, 1, 0, 0, 1, 1, 0, 1, 1, 1, 0, 0, 0, 0, 0]), 
+ -1/32*((-4 + d)^5*(-1 + x)*INT[B1, 1, 1, 0, 0, 1, 2, 0, 1, 1, 1, 0, 0, 0, 0, 
+    0]), BASISLC[4], BASISLC[26], BASISLCx13[89], BASISLC[8], BASISLC[27], 
+ -BASISLCx12[12], -BASISLCx123[39], -BASISLC[12], BASISLCx123[40], 
+ -BASISLC[7], -1/32*((-4 + d)^5*(-1 + x + y)*INT[PLx132, 0, 0, 1, 0, 0, 1, 0, 
+    2, 0, 1, 0, 0, 1, 1, 0]), 
+ ((-4 + d)^5*(-1 + x + y)*INT[B1x12, 0, 0, 1, 0, 1, 1, 1, 2, 1, 1, 0, 0, 0, 
+    0, 0])/32, -BASISLC[32], -1/36*BASISLCx12[2] + BASISLCx12[3]/36 - 
+  BASISLCx12[12]/4 + BASISLCx12[16]/3, BASISLCx12[31] - BASISLCx12[37]/2, 
+ BASISLCx123[1]/36, -1/2*BASISLCx13[39] + BASISLCx13[99], 
  -1/64*((-4 + d)^6*(-1 + x)*INT[B1x12, 1, 0, 0, 0, 1, 1, 1, 1, 1, 1, 0, 0, 0, 
      0, 0]) + ((-4 + d)^6*(-1 + x)*INT[B1x12, 1, 0, 1, 0, 1, 1, 1, 1, 1, 1, 
      0, -1, 0, 0, 0])/64, 

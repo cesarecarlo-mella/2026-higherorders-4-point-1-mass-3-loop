@@ -19,24 +19,30 @@ Method: the H pipeline (`H_opt/run_fast.wls`), made generic. Everything is rebui
 | `export_bc.wls <fam>` (to do) | `results/<fam>_bc.m` (ep^0..8) in the `boundaries_all` format: corners 6 ("", x23), 4 (x12, x132), 2 (x13, x123) |
 | `work/<fam>/`, `results/` | generated, gitignored |
 
-## Plan
+## Status (2026-10-19)
 
-0. **Inputs** — done, see below.
-1. **Fully planar families** A, E1, E2, M3, R2. No differential equation is needed: the boundary
-   conditions are the shift map × the PL crossings (`planar_stuff_w8`) at the three corners.
-   Validate against `boundaries_all` through `ep^6`.
-2. **Generic solver on H.** Rebuild every matrix from `a_tildes/H_atilde.m` instead of the
-   `H/` files. It must reproduce `H_opt/run_fast.wls` exactly. This checks the generic
-   projectors and the square-root conventions of the regularity residues.
-3. **Rational alphabet** B2, C, F2, G2, G3 (letters 1–6 only, the same geometry as PL).
-4. **Algebraic alphabets with complete planar data**: D, G4, I1, I3, L3 (H done in step 2).
-   Before each run, check that the extra letters of the segments cancel before t→1, as they
-   do for H.
-5. **After the new Kira reductions / shifts**: B1, N3, P3, then F1, G1, I2.
+Boundary conditions to ep^8 (`results/<fam>_bc.m`) and segment solutions
+(`segments/<fam>/eps_sep/w0..w8/{sol,const}<w>_<seg>.m`, H's format, gitignored, ~1 GB):
 
-Per-family checks: weights ≤ 6 equal to `boundaries_all`, zero residual of the
-over-determined boundary system, projected equations independent of the segment variable,
-only `{0,1}` words evaluated at t→1.
+- **done**: A, B1, B2, C, D, E1, E2, F1, F2, G1, G2, G3, G4, H, I1, I2, L3, M3, N3, P3, R2;
+- **running**: I3 (weights 1-7 done).
+
+Every family: ep^1..6 identical to `all.ints/boundaries_all` for all six crossings; the
+over-determined projector + regularity system has full rank and zero residuals at every weight,
+7 and 8 included. H additionally reproduces `H_opt` exactly at every weight 0-8. The planar
+families go through the same solver with no unknowns, so all their equations are checks; their
+BC equal the planar route (`planar_bc.wls`).
+
+## Scripts
+
+- `solve_bc.wls fam=<f> [wmax=8]`: the H algorithm for any family, built per letter from
+  `a_tildes` and the 20-letter dictionary (H's sqrt-letter formulas and branches); projectors on
+  all positive eigenvalues at x->0, y->0, x+y->1; regularity residues at x=1, y=1, x=-y; planar
+  constants from the shifted basis x PL crossings (`PL/pl_gpls_7_8`). Checkpoints in `work/<f>/`.
+- `export_segments.wls fam=<f,...>`: segment solutions in H's `eps_sep` format.
+- `planar_bc.wls`: BC of the planar families directly from shifts x PL (no DE).
+- `export_shifted.wls`: readable shifted bases `results/<fam>_shiftedBasis.m`.
+- `check_inputs.wls`, `config.wl`: inputs, names, planar sources.
 
 ## Inputs (from `check_inputs.log`)
 
@@ -71,22 +77,30 @@ dropped) is then looked up in the PL → BASISLC tables: 448 PL integrals are co
 |--------|----------------|--------------------------------|--------------|---------------|
 | A, E1, E2, M3, R2 | all | 0 | 92, 162, 110, 47, 97 | 0 |
 | C | 76 / 173 | 80 | 66 | 0 |
-| **B1** | 89 / 150 | 36 | 69 | **5** |
+| **B1** | 89 / 150 | 36 | 69 | **3** |
 | **B2** | 72 / 114 | 62 | 49 | **3** |
 | **D** | 54 / 121 | 43 | 34 | **1** |
-| **L3** | 85 / 131 | 50 | 76 | **14** |
-| **N3** | 73 / 90 | 8 | 52 | **16** |
-| **P3** | 86 / 143 | 43 | 49 | **10** |
+| **L3** | 85 / 131 | 50 | 76 | **12** |
+| **N3** | 73 / 90 | 8 | 52 | **15** |
+| **P3** | 86 / 143 | 43 | 49 | **9** |
 | F2, G2, G3, G4, H, I1, I3 | `SLC/Solutions/<fam>/shiftedBasis` (bases and Atilde identical to `all.ints`); planar entries 26, 25, 40, 57, 133, 77, 103 | – | – | 0 |
-| **F1, G1, I2** | no planar data in `all.ints` or `SLC/Solutions` | | | |
+| F1 | 53 / 214 | 167 | 63 | 0 |
+| G1 | 114 / 254 | 161 | 119 | 0 |
+| **I2** | 116 / 305 | 115 | 92 | **1** |
 
-The lists for Kira are in `extra_shifts/{B1,B2,D,L3,N3,P3}_missingPL.m`. They are a
+The lists for Kira are in `extra_shifts/{B1,B2,D,I2,L3,N3,P3}_missingPL.m`. "Planar entries" counts every entry whose shift reaches only PL integrals, reducible or not. They are a
 fallback: the entries that are already completely shifted to BASISLC are probably enough
 to fix the boundary system. The missing reductions only matter if a family turns out
 rank-deficient.
 
 Planar sources, decided: `all.ints/result` shift maps where they exist; otherwise
-`SLC/Solutions/<fam>/shiftedBasis`. The `Leading_Color` folder is not used.
+`SLC/Solutions/<fam>/shiftedBasis`. F1, G1 and I2 have no shift map in `all.ints`: their Kira
+shifts (`toshift/list.m`) and PL -> BASISLC tables come from
+`DEQ_solutions/Leading_Color/<fam>/*_rotated_boundaries/toshift/`. The propagators are the same
+as in `all.ints`: identical for I2 (Kira `integralfamilies.yaml`); for F1 and G1 the
+`Leading_Color` `old_basis` uses the same integral index vectors as `all.ints` with proportional
+coefficients. Nothing else from `Leading_Color` is used. (The rotated `shiftedBasis` there gives
+the same planar entries up to an overall eps^6 normalization.)
 "Basis integrals not in the map" are left as the family's own integrals. For non-planar
 families most of them sit in genuinely non-planar sectors, but this check cannot prove that
 none of them could have been shifted to PL; only the shift finder can.
