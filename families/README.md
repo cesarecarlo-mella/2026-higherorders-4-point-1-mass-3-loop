@@ -24,8 +24,7 @@ Method: the H pipeline (`H_opt/run_fast.wls`), made generic. Everything is rebui
 Boundary conditions to ep^8 (`results/<fam>_bc.m`) and segment solutions
 (`segments/<fam>/eps_sep/w0..w8/{sol,const}<w>_<seg>.m`, H's format, gitignored, ~1 GB):
 
-- **done**: A, B1, B2, C, D, E1, E2, F1, F2, G1, G2, G3, G4, H, I1, I2, L3, M3, N3, P3, R2;
-- **running**: I3 (weights 1-7 done).
+- **done**: all 22 families (A, B1, B2, C, D, E1, E2, F1, F2, G1, G2, G3, G4, H, I1, I2, I3, L3, M3, N3, P3, R2).
 
 Every family: ep^1..6 identical to `all.ints/boundaries_all` for all six crossings; the
 over-determined projector + regularity system has full rank and zero residuals at every weight,
