@@ -1,3 +1,4 @@
 out/
 II/
-logs/
+logs/*
+!logs/.gitkeep

@@ -19,7 +19,7 @@ repo therefore has every input. No PolyLogTools is needed.
 
 On the cluster, clone the repo (branch `pl-w8-crossings`), then:
 
-    cd iterint && mkdir -p logs
+    cd iterint      # logs/ is in the repo (SLURM needs it to exist before a task starts)
     sbatch run_all.sbatch                                          # 132 tasks = 22 families x 6 crossings
     sbatch --dependency=afterok:<jobid> assemble_all.sbatch        # 22 tasks, one per family
 
