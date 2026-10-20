@@ -100,6 +100,7 @@ Do[
 
 If[KeyExistsQ[args, "validate"],
   vmax = ToExpression[Lookup[args, "vmax", "6"]];
+  If[vmax > wmax, Print["validate: vmax=", vmax, " > wmax=", wmax, ", skipped"]; Exit[0]];
   old = Association[Get[args["validate"]]];
   ref = toF[Table[old[Global`BASISLC[fam, crossLabel, i]], {i, n}]];
   mine = mergeBlocks[Table[If[KeyExistsQ[wk, k], wk[k], Import[file[k, "wdx"]]], {k, 0, vmax}]];

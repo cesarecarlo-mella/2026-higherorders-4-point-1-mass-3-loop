@@ -79,8 +79,9 @@ Do[
     If[nd > 0, Print[f, " ", X, ": result depends on x,y in ", nd, " entries"]; Abort[]];
     bc = Join[bc, Table[Global`BC[fsym, X, i] -> Sum[ep^w vals[[1, w + 1, i]], {w, 0, wmax}], {i, n}]],
     {X, crossLabels}];
-  Export[FileNameJoin[{outDir, f <> "_bc.m"}], bc];
   old = Association[Import[bcFile[f]]];
+  bc = bc[[Ordering[Lookup[PositionIndex[Keys[old]], bc[[All, 1]]][[All, 1]]]]];   (* entry order of boundaries_all *)
+  Export[FileNameJoin[{outDir, f <> "_bc.m"}], bc];
   diff = Select[bc, Expand[Normal[Series[#[[2]], {ep, 0, 6}]] - Lookup[old, #[[1]], Missing[]]] =!= 0 &];
   Print[f, ": ", n, " masters, ", Length[bc], " BC to ep^", wmax, " in ", Round[AbsoluteTime[] - tf, 0.1], " s; vs boundaries_all through ep^6: ",
    If[diff === {}, "identical", ToString[Length[diff]] <> " differ, e.g. " <> ToString[diff[[1, 1]], InputForm]]],

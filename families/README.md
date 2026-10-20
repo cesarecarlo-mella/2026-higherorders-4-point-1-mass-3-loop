@@ -22,7 +22,8 @@ Method: the H pipeline (`H_opt/run_fast.wls`), made generic. Everything is rebui
 ## Status (2026-10-19)
 
 Boundary conditions to ep^8 (`results/<fam>_bc.m`) and segment solutions
-(`segments/<fam>/eps_sep/w0..w8/{sol,const}<w>_<seg>.m`, H's format, gitignored, ~1 GB):
+(`Solutions/<fam>/solutions/eps_sep/w0..w8/{sol,const}<w>_<seg>.m`, the format and folder layout
+of `H/solutions` and `SLC/Solutions/<fam>/solutions`, gitignored, ~1.2 GB):
 
 - **done**: all 22 families (A, B1, B2, C, D, E1, E2, F1, F2, G1, G2, G3, G4, H, I1, I2, I3, L3, M3, N3, P3, R2).
 
@@ -38,7 +39,9 @@ BC equal the planar route (`planar_bc.wls`).
   `a_tildes` and the 20-letter dictionary (H's sqrt-letter formulas and branches); projectors on
   all positive eigenvalues at x->0, y->0, x+y->1; regularity residues at x=1, y=1, x=-y; planar
   constants from the shifted basis x PL crossings (`PL/pl_gpls_7_8`). Checkpoints in `work/<f>/`.
-- `export_segments.wls fam=<f,...>`: segment solutions in H's `eps_sep` format.
+- `export_segments.wls fam=<f,...>`: segment solutions in H's `eps_sep` format, written to
+  `Solutions/<fam>/solutions/eps_sep`. Through ep^6 they equal the old `SLC/Solutions/C` files
+  (sol identical; const identical once the old unregularized `G[0,...,0]` are set to 0).
 - `planar_bc.wls`: BC of the planar families directly from shifts x PL (no DE).
 - `export_shifted.wls`: readable shifted bases `results/<fam>_shiftedBasis.m`.
 - `check_inputs.wls`, `config.wl`: inputs, names, planar sources.

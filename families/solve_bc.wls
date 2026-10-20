@@ -294,6 +294,8 @@ Do[bad = Sum[Count[Expand[toVals[ev0[sol[w][corner[X]]]] - Table[Coefficient[bcO
   If[bad > 0, ok = False; Print["w", w, ": ", bad, " entries differ from boundaries_all"]], {w, 1, Min[6, wmax]}];
 If[ok,
   bc = Flatten[Table[Table[BC[fsym, X, i] -> sol0[[i]] + Sum[ep^w toVals[ev0[sol[w][corner[X]]]][[i]], {w, 1, wmax}], {i, n}], {X, crossLabels}]];
+  (* same entry order as all.ints/boundaries_all (its crossing order differs between families) *)
+  bc = bc[[Ordering[Lookup[PositionIndex[Keys[bcOld]], bc[[All, 1]]][[All, 1]]]]];
   Export[FileNameJoin[{outDir, f <> "_bc.m"}], bc];
   Print[f, ": exported results/", f, "_bc.m (", Length[bc], " entries, ep^0..", wmax, ")"],
   Print[f, ": NOT exported -- disagreement with boundaries_all"]];

@@ -1,11 +1,12 @@
 #!/usr/bin/env wolframscript
 (* ::Package:: *)
 
-(* Segment solutions of solve_bc.wls in the format of H/solutions/eps_sep:
-     segments/<fam>/eps_sep/w0/sol0.m
-     segments/<fam>/eps_sep/w<w>/sol<w>_<seg>.m   : 371-style list of expressions in G[..., t]
+(* Segment solutions of solve_bc.wls in the format and layout of H/solutions/eps_sep
+   (and of DEQ_solutions/SLC/Solutions/<fam>/solutions/eps_sep):
+     Solutions/<fam>/solutions/eps_sep/w0/sol0.m
+     Solutions/<fam>/solutions/eps_sep/w<w>/sol<w>_<seg>.m   : 371-style list of expressions in G[..., t]
                                                      (x1, xmy: G[..., y]; y1: G[..., x])
-     segments/<fam>/eps_sep/w<w>/const<w>_<seg>.m : {cnst[w, i][seg] -> constant part}
+     Solutions/<fam>/solutions/eps_sep/w<w>/const<w>_<seg>.m : {cnst[w, i][seg] -> constant part}
    seg in {1..6, x1, y1, xmy}. Letters (1-+I)/2 and the cube roots of unity are written back as
    c2, c2c, cxmy, cxmyc (as in H/); other letters stay explicit numbers.
    Input: work/<fam>/sol<w>.mx (Association seg -> {keys, S}), weight 0 from boundaries_all.
@@ -37,7 +38,7 @@ Do[
   tf = AbsoluteTime[];
   fsym = ToExpression[f];
   n = Length[Import[canonFile[f]]];
-  base = FileNameJoin[{here, "segments", f, "eps_sep"}];
+  base = FileNameJoin[{here, "Solutions", f, "solutions", "eps_sep"}];
   bcOld = Association[Import[bcFile[f]]];
   Quiet[CreateDirectory[FileNameJoin[{base, "w0"}], CreateIntermediateDirectories -> True]];
   Export[FileNameJoin[{base, "w0", "sol0.m"}], Table[Coefficient[bcOld[BC[fsym, "", i]], ep, 0], {i, n}]];
@@ -54,5 +55,5 @@ Do[
       {s, segs}];
     done = w,
     {w, 1, wmax}];
-  Print[f, ": exported weights 0..", done, " to segments/", f, "/eps_sep (", Round[AbsoluteTime[] - tf, 0.1], " s)"],
+  Print[f, ": exported weights 0..", done, " to Solutions/", f, "/solutions/eps_sep (", Round[AbsoluteTime[] - tf, 0.1], " s)"],
   {f, fams}];
