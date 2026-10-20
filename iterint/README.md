@@ -34,6 +34,10 @@ with the crossings in the order `"", x12, x13, x23, x123, x132`, the same keys a
 `all.ints` files. There is no `ep`: the weight is the length of the II word plus the weight of
 the constants.
 
+- **Mathematica command:** `WL` (default `wolframscript -file`). Where there is no
+  `wolframscript`, use the kernel directly, e.g. `WL="math -script" ./run_all.sh 8` or
+  `WL="/path/to/WolframKernel -script" ./run_all.sh 8` (both tested), or `module load` Mathematica
+  first.
 - **NJOBS:** keep it within the number of Mathematica kernels the license allows and within the
   machine's memory.
 - **Families:** `./run_all.sh 4 H I3` runs only those families.

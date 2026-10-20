@@ -11,17 +11,20 @@
 # Environment: WMAX (default 8); VALIDATE_DIR=<copy of all.ints/iterint_solutions> also compares
 # Sum_{k<=6} of every crossing with the old file. Resumable: rerunning reloads the weights already
 # in out/<fam>/. Per-job logs: logs/<fam>_<cross>.log; summary: logs/run_all.log.
+# WL is the command that runs a Wolfram script (default "wolframscript -file"); on a machine
+# without wolframscript use e.g. WL="math -script" or WL="/path/to/WolframKernel -script".
 # A kernel that does not come up within STARTUP seconds (default 180; e.g. no free license or a
 # failed link) is killed and the job retried, up to 3 times.
 set -u
 cd "$(dirname "$0")"
 NJOBS=${1:-4}; shift || true
-export WMAX=${WMAX:-8} VALIDATE_DIR=${VALIDATE_DIR:-} STARTUP=${STARTUP:-180}
+export WMAX=${WMAX:-8} VALIDATE_DIR=${VALIDATE_DIR:-} STARTUP=${STARTUP:-180} WL=${WL:-wolframscript -file}
+if ! command -v ${WL%% *} > /dev/null; then echo "'${WL%% *}' not found: load Mathematica (module load ...) or set WL" >&2; exit 1; fi
 mkdir -p logs out II
 # largest families first, so the long jobs start early
 if [ $# -gt 0 ]; then FAMS="$*"; else
   FAMS=$(for f in $(cat families.txt); do echo "$(wc -c < input/atilde/${f}_atilde.m) $f"; done | sort -rn | awk '{print $2}'); fi
-echo "$(date '+%F %T')  families: $(echo $FAMS | tr '\n' ' ')  NJOBS=$NJOBS WMAX=$WMAX"
+echo "$(date '+%F %T')  families: $(echo $FAMS | tr '\n' ' ')  NJOBS=$NJOBS WMAX=$WMAX WL=$WL"
 
 # wl <log> <script> <args...>: run wolframscript with a startup watchdog and retries
 wl() {
@@ -29,7 +32,7 @@ wl() {
   local attempt pid s
   for attempt in 1 2 3; do
     sleep $((RANDOM % 10))                       # stagger kernel launches
-    wolframscript -file "$@" > "$log" 2>&1 &
+    $WL "$@" > "$log" 2>&1 &
     pid=$!
     for ((s = 0; s < STARTUP; s++)); do
       grep -q "kernel started" "$log" 2>/dev/null && break

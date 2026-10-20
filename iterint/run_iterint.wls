@@ -26,7 +26,8 @@
 Print["kernel started"];   (* run_all.sh watches for this line *)
 $HistoryLength = 0;
 SetSystemOptions["SparseArrayOptions" -> {"TreatRepeatedEntries" -> 1}];
-args = Association[Cases[$ScriptCommandLine[[2 ;;]], s_String /; StringContainsQ[s, "="] :>
+(* key=value arguments: $ScriptCommandLine under wolframscript, $CommandLine under math/WolframKernel -script *)
+args = Association[Cases[If[$ScriptCommandLine === {}, $CommandLine, Rest[$ScriptCommandLine]], s_String /; StringContainsQ[s, "="] :>
      Rule @@ StringSplit[s, "=", 2]]];
 need[k_] := If[KeyExistsQ[args, k], args[k], Print["missing argument ", k, "="]; Exit[1]];
 (* resolve the family name exactly as the input files do: "D" is System`D (Mathematica's
