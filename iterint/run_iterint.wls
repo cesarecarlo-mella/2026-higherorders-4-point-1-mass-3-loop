@@ -23,6 +23,7 @@
    resumes from the highest weight found). keys = {II-word, transcendental monomial},
    w_k[[i]] = Sum_j S[[i,j]] II @@ keys[[j,1]] keys[[j,2]]. Read with load_iterint.wl. *)
 
+Print["kernel started"];   (* run_all.sh watches for this line *)
 $HistoryLength = 0;
 SetSystemOptions["SparseArrayOptions" -> {"TreatRepeatedEntries" -> 1}];
 args = Association[Cases[$ScriptCommandLine[[2 ;;]], s_String /; StringContainsQ[s, "="] :>

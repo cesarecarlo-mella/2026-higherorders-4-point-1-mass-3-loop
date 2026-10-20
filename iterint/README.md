@@ -17,13 +17,16 @@ repo therefore has every input. No PolyLogTools is needed.
 
 ## Full run (all 22 families)
 
-On the cluster, clone the repo (branch `pl-w8-crossings`), then:
+On the cluster, clone the repo (branch `pl-w8-crossings`), then, with no scheduler:
 
-    cd iterint      # logs/ is in the repo (SLURM needs it to exist before a task starts)
-    sbatch run_all.sbatch                                          # 132 tasks = 22 families x 6 crossings
-    sbatch --dependency=afterok:<jobid> assemble_all.sbatch        # 22 tasks, one per family
+    cd iterint
+    nohup ./run_all.sh 8 > logs/run_all.log 2>&1 &      # 132 jobs (22 families x 6 crossings), 8 at a time
+    tail -f logs/run_all.log                            # one line per finished job / assembled family
 
-Result: `II/<fam>_II.m` (and `II/H.wl`, `II/I3.wl`, the names used in `all.ints`). Each file holds
+`run_all.sh NJOBS [families...]` runs the (family, crossing) jobs of `run_iterint.wls` as
+background processes, NJOBS at a time, largest families first. When they are done it assembles
+every family whose six crossings all succeeded. Result: `II/<fam>_II.m` (and `II/H.wl`,
+`II/I3.wl`, the names used in `all.ints`). Each file holds
 
     {BASISLC[fam, "", 1] -> Sum_{k<=8} w_k[[1]], ..., BASISLC[fam, "x132", n] -> ...}
 
@@ -31,17 +34,20 @@ with the crossings in the order `"", x12, x13, x23, x123, x132`, the same keys a
 `all.ints` files. There is no `ep`: the weight is the length of the II word plus the weight of
 the constants.
 
-- Task `t` of `run_all.sbatch` runs family line `t/6 + 1` of `families.txt` in crossing `t%6` of
-  `(x x12 x13 x23 x123 x132)`. For example, H is line 16, so `sbatch --array=90-95 run_all.sbatch`
-  runs only H.
-- Jobs are resumable: a resubmitted task reloads the weights already in `out/<fam>/`.
-- `WMAX=6 sbatch --export=ALL ...` stops at a lower weight (default 8).
-- Optional check: `VALIDATE_DIR=<copy of all.ints/iterint_solutions> sbatch --export=ALL run_all.sbatch`
-  compares `Sum_{k<=6} w_k` of each crossing with the old file (needs WMAX ≥ 6).
-- Resources: 32 GB and 24 h per task are requested. H at weight 8 took 8 min and about 2 GB in
-  use per crossing on the laptop (table below). The largest families (I1, I2, I3) have not been
-  timed at weight 8.
-- Size: text output at weight 8 is about 2 GB per crossing for H, so the assembled `H.wl` is
+- **NJOBS:** keep it within the number of Mathematica kernels the license allows and within the
+  machine's memory.
+- **Families:** `./run_all.sh 4 H I3` runs only those families.
+- **Resumable:** a rerun reloads the weights already in `out/<fam>/`.
+- **Kernel watchdog:** a kernel that does not start within `STARTUP` seconds (default 180), for
+  example with no free license or a failed link, is killed and the job retried up to 3 times.
+- **Logs:** `logs/<fam>_<cross>.log` per job, `logs/<fam>_assemble.log` per family, and the
+  summary `logs/run_all.log` (`done` / `FAILED` per job).
+- **Lower weight:** `WMAX=6 ./run_all.sh ...` stops at a lower weight (default 8).
+- **Optional check:** `VALIDATE_DIR=<copy of all.ints/iterint_solutions> ./run_all.sh ...` also
+  compares `Sum_{k<=6} w_k` of every crossing with the old file. A mismatch marks the job FAILED.
+- **Resources:** H at weight 8 took 8 min and about 2 GB in use per crossing on the laptop
+  (table below). The largest families (I1, I2, I3) have not been timed at weight 8.
+- **Size:** text output at weight 8 is about 2 GB per crossing for H, so the assembled `H.wl` is
   roughly 12 GB. The assembled M3 file is 245 MB. `out/` and `II/` are gitignored (too big for
   GitHub); copy `II/` back with rsync.
 
@@ -50,7 +56,7 @@ the constants.
 - `run_iterint.wls` — one family, one crossing, weights 0..wmax → `out/<fam>/<fam>_<cross>_w<k>.wdx`.
 - `assemble_II.wls` — one family, all crossings → `II/<fam>_II.m`. Writes entry by entry, so the
   whole expression is never held in memory.
-- `run_all.sbatch`, `assemble_all.sbatch` — the SLURM arrays above.
+- `run_all.sh` — the launcher above (no scheduler).
 - `families.txt` — the family list (task order).
 - `input/atilde/<fam>_atilde.m` — copies of `all.ints/a_tildes` (`prepare_inputs.sh` refreshes them).
 - `load_iterint.wl` — read the per-weight output back (`IIWeight`, `IISum`).
@@ -88,8 +94,10 @@ Family M3 (80 masters): 10 s and 0.9 GB peak per crossing at weight 8; assembly 
 
 - **H:** the sum through weight 6 is identical to `all.ints/iterint_solutions/H.wl` in all six
   crossings, coefficient by coefficient after expansion.
-- **M3 (full pipeline: array tasks to w8, then `assemble_II.wls`):** every crossing is identical
+- **M3 (to w8, then `assemble_II.wls`):** every crossing is identical
   to `M3_II.m` through weight 6. The assembled file has the same 480 keys in the same order as
   `M3_II.m`, and truncated at total weight 6 all 480 entries are identical.
 - **D** (square-root letters; the name is `System`D`): all six crossings are identical to
   `D_II.m` through weight 6. The assembled file has the same keys and order.
+- **`run_all.sh` with WMAX=6 on M3 and R2:** the assembled `II/M3_II.m` and `II/R2_II.m` are
+  identical to the `all.ints` files (keys, order and every entry).

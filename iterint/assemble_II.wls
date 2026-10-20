@@ -13,6 +13,7 @@
      outdir=<dir>  (default II)
      wmax=8 *)
 
+Print["kernel started"];   (* run_all.sh watches for this line *)
 $HistoryLength = 0;
 args = Association[Cases[$ScriptCommandLine[[2 ;;]], s_String /; StringContainsQ[s, "="] :>
      Rule @@ StringSplit[s, "=", 2]]];
