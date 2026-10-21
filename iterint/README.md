@@ -25,8 +25,8 @@ On the cluster, clone the repo (branch `pl-w8-crossings`), then, with no schedul
 
 `run_all.sh NJOBS [families...]` runs the (family, crossing) jobs of `run_iterint.wls` as
 background processes, NJOBS at a time, largest families first. When they are done it assembles
-every family whose six crossings all succeeded. Result: `II/<fam>_II.m` (and `II/H.wl`,
-`II/I3.wl`, the names used in `all.ints`). Each file holds
+every family whose six crossings all succeeded. Result: `II/<fam>_II.m` for every family
+(`all.ints` names H and I3 `H.wl`, `I3.wl`). Each file holds
 
     {BASISLC[fam, "", 1] -> Sum_{k<=8} w_k[[1]], ..., BASISLC[fam, "x132", n] -> ...}
 
@@ -51,7 +51,7 @@ the constants.
   compares `Sum_{k<=6} w_k` of every crossing with the old file. A mismatch marks the job FAILED.
 - **Resources:** H at weight 8 took 8 min and about 2 GB in use per crossing on the laptop
   (table below). The largest families (I1, I2, I3) have not been timed at weight 8.
-- **Size:** text output at weight 8 is about 2 GB per crossing for H, so the assembled `H.wl` is
+- **Size:** text output at weight 8 is about 2 GB per crossing for H, so the assembled `H_II.m` is
   roughly 12 GB. The assembled M3 file is 245 MB. `out/` and `II/` are gitignored (too big for
   GitHub); copy `II/` back with rsync.
 

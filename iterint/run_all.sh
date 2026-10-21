@@ -1,7 +1,7 @@
 #!/bin/bash
 # Iterated-integral solution of all families, no scheduler: runs the (family, crossing) jobs of
 # run_iterint.wls as background processes, NJOBS at a time, then assembles every family whose six
-# crossings all succeeded (assemble_II.wls -> II/<fam>_II.m, II/H.wl, II/I3.wl).
+# crossings all succeeded (assemble_II.wls -> II/<fam>_II.m).
 #
 #   nohup ./run_all.sh 8 > logs/run_all.log 2>&1 &          # all 22 families, 8 jobs at a time
 #   nohup ./run_all.sh 4 H I3 > logs/run_all.log 2>&1 &     # only some families

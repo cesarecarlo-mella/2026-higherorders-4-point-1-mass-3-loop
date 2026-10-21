@@ -4,7 +4,8 @@
 (* Assembles the run_iterint.wls output of one family into the all.ints/iterint_solutions format:
      {BASISLC[fam, "", 1] -> Sum_{k<=wmax} w_k[[1]], ..., BASISLC[fam, "x132", n] -> ...}
    crossings in the order "", x12, x13, x23, x123, x132 (as in all.ints), no ep (the weight is
-   the length of the II word). File name as in all.ints: H.wl, I3.wl, otherwise <fam>_II.m.
+   the length of the II word). File name: <fam>_II.m for every family (all.ints uses H.wl, I3.wl
+   for H and I3).
    The file is written entry by entry, so the full expression is never held in memory.
 
    Arguments (key=value):
@@ -23,7 +24,7 @@ famName = need["family"]; fam = ToExpression[famName];   (* "D" is System`D, as 
 in = Lookup[args, "in", FileNameJoin[{"out", famName}]];
 outDir = Lookup[args, "outdir", "II"]; Quiet[CreateDirectory[outDir, CreateIntermediateDirectories -> True]];
 wmax = ToExpression[Lookup[args, "wmax", "8"]];
-outName = If[MemberQ[{"H", "I3"}, famName], famName <> ".wl", famName <> "_II.m"];
+outName = famName <> "_II.m";
 outFile = FileNameJoin[{outDir, outName}];
 
 crosses = {"x", "x12", "x13", "x23", "x123", "x132"};
