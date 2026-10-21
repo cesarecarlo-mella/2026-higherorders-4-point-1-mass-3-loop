@@ -15,12 +15,48 @@ repo therefore has every input. No PolyLogTools is needed.
 > ⚠️ w7 and w8 of the NPL families have not been checked independently
 > (see `families/README.cesare.md`).
 
+## Status (2026-10-21)
+
+**Done for all 22 families, weights 0..8, all six crossings.** The results are on the cluster
+only (not in git):
+
+    newton4:/scratch/ge45tuy/2026-higherorders-4-point-1-mass-3-loop/iterint/II/<fam>_II.m.gz   assembled, gzipped (~95 GB unzipped)
+    newton4:/scratch/ge45tuy/2026-higherorders-4-point-1-mass-3-loop/iterint/out/<fam>/          per-weight .wdx (load_iterint.wl)
+
+The assembled files from this run are named H.wl / I3.wl, renamed by hand to `H_II.m` / `I3_II.m`.
+
+**What this run checked:** nothing against the old results. It ran without `VALIDATE_DIR`, so
+the only checks were internal to each job:
+- the Atilde is linear in the letters;
+- every BC entry is present;
+- every crossing reached w8;
+- each assembled file has 6 × masters entries.
+
+**Compared with `all.ints` through w6 earlier, locally:** H, M3, D and R2 (see "Checks done"
+below). The other 18 families have not been compared at w≤6 on these files. w7 and w8 have no
+check at all.
+
+Weight-8 cost per crossing (newton4):
+
+| family | memory peak | time |
+|---|---|---|
+| H | 38 GB | 16 min |
+| I1 | 31 GB | 1.8 h |
+| G1 | 22 GB | 15 min |
+
+Assembly took up to 1 h each for H and I3.
+
+On newton4, launch with `setsid` (`nohup` alone is not enough: the kernels die when the SSH
+session closes):
+
+    setsid nohup env WL="math -script" ./run_all.sh 8 > logs/run_all.log 2>&1 < /dev/null &
+
 ## Full run (all 22 families)
 
 On the cluster, clone the repo (branch `pl-w8-crossings`), then, with no scheduler:
 
     cd iterint
-    nohup ./run_all.sh 8 > logs/run_all.log 2>&1 &      # 132 jobs (22 families x 6 crossings), 8 at a time
+    setsid nohup ./run_all.sh 8 > logs/run_all.log 2>&1 < /dev/null &   # 132 jobs (22 families x 6 crossings), 8 at a time
     tail -f logs/run_all.log                            # one line per finished job / assembled family
 
 `run_all.sh NJOBS [families...]` runs the (family, crossing) jobs of `run_iterint.wls` as

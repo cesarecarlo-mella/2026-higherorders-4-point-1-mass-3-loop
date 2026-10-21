@@ -3,8 +3,8 @@
 # run_iterint.wls as background processes, NJOBS at a time, then assembles every family whose six
 # crossings all succeeded (assemble_II.wls -> II/<fam>_II.m).
 #
-#   nohup ./run_all.sh 8 > logs/run_all.log 2>&1 &          # all 22 families, 8 jobs at a time
-#   nohup ./run_all.sh 4 H I3 > logs/run_all.log 2>&1 &     # only some families
+#   setsid nohup ./run_all.sh 8 > logs/run_all.log 2>&1 < /dev/null &    # all 22 families, 8 jobs at a time
+#   setsid nohup ./run_all.sh 4 H I3 > logs/run_all.log 2>&1 < /dev/null &   # only some families
 #
 # NJOBS must not exceed the Mathematica kernels the license allows, and the jobs must fit in the
 # machine's memory (H at weight 8: ~2 GB per job; I1, I2, I3 not measured).
