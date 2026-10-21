@@ -8,3 +8,7 @@
   internal: the over-determined boundary system closes with zero residuals, and the same code
   reproduces w0–6 and H_opt. Do not use NPL w7/w8 results as validated until they have been
   checked against an independent computation (e.g. AMFlow).
+- **⚠️ Iterint solutions (w0–8, all 22 families, on the cluster): NOT CHECKED YET.** No
+  validation has been run on the cluster output (`iterint/II/`, see `iterint/README.md`), not even
+  the w≤6 comparison with `all.ints/iterint_solutions`. Only H, M3, D and R2 were compared through
+  w6, on earlier local runs of the same code.
